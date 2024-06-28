@@ -6,3 +6,21 @@ body {
   background-color: #000;
   border: 1px solid #fff;
 }
+
+#columnas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#columnas > * {
+  flex: 1 1 calc(50% - 1rem); /* 2 columnas */
+  margin: 0.5rem;
+}
+
+/* Estilos para pantallas medianas y pequeñas (1 columna) */
+@media (max-width: 768px) {
+  #columnas > * {
+    flex: 1 1 100%; /* 1 columna */
+  }
+}
