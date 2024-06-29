@@ -18,9 +18,56 @@ body {
   margin: 0.5rem;
 }
 
+#presentacion {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  height: 70vh; /* Full height of the viewport */
+  overflow-y: auto; /* Scroll within the sticky element if content overflows */
+  background-color: #f4f4f4;
+}
+
+.job-title {
+  font-weight: bold;
+  margin-top: 0.5em;
+  color: #2980b9;
+}
+.company-name {
+  font-weight: bold;
+  color: #e67e22;
+}
+.responsibilities {
+  margin-left: 20px;
+}
+
+.institution {
+  font-weight: bold;
+  color: #e67e22;
+}
+.degree {
+  font-weight: bold;
+  margin-top: 0.5em;
+  color: #2980b9;
+}
+.education-details {
+  margin-left: 20px;
+}
+
+.skill-category {
+  font-weight: bold;
+  color: #2980b9;
+}
+.skills-list {
+  margin-left: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
 /* Estilos para pantallas medianas y pequeñas (1 columna) */
 @media (max-width: 768px) {
   #columnas > * {
     flex: 1 1 100%; /* 1 columna */
   }
 }
+

@@ -19,18 +19,401 @@
     <!-- Estilos -->
     <link rel="stylesheet" type="text/css" href="css/index.css" />
   </head>
+
   <body>
     <div class="container">
-      <!-- Titulo y tarjeta de presentacion -->
-      <div class="row row-cols-1 justify-content-md-center">
-        <h1 class="text-center my-4">Proyectos en los que estuve presente</h1>
-      </div>
-      <div class="row row-cols-1 justify-content-md-center">
-        <div class="card col-11">
-          <div class="card-body">This is some text within a card body.</div>
+      <!-- Tarjeta de presentacion y Titulo -->
+      <div class="row justify-content-md-center">
+        <div class="col">
+          <div id="presentacion" class="card my-2">
+            <div class="card-body">
+              <!-- Barra de datos y botones -->
+              <div class="row">
+                <!-- Lado Izq -->
+                <div class="col col-lg-3 text-bg-primary">
+                  <div class="card text-bg-warning my-1">
+                    <div class="card-body">
+                      <div class="col justify-content-md-center">
+                        <div class="row">
+                          <h3 class="text-center">Moras Alejandro</h3>
+                        </div>
+                        <div class="row justify-content-md-center">
+                          <img
+                            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                            src="img/index/prueba01.png"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="row justify-content-md-center">
+                          <div
+                            class="btn-group-vertical"
+                            role="group"
+                            aria-label="Vertical button group"
+                          >
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
+                            >
+                              Yo
+                            </button>
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
+                            >
+                              Tu
+                            </button>
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree"
+                              aria-expanded="false"
+                              aria-controls="collapseThree"
+                            >
+                              El
+                            </button>
+                          </div>
+                        </div>
+                        <div class="row justify-content-md-center"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Lado Der-->
+                <div class="col col-xxl-auto text-bg-warning">
+                  <div class="card text-bg-warning my-1">
+                    <div class="card-body">
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header"></h2>
+                          <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <ul class="list-group">
+                                <li class="list-group-item">
+                                  <strong>Nombre:</strong><br />Alejandro Moras
+                                </li>
+                                <li class="list-group-item">
+                                  <strong>Resumen Profesional:</strong><br />
+                                  <p>
+                                    Apasionado por la tecnología, mi trayectoria
+                                    profesional y académica me ha permitido
+                                    desarrollar una amplia gama de habilidades
+                                    en diversas áreas.
+                                  </p>
+                                  <p>
+                                    Tras egresarme de la tecnicatura en
+                                    electrónica en mi secundaria, comencé mi
+                                    carrera laboral en una casa de fotografía.
+                                    Aquí, exploté mi interés por la edición
+                                    multimedia y perfeccioné mis habilidades en
+                                    atención al público y edición fotográfica.
+                                  </p>
+                                  <p>
+                                    Posteriormente, estudié dirección de arte,
+                                    lo que me proporcionó un profundo
+                                    conocimiento en la parte gráfica de la
+                                    publicidad y me enseñó conceptos importantes
+                                    de especialización en este campo.
+                                  </p>
+                                  <p>
+                                    Durante mi carrera, he tenido la oportunidad
+                                    de gestionar personal, lo que me ha
+                                    permitido desarrollar competencias en
+                                    liderazgo y manejo de equipos.
+                                  </p>
+                                  <p>
+                                    Actualmente, estoy a un final de recibirme
+                                    de Técnico en Sistemas y estudio
+                                    Licenciatura en Sistemas, lo que complementa
+                                    y amplía mis conocimientos técnicos y mi
+                                    pasión por la tecnología.
+                                  </p>
+                                </li>
+                                <li class="list-group-item">
+                                  <strong>Experiencia Laboral:</strong><br />
+                                  <div>
+                                    <span class="company-name"
+                                      >Fotomar - Villa Gesell</span
+                                    ><br />
+                                    <span class="job-title"
+                                      >Atención al Público y Edición
+                                      Fotográfica</span
+                                    >
+                                    <ul class="responsibilities">
+                                      <li>
+                                        Atendí a los clientes, proporcionando un
+                                        servicio personalizado y de alta
+                                        calidad.
+                                      </li>
+                                      <li>
+                                        Realicé tareas de edición fotográfica,
+                                        mejorando la calidad y presentación de
+                                        las imágenes para los clientes.
+                                      </li>
+                                      <li>
+                                        Gestioné la venta de productos,
+                                        asesorando a los clientes sobre las
+                                        mejores opciones disponibles.
+                                      </li>
+                                    </ul>
+                                  </div>
+
+                                  <div>
+                                    <span class="company-name"
+                                      >Munchis - Villa Gesell</span
+                                    ><br />
+                                    <span class="job-title"
+                                      >Encargado de Turno</span
+                                    >
+                                    <ul class="responsibilities">
+                                      <li>
+                                        Supervisé al personal, asegurando el
+                                        cumplimiento de las tareas asignadas y
+                                        manteniendo un ambiente de trabajo
+                                        productivo.
+                                      </li>
+                                      <li>
+                                        Gestioné el inventario, asegurando que
+                                        los productos estuvieran siempre en
+                                        stock y realizando pedidos cuando era
+                                        necesario.
+                                      </li>
+                                      <li>
+                                        Manejo de caja, incluyendo la apertura y
+                                        cierre, y asegurando la precisión en las
+                                        transacciones financieras.
+                                      </li>
+                                    </ul>
+                                  </div>
+
+                                  <div>
+                                    <span class="company-name"
+                                      >Colonial - Villa Gesell</span
+                                    ><br />
+                                    <span class="job-title"
+                                      >Encargado de Turno</span
+                                    >
+                                    <ul class="responsibilities">
+                                      <li>
+                                        Coordiné y supervisé al personal durante
+                                        los turnos, asegurando el cumplimiento
+                                        de los estándares de la empresa.
+                                      </li>
+                                      <li>
+                                        Realicé la gestión de inventarios,
+                                        asegurando que los productos estuvieran
+                                        disponibles y bien organizados.
+                                      </li>
+                                      <li>
+                                        Manejo de caja, garantizando la
+                                        precisión en el manejo del dinero y la
+                                        realización de transacciones.
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <strong>Educación:</strong><br />
+                                  <div>
+                                    <span class="institution"
+                                      >Primera Brigada Aérea del Palomar</span
+                                    ><br />
+                                    <span class="degree"
+                                      >Técnico en Electrónica (Orientación
+                                      Telecomunicaciones)</span
+                                    >
+                                    <p class="education-details">
+                                      Secundario Completo
+                                    </p>
+                                  </div>
+
+                                  <div>
+                                    <span class="institution"
+                                      >Asociación Argentina de Agencias de
+                                      Publicidad</span
+                                    ><br />
+                                    <span class="degree"
+                                      >Dirección de Arte</span
+                                    >
+                                    <p class="education-details">
+                                      Terciario (un año y medio)
+                                    </p>
+                                  </div>
+
+                                  <div>
+                                    <span class="institution"
+                                      >Universidad Nacional General
+                                      Sarmiento</span
+                                    ><br />
+                                    <span class="degree"
+                                      >Tecnicatura en Sistemas</span
+                                    >
+                                    <p class="education-details">A un final</p>
+                                  </div>
+
+                                  <div>
+                                    <span class="institution"
+                                      >Universidad Nacional General
+                                      Sarmiento</span
+                                    ><br />
+                                    <span class="degree"
+                                      >Licenciatura en Sistemas</span
+                                    >
+                                    <p class="education-details">En curso</p>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <strong>Habilitades:</strong><br />
+                                  <div>
+                                    <span class="skill-category"
+                                      >Software y Herramientas</span
+                                    >
+                                    <ul class="skills-list">
+                                      <li>Photoshop</li>
+                                      <li>After Effects</li>
+                                      <li>Office</li>
+                                      <li>Git</li>
+                                      <li>Eclipse</li>
+                                      <li>Android Studio</li>
+                                    </ul>
+                                  </div>
+
+                                  <div>
+                                    <span class="skill-category"
+                                      >Lenguajes de Programación</span
+                                    >
+                                    <ul class="skills-list">
+                                      <li>Java</li>
+                                      <li>Python</li>
+                                      <li>Kotlin</li>
+                                      <li>bash</li>
+                                    </ul>
+                                  </div>
+
+                                  <div>
+                                    <span class="skill-category"
+                                      >Bases de Datos</span
+                                    >
+                                    <ul class="skills-list">
+                                      <li>Room</li>
+                                      <li>SQLite</li>
+                                      <li>PostgreSQL</li>
+                                    </ul>
+                                  </div>
+
+                                  <div>
+                                    <span class="skill-category"
+                                      >Sistemas Operativos</span
+                                    >
+                                    <ul class="skills-list">
+                                      <li>Linux</li>
+                                      <li>Windows</li>
+                                    </ul>
+                                  </div>
+
+                                  <div>
+                                    <span class="skill-category"
+                                      >Otras Habilidades</span
+                                    >
+                                    <ul class="skills-list">
+                                      <li>
+                                        Alto desenvolvimiento en ambientes
+                                        tecnológicos
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <strong>Idiomas:</strong>
+                                  ILC
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header"></h2>
+                          <div
+                            id="collapseTwo"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <strong
+                                >This is the second item's accordion
+                                body.</strong
+                              >
+                              It is hidden by default, until the collapse plugin
+                              adds the appropriate classes that we use to style
+                              each element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the <code>.accordion-body</code>,
+                              though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header"></h2>
+                          <div
+                            id="collapseThree"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <strong
+                                >This is the third item's accordion
+                                body.</strong
+                              >
+                              It is hidden by default, until the collapse plugin
+                              adds the appropriate classes that we use to style
+                              each element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the <code>.accordion-body</code>,
+                              though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Barra de datos y botones -->
+            </div>
+          </div>
         </div>
       </div>
-      <!-- /Titulo y tarjeta de presentacion -->
+      <!-- Titulo -->
+      <div class="row justify-content-md-center">
+        <div class="col">
+          <div class="card text-bg-warning my-1">
+            <div class="card-body">
+              <h3 class="text-center">
+                <strong>Proyectos en los que estuve presente</strong>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Tarjeta de presentacion y Titulo -->
       <!-- Porfolio -->
       <div id="columnas" class="row justify-content-md-center">
         <!-- Sakura Ikebana Game -->
@@ -885,5 +1268,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!--JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
