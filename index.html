@@ -30,8 +30,8 @@
               <!-- Barra de datos y botones -->
               <div class="row">
                 <!-- Lado Izq -->
-                <div class="col col-lg-3 text-bg-primary">
-                  <div class="card text-bg-warning my-1">
+                <div id="columnas-cv1" class="col col-lg-3 text-bg-primary">
+                  <div id="card-botones" class="card text-bg-warning my-1">
                     <div class="card-body">
                       <div class="col justify-content-md-center">
                         <div class="row">
@@ -54,9 +54,9 @@
                               class="btn btn-primary"
                               type="button"
                               data-bs-toggle="collapse"
-                              data-bs-target="#collapseOne"
+                              data-bs-target="#collapseYo"
                               aria-expanded="true"
-                              aria-controls="collapseOne"
+                              aria-controls="collapseYo"
                             >
                               Yo
                             </button>
@@ -64,21 +64,21 @@
                               class="btn btn-primary"
                               type="button"
                               data-bs-toggle="collapse"
-                              data-bs-target="#collapseTwo"
+                              data-bs-target="#collapseHobbies"
                               aria-expanded="false"
-                              aria-controls="collapseTwo"
+                              aria-controls="collapseHobbies"
                             >
-                              Tu
+                              Hobbies
                             </button>
                             <button
                               class="btn btn-primary"
                               type="button"
                               data-bs-toggle="collapse"
-                              data-bs-target="#collapseThree"
+                              data-bs-target="#collapseLink"
                               aria-expanded="false"
-                              aria-controls="collapseThree"
+                              aria-controls="collapseLink"
                             >
-                              El
+                              Links
                             </button>
                           </div>
                         </div>
@@ -88,18 +88,19 @@
                   </div>
                 </div>
                 <!-- Lado Der-->
-                <div class="col col-xxl-auto text-bg-warning">
+                <div id="columnas-cv1" class="col col-xxl-auto text-bg-warning">
                   <div class="card text-bg-warning my-1">
                     <div class="card-body">
                       <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                           <h2 class="accordion-header"></h2>
                           <div
-                            id="collapseOne"
+                            id="collapseYo"
                             class="accordion-collapse collapse"
                             data-bs-parent="#accordionExample"
                           >
                             <div class="accordion-body">
+                              <h2>Presentación Personal</h2>
                               <ul class="list-group">
                                 <li class="list-group-item">
                                   <strong>Nombre:</strong><br />Alejandro Moras
@@ -346,48 +347,44 @@
                         <div class="accordion-item">
                           <h2 class="accordion-header"></h2>
                           <div
-                            id="collapseTwo"
+                            id="collapseHobbies"
                             class="accordion-collapse collapse"
                             data-bs-parent="#accordionExample"
                           >
-                            <div class="accordion-body">
-                              <strong
-                                >This is the second item's accordion
-                                body.</strong
-                              >
-                              It is hidden by default, until the collapse plugin
-                              adds the appropriate classes that we use to style
-                              each element. These classes control the overall
-                              appearance, as well as the showing and hiding via
-                              CSS transitions. You can modify any of this with
-                              custom CSS or overriding our default variables.
-                              It's also worth noting that just about any HTML
-                              can go within the <code>.accordion-body</code>,
-                              though the transition does limit overflow.
+                            <div class="accordion-body hobbies">
+                              <h2>Hobbies e Intereses</h2>
+                              <ul class="list-group hobbies-list">
+                                <li class="list-group-item">
+                                  Musica y despejar la mente al aire libre
+                                </li>
+                                <li class="list-group-item">
+                                  Pasar tiempo frente a la computadora
+                                  informándome o viendo series
+                                </li>
+                                <li class="list-group-item">
+                                  Crear herramientas para uso propio como una
+                                  terminal para Debian y Termux
+                                </li>
+                                <li class="list-group-item">
+                                  Exploración de tecnologías como Raspberry Pi
+                                  Pico y Android Studio
+                                </li>
+                                <li class="list-group-item">
+                                  Proyectos simples con electrónica
+                                </li>
+                              </ul>
                             </div>
                           </div>
                         </div>
                         <div class="accordion-item">
                           <h2 class="accordion-header"></h2>
                           <div
-                            id="collapseThree"
+                            id="collapseLink"
                             class="accordion-collapse collapse"
                             data-bs-parent="#accordionExample"
                           >
                             <div class="accordion-body">
-                              <strong
-                                >This is the third item's accordion
-                                body.</strong
-                              >
-                              It is hidden by default, until the collapse plugin
-                              adds the appropriate classes that we use to style
-                              each element. These classes control the overall
-                              appearance, as well as the showing and hiding via
-                              CSS transitions. You can modify any of this with
-                              custom CSS or overriding our default variables.
-                              It's also worth noting that just about any HTML
-                              can go within the <code>.accordion-body</code>,
-                              though the transition does limit overflow.
+                              <strong>Aun no hay nada :/.</strong>
                             </div>
                           </div>
                         </div>
@@ -407,7 +404,7 @@
           <div class="card text-bg-warning my-1">
             <div class="card-body">
               <h3 class="text-center">
-                <strong>Proyectos en los que estuve presente</strong>
+                <strong>Desarrollos en los que estuve presente</strong>
               </h3>
             </div>
           </div>
