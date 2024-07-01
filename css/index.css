@@ -1,10 +1,11 @@
 body {
-  background-color: #000;
-  color: #fff;
+  background-image: url("../img/index/patron-am2-final.jpg");
+  background-repeat: repeat;
 }
+
 .card {
   background-color: #000;
-  border: 1px solid #fff;
+  border: 1px  hwb(0 100% 0%);
 }
 
 #columnas {
@@ -24,8 +25,13 @@ body {
   top: 0;
   align-self: flex-start;
   height: 70vh; /* Full height of the viewport */
-  overflow-y: auto; /* Scroll within the sticky element if content overflows */
-  background-color: #f4f4f4;
+  overflow-y: auto;
+  background-image: url("../img/index/patron-am-final.jpg");
+  background-repeat: repeat;
+}
+
+#columnas-cv1{
+  background-color: transparent;
 }
 
 .job-title {
@@ -72,7 +78,41 @@ body {
 }
 
 /* Estilos para pantallas medianas y pequeñas (1 columna) */
-@media (max-width: 700px) {
+@media (max-width: 765px) {
+  #columnas > * {
+    flex: 1 1 100%; /* 1 columna */
+  }
+
+  #card-botones {
+    width:fit-content;
+    flex-basis: 1 1 100%;
+  }
+
+  #columnas-cv1 {
+    flex-basis: 100%;
+    min-width: 300px; /* Ajusta el tamaño mínimo según tus necesidades */
+    max-width: 650px; /* Ajusta el tamaño máximo según tus necesidades */
+  }
+}
+
+@media (max-width: 400px) {
+  #columnas > * {
+    flex: 1 1 100%; /* 1 columna */
+  }
+
+  #card-botones {
+    width:fit-content;
+    flex-basis: 1 1 100%;
+  }
+
+  #columnas-cv1 {
+    flex-basis: 100%;
+    min-width: 320px; /* Ajusta el tamaño mínimo según tus necesidades */
+    max-width: 400px; /* Ajusta el tamaño máximo según tus necesidades */
+  }
+}
+
+@media (max-width: 350px) {
   #columnas > * {
     flex: 1 1 100%; /* 1 columna */
   }
