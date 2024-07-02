@@ -1,3 +1,12 @@
+/* CARDS COMO PPT */
+#sakuraPPT {
+  background-image: url("../img/index/patron-am3-final.jpg");
+  background-repeat: repeat;
+  background-size: 700px 700px;
+}
+
+/* FIN CARDS COMO PPT */
+
 body {
   background-image: url("../img/index/patron-am2-final.jpg");
   background-repeat: repeat;
