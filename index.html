@@ -718,6 +718,342 @@
         </div>
       </div>
       <!--/Sistema de Votacion-->
+      <!-- Wordle Game -->
+      <div class="col">
+        <div class="card fondo-oscuro-gauss">
+          <!-- Carousel -->
+          <div id="carouselExample" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner card-img-top px-3 py-3">
+              <div class="carousel-item active my-3 px-3">
+                <video class="w-100" controls>
+                  <source
+                    src="https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas/-/raw/main/Trabajo%20Practico%20N1/WORDLE%20TEST.mp4?ref_type=heads"
+                    type="video/mp4" />
+                </video>
+
+              </div>
+            </div>
+          </div>
+          <!-- /Carousel -->
+          <div class="card-body">
+            <h3 class="card-title text-center">
+              <div class="col text-center">
+                <!-- Lo que use -->
+                <div class="row px-3">
+                  <span class="badge text-secondary bg-warning-subtle badge-light">
+                    <div class="col px-2">
+                      <div class="row py-2">Herramientas:</div>
+                      <div class="row">
+                        <span class="badge text-bg-warning my-1"><i class="bi bi-terminal-fill"></i> Eclipse</span>
+                        <span class="badge text-bg-warning my-1"><i class="bi bi-filetype-java"></i> Java</span>
+                        <span class="badge text-bg-warning my-1"><i class="bi bi-git"></i> Git</span>
+                      </div>
+                    </div>
+                  </span>
+                </div>
+                <!-- /Lo que use -->
+                <!-- Titulo referencial -->
+                <div class="col text-warning text-center my-3">
+                  <p><strong>
+                      Juego: Wordle
+                    </strong> </p>
+                </div>
+                <!-- /Titulo referencial -->
+              </div>
+            </h3>
+            <p class="card-text my-3"></p>
+            <!-- Nucleo -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button text-bg-warning fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOneWordle" aria-expanded="true" aria-controls="collapseOneWordle">
+                    Enunciado
+                  </button>
+                </h2>
+                <div id="collapseOneWordle" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    El trabajo consiste en recrear la lógica del juego Wordle, donde el jugador debe adivinar una
+                    palabra secreta en seis intentos, y presentarlo en una interfaz gráfica con la que el usuario pueda
+                    interactuar.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-bg-warning fw-bold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwoWordle" aria-expanded="false"
+                    aria-controls="collapseTwoWordle">
+                    Requerimientos
+                  </button>
+                </h2>
+                <div id="collapseTwoWordle" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        Cuando el usuario ingresa una palabra se le mostrara la siguiente información; las letras que
+                        coincidan con el mismo lugar de la palabra secreta se mostraran en verde, las que existen, pero
+                        no están en la posición correcta, se mostraran en naranja, y las letras que no existen en la
+                        palabra secreta se marcaran con gris.
+                      </li>
+                      <li class="list-group-item">
+                        <p>El trabajo tiene como objetivos opcionales:</p>
+                        <p>Proponer varios niveles de dificultad, que consistan por ejemplo en palabras más difíciles
+                          o bien una menor cantidad de intentos.</p>
+                        <p>Permitir que el idioma de la aplicación sea configurable.</p>
+                        <p>Medir el tiempo que tarda el usuario en adivinar la palabra, y mostrar el mejor tiempo
+                          hasta el momento.</p>
+                      </li>
+                      <li class="list-group-item">
+                        Se espera que el codigo de la logica del juego este separada de la interfaz.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-bg-warning fw-bold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThreeWordle" aria-expanded="false"
+                    aria-controls="collapseThreeWordle">
+                    Desarrollo
+                  </button>
+                </h2>
+                <div id="collapseThreeWordle" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      En esta materia se estudió arquitectura de diseño de software. Se pidió implementar el patrón MVC,
+                      el cual cumplimos sin correcciones por parte de los profesores.
+                    </p>
+                    <p><strong>Responsabilidades y Tareas:</strong></p>
+                    <p>
+                      <strong>1. Implementación del Patrón MVC:</strong>
+                      Diseñamos y desarrollamos el proyecto siguiendo el patrón MVC, asegurando una clara separación de
+                      responsabilidades.
+                    </p>
+                    <p>
+                      <strong>2. Coordinación en Equipo:</strong>
+                      Trabajé con dos integrantes más, manteniendo una coordinación eficiente y cumpliendo con todas las
+                      fechas de entrega.
+                    </p>
+                    <p><strong>Desafíos y Soluciones:</strong></p>
+                    <p>
+                      <strong>1. Implementación de Funcionalidades Opcionales:</strong>
+                    </p>
+                    <p>
+                      <strong>Desafío:</strong> Incluir todas las funcionalidades opcionales requeridas.
+                    </p>
+                    <p>
+                      <strong>Solución:</strong> Coordinamos eficientemente y distribuimos las tareas para asegurarnos
+                      de que todas las funcionalidades fueran implementadas correctamente.
+                    </p>
+                    <p><strong>Aprendizajes y Experiencias:</strong></p>
+                    <p>
+                      <strong>Diseño de Software:</strong>
+                      Profundicé en conceptos de arquitectura de diseño de software y en la implementación del patrón
+                      MVC.
+                    </p>
+                    <p>
+                      <strong>Trabajo en Equipo:</strong>
+                      Aprendí a coordinar y colaborar efectivamente en equipo, cumpliendo con todas las fechas de
+                      entrega.
+                    </p>
+                    <p><strong>Resultados y Conclusiones:</strong></p>
+                    <p>
+                      <em>
+                        Este proyecto no solo nos permitió aplicar el patrón MVC y mejorar nuestras habilidades en
+                        arquitectura de software, sino también desarrollar una excelente coordinación de equipo,
+                        logrando completar el proyecto con todas las funcionalidades opcionales incluidas.
+                      </em>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Nucleo -->
+            <!-- Repositorio o link -->
+            <a href="https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas/-/tree/main/Trabajo%20Practico%20N1?ref_type=heads"
+              class="btn my-3 btn-warning fw-bold">Ver
+              Repositorio</a>
+            <!-- /Repositorio o link -->
+          </div>
+        </div>
+      </div>
+      <!--/Wordle Game-->
+      <!-- Sistema de Clustering con AGM -->
+      <div class="col">
+        <div class="card fondo-oscuro-gauss">
+          <!-- Carousel -->
+          <div id="carouselExample" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner card-img-top px-3 py-3">
+              <div class="carousel-item active my-3 px-3">
+                <video class="w-100" controls>
+                  <source
+                    src="https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas/-/raw/main/Trabajo%20Practico%20N2/CLUSTER%20GENERATOR%20TEST.mp4?ref_type=heads"
+                    type="video/mp4" />
+                </video>
+
+              </div>
+            </div>
+          </div>
+          <!-- /Carousel -->
+          <div class="card-body">
+            <h3 class="card-title text-center">
+              <div class="col text-center">
+                <!-- Lo que use -->
+                <div class="row px-3">
+                  <span class="badge text-secondary bg-warning-subtle badge-light">
+                    <div class="col px-2">
+                      <div class="row py-2">Herramientas:</div>
+                      <div class="row">
+                        <span class="badge text-bg-warning my-1"><i class="bi bi-terminal-fill"></i> Eclipse</span>
+                        <span class="badge text-bg-warning my-1"><i class="bi bi-filetype-java"></i> Java</span>
+                        <span class="badge text-bg-warning my-1"><i class="bi bi-git"></i> Git</span>
+                      </div>
+                    </div>
+                  </span>
+                </div>
+                <!-- /Lo que use -->
+                <!-- Titulo referencial -->
+                <div class="col text-warning text-center my-3">
+                  <p><strong>
+                      Sistema de Clustering con AGM
+                    </strong> </p>
+                </div>
+                <!-- /Titulo referencial -->
+              </div>
+            </h3>
+            <p class="card-text my-3"></p>
+            <!-- Nucleo -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button text-bg-warning fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseProjectDetailsCluster" aria-expanded="true"
+                    aria-controls="collapseProjectDetailsCluster">
+                    Enunciado
+                  </button>
+                </h2>
+                <div id="collapseProjectDetailsCluster" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    El objetivo de este trabajo es desarrollar una aplicación que realice clustering utilizando el
+                    algoritmo propuesto por Charles Zahn en su libro 'IEEE Transactions on Computers'. La aplicación
+                    debe:
+                    <ul>
+                      <li>Calcular un árbol generador mínimo de un grafo completo formado por un conjunto de puntos en
+                        el plano, con pesos en las aristas iguales a la distancia entre los vértices.</li>
+                      <li>Eliminar del árbol las aristas cuyos pesos sean mayores que los pesos de sus aristas vecinas,
+                        repitiendo este paso hasta obtener una cantidad predeterminada de clústeres o hasta que no haya
+                        aristas con peso significativamente distinto de sus aristas vecinas.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-bg-warning fw-bold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseRequirementsCluster" aria-expanded="false"
+                    aria-controls="collapseRequirementsCluster">
+                    Requerimientos
+                  </button>
+                </h2>
+                <div id="collapseRequirementsCluster" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        Implementar una interfaz gráfica que permita mostrar los puntos de la instancia y ejecutar el
+                        algoritmo de Charles Zahn.
+                      </li>
+                      <li class="list-group-item">
+                        Visualizar el resultado del algoritmo en la interfaz gráfica.
+                      </li>
+                      <li class="list-group-item">
+                        <p>Objetivos opcionales:</p>
+                        <p>Incluir diferentes criterios para determinar si una arista tiene un peso significativamente
+                          mayor que sus aristas vecinas, permitiendo seleccionar el criterio desde la interfaz.</p>
+                        <p>Mostrar estadísticas de la solución, tales como la cantidad de clústeres, el peso de cada
+                          clúster, y la desviación estándar.</p>
+                        <p>Guardar la solución en un archivo y permitir la recuperación de soluciones guardadas.</p>
+                        <p>Permitir la edición manual de la solución desde la interfaz.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-bg-warning fw-bold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThreeClustering" aria-expanded="false"
+                    aria-controls="collapseThreeClustering">
+                    Desarrollo
+                  </button>
+                </h2>
+                <div id="collapseThreeClustering" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      En este trabajo, además de cumplir con el requerimiento principal sumado a los agregados
+                      propuestos, menos la edicion manual, se debía mantener el patrón de diseño MVC. También se
+                      estudiaron varias teorías respecto al análisis de clusters dentro de un grafo.
+                    </p>
+                    <p><strong>Responsabilidades y Tareas:</strong></p>
+                    <p>
+                      <strong>1. Implementación del Patrón MVC:</strong>
+                      Diseñamos y desarrollamos el proyecto siguiendo el patrón MVC, asegurando una clara separación de
+                      responsabilidades.
+                    </p>
+                    <p>
+                      <strong>2. Análisis de Clusters:</strong>
+                      Implementamos un análisis de clusters en un entorno complejo, llegando a descubrir y eliminar el
+                      llamado "puente" dentro del grafo.
+                    </p>
+                    <p><strong>Desafíos y Soluciones:</strong></p>
+                    <p>
+                      <strong>1. Identificación del "Puente":</strong>
+                    </p>
+                    <p>
+                      <strong>Desafío:</strong> Identificar y eliminar el "puente", un elemento difícil de descubrir con
+                      algoritmos simples que eliminan las aristas más largas del grafo.
+                    </p>
+                    <p>
+                      <strong>Solución:</strong> Implementamos un análisis detallado y eficiente que permitió
+                      identificar y eliminar el "puente", incluso en casos donde todos los nodos tenían la misma
+                      distancia.
+                    </p>
+                    <p><strong>Aprendizajes y Experiencias:</strong></p>
+                    <p>
+                      <strong>Arquitectura de Software:</strong>
+                      Profundizamos en conceptos de arquitectura de diseño de software y en la implementación del patrón
+                      MVC.
+                    </p>
+                    <p>
+                      <strong>Análisis de Clusters:</strong>
+                      Aprendimos a aplicar técnicas avanzadas de análisis de clusters en grafos complejos.
+                    </p>
+                    <p><strong>Resultados y Conclusiones:</strong></p>
+                    <p>
+                      <em>
+                        Este proyecto no solo nos permitió aplicar el patrón MVC y mejorar nuestras habilidades en
+                        arquitectura de software, sino también implementar un análisis avanzado de clusters, logrando
+                        descubrir y eliminar el "puente" en un grafo complejo, algo que otros equipos no lograron.
+                      </em>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Nucleo -->
+            <!-- Repositorio o link -->
+            <a href="https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas/-/tree/main/Trabajo%20Practico%20N2?ref_type=heads"
+              class="btn my-3 btn-warning fw-bold">Ver
+              Repositorio</a>
+            <!-- /Repositorio o link -->
+          </div>
+        </div>
+      </div>
+      <!--/Sistema de Clustering con AGM-->
     </div>
     <!-- /Porfolio -->
   </div>
