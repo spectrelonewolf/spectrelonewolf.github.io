@@ -1,391 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mis Proyectos</title>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <!-- Estilos -->
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis Proyectos</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-  <body>
-    <div class="container">
-      <!-- Tarjeta de presentacion y Titulo -->
-      <div class="row justify-content-md-center">
-        <div class="col">
-          <div id="presentacion" class="card my-2">
-            <div class="card-body">
-              <!-- Barra de datos y botones -->
-              <div class="row">
-                <!-- Lado Izq -->
-                <div id="columnas-cv1" class="col col-lg-3">
-                  <div id="card-botones" class="card text-bg-warning my-1">
-                    <div class="card-body">
-                      <div class="col justify-content-md-center">
-                        <div class="row">
-                          <h3 class="text-center">Moras Alejandro</h3>
-                        </div>
-                        <div class="row justify-content-md-center">
-                          <img
-                            class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                            src="img/index/prueba01.png"
-                            alt="..."
-                          />
-                        </div>
-                        <div class="row justify-content-md-center">
-                          <div
-                            class="btn-group-vertical"
-                            role="group"
-                            aria-label="Vertical button group"
-                          >
-                            <button
-                              class="btn btn-outline-primary"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#collapseYo"
-                              aria-expanded="true"
-                              aria-controls="collapseYo"
-                            >
-                              Yo
-                            </button>
-                            <button
-                              class="btn btn-outline-primary"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#collapseHobbies"
-                              aria-expanded="false"
-                              aria-controls="collapseHobbies"
-                            >
-                              Hobbies
-                            </button>
-                            <button
-                              class="btn btn-outline-primary"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#collapseLink"
-                              aria-expanded="false"
-                              aria-controls="collapseLink"
-                            >
-                              Links
-                            </button>
-                          </div>
-                        </div>
-                        <div class="row justify-content-md-center"></div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Estilos -->
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Tarjeta de presentacion y Titulo -->
+    <div class="row justify-content-md-center">
+      <div class="col">
+        <div id="presentacion" class="card my-2">
+          <div class="card-body">
+            <!-- Barra de datos y botones -->
+            <div class="row">
+              <!-- Lado Izq -->
+              <div id="columnas-cv1" class="col col-lg-3">
+                <div id="card-botones" class="card text-bg-warning my-1">
+                  <div class="card-body">
+                    <div class="col justify-content-md-center">
+                      <div class="row">
+                        <h3 class="text-center">Moras Alejandro</h3>
                       </div>
+                      <div class="row justify-content-md-center">
+                        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/index/prueba01.png"
+                          alt="..." />
+                      </div>
+                      <div class="row justify-content-md-center">
+                        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                          <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseYo" aria-expanded="true" aria-controls="collapseYo">
+                            Yo
+                          </button>
+                          <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseHobbies" aria-expanded="false" aria-controls="collapseHobbies">
+                            Hobbies
+                          </button>
+                          <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseLink" aria-expanded="false" aria-controls="collapseLink">
+                            Links
+                          </button>
+                        </div>
+                      </div>
+                      <div class="row justify-content-md-center"></div>
                     </div>
                   </div>
                 </div>
-                <!-- Lado Der-->
-                <div id="columnas-cv1" class="col col-xxl-auto">
-                  <div class="card text-bg-warning my-1">
-                    <div class="card-body">
-                      <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header"></h2>
-                          <div
-                            id="collapseYo"
-                            class="accordion-collapse collapse"
-                            data-bs-parent="#accordionExample"
-                          >
-                            <div class="accordion-body">
-                              <h2>Presentación Personal</h2>
-                              <ul class="list-group">
-                                <li class="list-group-item">
-                                  <strong>Nombre:</strong><br />Alejandro Moras
-                                </li>
-                                <li class="list-group-item">
-                                  <strong>Resumen Profesional:</strong><br />
-                                  <p>
-                                    Apasionado por la tecnología, mi trayectoria
-                                    profesional y académica me ha permitido
-                                    desarrollar una amplia gama de habilidades
-                                    en diversas áreas.
+              </div>
+              <!-- Lado Der-->
+              <div id="columnas-cv1" class="col col-xxl-auto">
+                <div class="card text-bg-warning my-1">
+                  <div class="card-body">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header"></h2>
+                        <div id="collapseYo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <h2>Presentación Personal</h2>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <strong>Nombre:</strong><br />Alejandro Moras
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Resumen Profesional:</strong><br />
+                                <p>
+                                  Apasionado por la tecnología, mi trayectoria
+                                  profesional y académica me ha permitido
+                                  desarrollar una amplia gama de habilidades
+                                  en diversas áreas.
+                                </p>
+                                <p>
+                                  Tras egresarme de la tecnicatura en
+                                  electrónica en mi secundaria, comencé mi
+                                  carrera laboral en una casa de fotografía.
+                                  Aquí, exploté mi interés por la edición
+                                  multimedia y perfeccioné mis habilidades en
+                                  atención al público y edición fotográfica.
+                                </p>
+                                <p>
+                                  Posteriormente, estudié dirección de arte,
+                                  lo que me proporcionó un profundo
+                                  conocimiento en la parte gráfica de la
+                                  publicidad y me enseñó conceptos importantes
+                                  de especialización en este campo.
+                                </p>
+                                <p>
+                                  Durante mi carrera, he tenido la oportunidad
+                                  de gestionar personal, lo que me ha
+                                  permitido desarrollar competencias en
+                                  liderazgo y manejo de equipos.
+                                </p>
+                                <p>
+                                  Actualmente, estoy a un final de recibirme
+                                  de Técnico en Sistemas y estudio
+                                  Licenciatura en Sistemas, lo que complementa
+                                  y amplía mis conocimientos técnicos y mi
+                                  pasión por la tecnología.
+                                </p>
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Experiencia Laboral:</strong><br />
+                                <div>
+                                  <span class="company-name">Fotomar - Villa Gesell</span><br />
+                                  <span class="job-title">Atención al Público y Edición Fotográfica</span>
+                                  <ul class="responsibilities">
+                                    <li>Atención al cliente personalizada.</li>
+                                    <li>Edición y mejora de imágenes.</li>
+                                    <li>Venta y asesoramiento de productos.</li>
+                                  </ul>
+                                </div>
+                                <div>
+                                  <span class="company-name">Munchis - Villa Gesell</span><br />
+                                  <span class="job-title">Encargado de Turno</span>
+                                  <ul class="responsibilities">
+                                    <li>Supervisión del personal.</li>
+                                    <li>Gestión de inventarios.</li>
+                                    <li>Manejo de caja.</li>
+                                  </ul>
+                                </div>
+
+                                <div>
+                                  <span class="company-name">Colonial - Villa Gesell</span><br />
+                                  <span class="job-title">Encargado de Turno</span>
+                                  <ul class="responsibilities">
+                                    <li>Coordinación y supervisión del personal.</li>
+                                    <li>Gestión de inventarios.</li>
+                                    <li>Manejo de caja.</li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Educación:</strong><br />
+                                <div>
+                                  <span class="institution">Primera Brigada Aérea del Palomar</span><br />
+                                  <span class="degree">Técnico en Electrónica (Orientación
+                                    Telecomunicaciones)</span>
+                                  <p class="education-details">
+                                    Secundario Completo
                                   </p>
-                                  <p>
-                                    Tras egresarme de la tecnicatura en
-                                    electrónica en mi secundaria, comencé mi
-                                    carrera laboral en una casa de fotografía.
-                                    Aquí, exploté mi interés por la edición
-                                    multimedia y perfeccioné mis habilidades en
-                                    atención al público y edición fotográfica.
+                                </div>
+                                <div>
+                                  <span class="institution">Asociación Argentina de Agencias de
+                                    Publicidad</span><br />
+                                  <span class="degree">Dirección de Arte</span>
+                                  <p class="education-details">
+                                    Terciario (un año y medio)
                                   </p>
-                                  <p>
-                                    Posteriormente, estudié dirección de arte,
-                                    lo que me proporcionó un profundo
-                                    conocimiento en la parte gráfica de la
-                                    publicidad y me enseñó conceptos importantes
-                                    de especialización en este campo.
-                                  </p>
-                                  <p>
-                                    Durante mi carrera, he tenido la oportunidad
-                                    de gestionar personal, lo que me ha
-                                    permitido desarrollar competencias en
-                                    liderazgo y manejo de equipos.
-                                  </p>
-                                  <p>
-                                    Actualmente, estoy a un final de recibirme
-                                    de Técnico en Sistemas y estudio
-                                    Licenciatura en Sistemas, lo que complementa
-                                    y amplía mis conocimientos técnicos y mi
-                                    pasión por la tecnología.
-                                  </p>
-                                </li>
-                                <li class="list-group-item">
-                                  <strong>Experiencia Laboral:</strong><br />
-                                  <div>
-                                    <span class="company-name"
-                                      >Fotomar - Villa Gesell</span
-                                    ><br />
-                                    <span class="job-title"
-                                      >Atención al Público y Edición
-                                      Fotográfica</span
-                                    >
-                                    <ul class="responsibilities">
-                                      <li>
-                                        Atendí a los clientes, proporcionando un
-                                        servicio personalizado y de alta
-                                        calidad.
-                                      </li>
-                                      <li>
-                                        Realicé tareas de edición fotográfica,
-                                        mejorando la calidad y presentación de
-                                        las imágenes para los clientes.
-                                      </li>
-                                      <li>
-                                        Gestioné la venta de productos,
-                                        asesorando a los clientes sobre las
-                                        mejores opciones disponibles.
-                                      </li>
-                                    </ul>
-                                  </div>
-
-                                  <div>
-                                    <span class="company-name"
-                                      >Munchis - Villa Gesell</span
-                                    ><br />
-                                    <span class="job-title"
-                                      >Encargado de Turno</span
-                                    >
-                                    <ul class="responsibilities">
-                                      <li>
-                                        Supervisé al personal, asegurando el
-                                        cumplimiento de las tareas asignadas y
-                                        manteniendo un ambiente de trabajo
-                                        productivo.
-                                      </li>
-                                      <li>
-                                        Gestioné el inventario, asegurando que
-                                        los productos estuvieran siempre en
-                                        stock y realizando pedidos cuando era
-                                        necesario.
-                                      </li>
-                                      <li>
-                                        Manejo de caja, incluyendo la apertura y
-                                        cierre, y asegurando la precisión en las
-                                        transacciones financieras.
-                                      </li>
-                                    </ul>
-                                  </div>
-
-                                  <div>
-                                    <span class="company-name"
-                                      >Colonial - Villa Gesell</span
-                                    ><br />
-                                    <span class="job-title"
-                                      >Encargado de Turno</span
-                                    >
-                                    <ul class="responsibilities">
-                                      <li>
-                                        Coordiné y supervisé al personal durante
-                                        los turnos, asegurando el cumplimiento
-                                        de los estándares de la empresa.
-                                      </li>
-                                      <li>
-                                        Realicé la gestión de inventarios,
-                                        asegurando que los productos estuvieran
-                                        disponibles y bien organizados.
-                                      </li>
-                                      <li>
-                                        Manejo de caja, garantizando la
-                                        precisión en el manejo del dinero y la
-                                        realización de transacciones.
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </li>
-                                <li class="list-group-item">
-                                  <strong>Educación:</strong><br />
-                                  <div>
-                                    <span class="institution"
-                                      >Primera Brigada Aérea del Palomar</span
-                                    ><br />
-                                    <span class="degree"
-                                      >Técnico en Electrónica (Orientación
-                                      Telecomunicaciones)</span
-                                    >
-                                    <p class="education-details">
-                                      Secundario Completo
-                                    </p>
-                                  </div>
-
-                                  <div>
-                                    <span class="institution"
-                                      >Asociación Argentina de Agencias de
-                                      Publicidad</span
-                                    ><br />
-                                    <span class="degree"
-                                      >Dirección de Arte</span
-                                    >
-                                    <p class="education-details">
-                                      Terciario (un año y medio)
-                                    </p>
-                                  </div>
-
-                                  <div>
-                                    <span class="institution"
-                                      >Universidad Nacional General
-                                      Sarmiento</span
-                                    ><br />
-                                    <span class="degree"
-                                      >Tecnicatura en Sistemas</span
-                                    >
-                                    <p class="education-details">A un final</p>
-                                  </div>
-
-                                  <div>
-                                    <span class="institution"
-                                      >Universidad Nacional General
-                                      Sarmiento</span
-                                    ><br />
-                                    <span class="degree"
-                                      >Licenciatura en Sistemas</span
-                                    >
-                                    <p class="education-details">En curso</p>
-                                  </div>
-                                </li>
-                                <li class="list-group-item">
-                                  <strong>Habilitades:</strong><br />
-                                  <div>
-                                    <span class="skill-category"
-                                      >Software y Herramientas</span
-                                    >
-                                    <ul class="skills-list">
-                                      <li>Photoshop</li>
-                                      <li>After Effects</li>
-                                      <li>Office</li>
-                                      <li>Git</li>
-                                      <li>Eclipse</li>
-                                      <li>Android Studio</li>
-                                    </ul>
-                                  </div>
-
-                                  <div>
-                                    <span class="skill-category"
-                                      >Lenguajes de Programación</span
-                                    >
-                                    <ul class="skills-list">
-                                      <li>Java</li>
-                                      <li>Python</li>
-                                      <li>Kotlin</li>
-                                      <li>bash</li>
-                                    </ul>
-                                  </div>
-
-                                  <div>
-                                    <span class="skill-category"
-                                      >Bases de Datos</span
-                                    >
-                                    <ul class="skills-list">
-                                      <li>Room</li>
-                                      <li>SQLite</li>
-                                      <li>PostgreSQL</li>
-                                    </ul>
-                                  </div>
-
-                                  <div>
-                                    <span class="skill-category"
-                                      >Sistemas Operativos</span
-                                    >
-                                    <ul class="skills-list">
-                                      <li>Linux</li>
-                                      <li>Windows</li>
-                                    </ul>
-                                  </div>
-
-                                  <div>
-                                    <span class="skill-category"
-                                      >Otras Habilidades</span
-                                    >
-                                    <ul class="skills-list">
-                                      <li>
-                                        Alto desenvolvimiento en ambientes
-                                        tecnológicos
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </li>
-                                <li class="list-group-item">
-                                  <strong>Idiomas:</strong>
-                                  ILC
-                                </li>
-                              </ul>
-                            </div>
+                                </div>
+                                <div>
+                                  <span class="institution">Universidad Nacional General
+                                    Sarmiento</span><br />
+                                  <span class="degree">Tecnicatura en Sistemas</span>
+                                  <p class="education-details">A un final</p>
+                                </div>
+                                <div>
+                                  <span class="institution">Universidad Nacional General
+                                    Sarmiento</span><br />
+                                  <span class="degree">Licenciatura en Sistemas</span>
+                                  <p class="education-details">En curso</p>
+                                </div>
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Habilitades:</strong><br />
+                                <div>
+                                  <span class="skill-category">Software y Herramientas</span>
+                                  <ul class="skills-list">
+                                    <li>Photoshop</li>
+                                    <li>After Effects</li>
+                                    <li>Office</li>
+                                    <li>Git</li>
+                                    <li>Eclipse</li>
+                                    <li>Android Studio</li>
+                                  </ul>
+                                </div>
+                                <div>
+                                  <span class="skill-category">Lenguajes de Programación</span>
+                                  <ul class="skills-list">
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>Kotlin</li>
+                                    <li>bash</li>
+                                  </ul>
+                                </div>
+                                <div>
+                                  <span class="skill-category">Bases de Datos</span>
+                                  <ul class="skills-list">
+                                    <li>Room</li>
+                                    <li>SQLite</li>
+                                    <li>PostgreSQL</li>
+                                  </ul>
+                                </div>
+                                <div>
+                                  <span class="skill-category">Sistemas Operativos</span>
+                                  <ul class="skills-list">
+                                    <li>Linux</li>
+                                    <li>Windows</li>
+                                  </ul>
+                                </div>
+                                <div>
+                                  <span class="skill-category">Otras Habilidades</span>
+                                  <ul class="skills-list">
+                                    <li>
+                                      Alto desenvolvimiento en ambientes
+                                      tecnológicos
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Idiomas:</strong>
+                                ILC
+                              </li>
+                            </ul>
                           </div>
                         </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header"></h2>
-                          <div
-                            id="collapseHobbies"
-                            class="accordion-collapse collapse"
-                            data-bs-parent="#accordionExample"
-                          >
-                            <div class="accordion-body hobbies">
-                              <h2>Hobbies e Intereses</h2>
-                              <ul class="list-group hobbies-list">
-                                <li class="list-group-item">
-                                  Musica y despejar la mente al aire libre
-                                </li>
-                                <li class="list-group-item">
-                                  Pasar tiempo frente a la computadora
-                                  informándome o viendo series
-                                </li>
-                                <li class="list-group-item">
-                                  Crear herramientas para uso propio como una
-                                  terminal para Debian y Termux
-                                </li>
-                                <li class="list-group-item">
-                                  Exploración de tecnologías como Raspberry Pi
-                                  Pico y Android Studio
-                                </li>
-                                <li class="list-group-item">
-                                  Proyectos simples con electrónica
-                                </li>
-                              </ul>
-                            </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header"></h2>
+                        <div id="collapseHobbies" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body hobbies">
+                            <h2>Hobbies e Intereses</h2>
+                            <ul class="list-group hobbies-list">
+                              <li class="list-group-item">
+                                Musica y despejar la mente al aire libre
+                              </li>
+                              <li class="list-group-item">
+                                Pasar tiempo frente a la computadora
+                                informándome o viendo series
+                              </li>
+                              <li class="list-group-item">
+                                Crear herramientas para uso propio como una
+                                terminal para Debian y Termux
+                              </li>
+                              <li class="list-group-item">
+                                Exploración de tecnologías como Raspberry Pi
+                                Pico y Android Studio
+                              </li>
+                              <li class="list-group-item">
+                                Proyectos simples con electrónica
+                              </li>
+                            </ul>
                           </div>
                         </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header"></h2>
-                          <div
-                            id="collapseLink"
-                            class="accordion-collapse collapse"
-                            data-bs-parent="#accordionExample"
-                          >
-                            <div class="accordion-body">
-                              <strong>Aun no hay nada :/.</strong>
-                            </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header"></h2>
+                        <div id="collapseLink" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>Aun no hay nada :/.</strong>
                           </div>
                         </div>
                       </div>
@@ -393,616 +265,469 @@
                   </div>
                 </div>
               </div>
-              <!-- Barra de datos y botones -->
             </div>
+            <!-- Barra de datos y botones -->
           </div>
         </div>
       </div>
-      <!-- Titulo -->
-      <div class="row justify-content-md-center">
-        <div class="col">
-          <div class="card text-bg-warning my-1">
-            <div class="card-body">
-              <h3 class="text-center">
-                <strong>Desarrollos en los que estuve presente</strong>
-              </h3>
-            </div>
+    </div>
+    <!-- Titulo -->
+    <div class="row justify-content-md-center">
+      <div class="col">
+        <div class="card text-bg-warning my-1">
+          <div class="card-body">
+            <h3 class="text-center">
+              <strong>Desarrollos en los que estuve presente</strong>
+            </h3>
           </div>
         </div>
       </div>
-      <!-- /Tarjeta de presentacion y Titulo -->
-      <!-- Porfolio -->
-      <div id="columnas" class="row justify-content-md-center">
-        <!-- Sakura Ikebana Game -->
-        <div class="col">
-          <div class="card fondo-oscuro-gauss">
-            <!-- Carousel -->
-            <div
-              id="carouselExample"
-              class="carousel slide"
-              data-bs-ride="true"
-            >
-              <div class="carousel-inner card-img-top px-3 py-3">
-                <div class="carousel-item active my-3 px-3">
-                  <video class="w-100" controls>
-                    <source src="video/sakura-game.mp4" type="video/mp4" />
-                  </video>
-                </div>
+    </div>
+    <!-- /Tarjeta de presentacion y Titulo -->
+    <!-- Porfolio -->
+    <div id="columnas" class="row justify-content-md-center">
+      <!-- Sakura Ikebana Game -->
+      <div class="col">
+        <div class="card fondo-oscuro-gauss">
+          <!-- Carousel -->
+          <div id="carouselExample" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner card-img-top px-3 py-3">
+              <div class="carousel-item active my-3 px-3">
+                <video class="w-100" controls>
+                  <source src="video/sakura-game.mp4" type="video/mp4" />
+                </video>
               </div>
             </div>
-            <!-- /Carousel -->
-            <div class="card-body">
-              <h3 class="card-title text-center">
-                <div class="col text-center">
-                  <!-- Lo que use -->
-                  <div class="row px-3">
-                    <span
-                      class="badge text-secondary bg-warning-subtle badge-light"
-                    >
-                      <div class="col px-2">
-                        <div class="row py-2">Herramientas:</div>
-                        <div class="row">
-                          <span class="badge text-bg-warning my-1"
-                            ><i class="bi bi-terminal-fill"></i> Eclipse</span
-                          >
-                          <span class="badge text-bg-warning my-1"
-                            ><i class="bi bi-filetype-java"></i> Java</span
-                          >
-                          <span class="badge text-bg-warning my-1"
-                            ><i class="bi bi-git"></i> Git</span
-                          >
-                          <span class="badge text-bg-warning my-1"
-                            ><i class="bi bi-brush"></i> Photoshop</span
-                          >
-                        </div>
+          </div>
+          <!-- /Carousel -->
+          <div class="card-body">
+            <h3 class="card-title text-center">
+              <div class="col text-center">
+                <!-- Lo que use -->
+                <div class="row px-3">
+                  <span class="badge text-secondary bg-warning-subtle badge-light">
+                    <div class="col px-2">
+                      <div class="row py-2">Herramientas:</div>
+                      <div class="row">
+                        <span class="badge text-bg-warning my-1"><i class="bi bi-terminal-fill"></i> Eclipse</span>
+                        <span class="badge text-bg-warning my-1"><i class="bi bi-filetype-java"></i> Java</span>
+                        <span class="badge text-bg-warning my-1"><i class="bi bi-git"></i> Git</span>
+                        <span class="badge text-bg-warning my-1"><i class="bi bi-brush"></i> Photoshop</span>
                       </div>
-                    </span>
-                  </div>
-                  <!-- /Lo que use -->
-                   <!-- Titulo referencial -->
-                  <div class="row text-warning text-center my-3">
-                    <p><strong>Juego: Sakura Ikebana Delivery</strong> </p>
-                  </div>
-                  <!-- /Titulo referencial -->
-                </div>
-              </h3>
-              <p class="card-text my-3"></p>
-              <!-- Nucleo -->
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button text-bg-warning fw-bold"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOneSakura"
-                      aria-expanded="true"
-                      aria-controls="collapseOneSakura"
-                    >
-                      Enunciado
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOneSakura"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Sakura Haruno junto a su amiga de la infancia Ino
-                      Yamanaka, tienen un negocio de arreglos florales típicos
-                      japoneses (ikebana). Ino se encarga de preparar los
-                      arreglos florales, y Sakura se encarga del delivery de los
-                      mismos. La complicación del trabajo de Sakura es que debe
-                      entregar los pedidos evitando y combatiendo a los ninjas
-                      enemigos. El objetivo de este trabajo practico es
-                      desarrollar un video juego en el cual Sakura entregue los
-                      pedidos sin perder la vida a manos de los ninjas enemigos.
                     </div>
+                  </span>
+                </div>
+                <!-- /Lo que use -->
+                <!-- Titulo referencial -->
+                <div class="row text-warning text-center my-3">
+                  <p><strong>Juego: Sakura Ikebana Delivery</strong> </p>
+                </div>
+                <!-- /Titulo referencial -->
+              </div>
+            </h3>
+            <p class="card-text my-3"></p>
+            <!-- Nucleo -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button text-bg-warning fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOneSakura" aria-expanded="true" aria-controls="collapseOneSakura">
+                    Enunciado
+                  </button>
+                </h2>
+                <div id="collapseOneSakura" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sakura Haruno junto a su amiga de la infancia Ino
+                    Yamanaka, tienen un negocio de arreglos florales típicos
+                    japoneses (ikebana). Ino se encarga de preparar los
+                    arreglos florales, y Sakura se encarga del delivery de los
+                    mismos. La complicación del trabajo de Sakura es que debe
+                    entregar los pedidos evitando y combatiendo a los ninjas
+                    enemigos. El objetivo de este trabajo practico es
+                    desarrollar un video juego en el cual Sakura entregue los
+                    pedidos sin perder la vida a manos de los ninjas enemigos.
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed text-bg-warning fw-bold"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwoSakura"
-                      aria-expanded="false"
-                      aria-controls="collapseTwoSakura"
-                    >
-                      Requerimientos
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwoSakura"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                          Al iniciar el juego, Sakura debe aparecer
-                          aproximadamente en el centro de la pantalla.
-                        </li>
-                        <li class="list-group-item">
-                          Sakura solo puede moverse por las calles de la ciudad,
-                          Tampoco puede salirse de los límites de la pantalla.
-                        </li>
-                        <li class="list-group-item">
-                          Si se presionan las flechas direccionales (izquierda,
-                          abajo, arriba, derecha) Sakura debe moverse en la
-                          dirección correspondiente.
-                        </li>
-                        <li class="list-group-item">
-                          En pantalla deberá verse una ciudad/aldea, con una
-                          grilla de calles. La cantidad de calles es a criterio
-                          de cada grupo, aunque como mínimo deben ser tres
-                          horizontales y mínimo tres calles verticales. Además,
-                          deben verse dos o tres casas por manzana.
-                        </li>
-                        <li class="list-group-item">
-                          Durante el juego, Sakura debe entregar un pedido (un
-                          ramo de flores o ikebana) en una casa determinada
-                          aleatoriamente. Una vez entregado, se genera el
-                          siguiente pedido nuevamente para una casa determinada
-                          aleatoriamente. La casa donde Sakura debe entregar el
-                          pedido deberá estar marcada con una flecha. Cuando
-                          Sakura pasa caminando por enfrente de la casa marcada,
-                          se considera el pedido entregado y se cuenta como una
-                          entrega hecha. Al realizar la entrega la casa deberá
-                          dejar de estar marcada y deberá aparecer
-                          aleatoriamente otra casa marcada para realizar el
-                          siguiente pedido.
-                        </li>
-                        <li class="list-group-item">
-                          Cada ninja enemigo debe desplazarse únicamente por una
-                          única calle, y siempre en la misma dirección. La
-                          cantidad de ninjas enemigos queda a criterio de cada
-                          grupo, aunque como mínimo deben ser cuatro.
-                        </li>
-                        <li class="list-group-item">
-                          Si un ninja toca a Sakura perdemos el juego.
-                        </li>
-                        <li class="list-group-item">
-                          El gran maestro Gama-Sennin le enseno a Sakura su
-                          técnica secreta, el Rasengan. Cuando Sakura se ve
-                          acorralada por ninjas enemigos, puede usar el Rasengan
-                          para eliminar a los ninjas que se cruzan por su
-                          camino.
-                        </li>
-                        <li class="list-group-item">
-                          Cuando Sakura haya eliminado algún ninja, luego de
-                          determinada cantidad de tiempo, a criterio de cada
-                          grupo, deben aparecer nuevos ninjas. Siempre hay que
-                          respetar la cantidad mínima de cuatro ninjas en el
-                          juego.
-                        </li>
-                        <li class="list-group-item">
-                          Durante todo el juego deberán mostrarse los siguientes
-                          datos en pantalla. Deberá mostrarse en la esquina
-                          superior derecha de la pantalla el puntaje acumulando.
-                          Para calcular el puntaje, por cada pedido entregado se
-                          debe incrementar el puntaje en 5 puntos. Además,
-                          deberá mostrarse en la esquina superior izquierda de
-                          la pantalla, la cantidad de ninjas eliminados.
-                        </li>
-                        <li class="list-group-item">
-                          El código del proyecto deberá tener un buen diseño de
-                          modo que cada objeto tenga bien delimitadas sus
-                          responsabilidades.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed text-bg-warning fw-bold"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThreeSakura"
-                      aria-expanded="false"
-                      aria-controls="collapseThreeSakura"
-                    >
-                      Desarrollo
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThreeSakura"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Este proyecto se desarrolló en equipo, conformado por
-                        tres integrantes, cada uno con responsabilidades
-                        específicas. Mi rol principal fue la implementación
-                        gráfica y la conceptualización general del manejo del
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-bg-warning fw-bold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwoSakura" aria-expanded="false"
+                    aria-controls="collapseTwoSakura">
+                    Requerimientos
+                  </button>
+                </h2>
+                <div id="collapseTwoSakura" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        Al iniciar el juego, Sakura debe aparecer
+                        aproximadamente en el centro de la pantalla.
+                      </li>
+                      <li class="list-group-item">
+                        Sakura solo puede moverse por las calles de la ciudad,
+                        Tampoco puede salirse de los límites de la pantalla.
+                      </li>
+                      <li class="list-group-item">
+                        Si se presionan las flechas direccionales (izquierda,
+                        abajo, arriba, derecha) Sakura debe moverse en la
+                        dirección correspondiente.
+                      </li>
+                      <li class="list-group-item">
+                        En pantalla deberá verse una ciudad/aldea, con una
+                        grilla de calles. La cantidad de calles es a criterio
+                        de cada grupo, aunque como mínimo deben ser tres
+                        horizontales y mínimo tres calles verticales. Además,
+                        deben verse dos o tres casas por manzana.
+                      </li>
+                      <li class="list-group-item">
+                        Durante el juego, Sakura debe entregar un pedido (un
+                        ramo de flores o ikebana) en una casa determinada
+                        aleatoriamente. Una vez entregado, se genera el
+                        siguiente pedido nuevamente para una casa determinada
+                        aleatoriamente. La casa donde Sakura debe entregar el
+                        pedido deberá estar marcada con una flecha. Cuando
+                        Sakura pasa caminando por enfrente de la casa marcada,
+                        se considera el pedido entregado y se cuenta como una
+                        entrega hecha. Al realizar la entrega la casa deberá
+                        dejar de estar marcada y deberá aparecer
+                        aleatoriamente otra casa marcada para realizar el
+                        siguiente pedido.
+                      </li>
+                      <li class="list-group-item">
+                        Cada ninja enemigo debe desplazarse únicamente por una
+                        única calle, y siempre en la misma dirección. La
+                        cantidad de ninjas enemigos queda a criterio de cada
+                        grupo, aunque como mínimo deben ser cuatro.
+                      </li>
+                      <li class="list-group-item">
+                        Si un ninja toca a Sakura perdemos el juego.
+                      </li>
+                      <li class="list-group-item">
+                        El gran maestro Gama-Sennin le enseno a Sakura su
+                        técnica secreta, el Rasengan. Cuando Sakura se ve
+                        acorralada por ninjas enemigos, puede usar el Rasengan
+                        para eliminar a los ninjas que se cruzan por su
+                        camino.
+                      </li>
+                      <li class="list-group-item">
+                        Cuando Sakura haya eliminado algún ninja, luego de
+                        determinada cantidad de tiempo, a criterio de cada
+                        grupo, deben aparecer nuevos ninjas. Siempre hay que
+                        respetar la cantidad mínima de cuatro ninjas en el
                         juego.
-                      </p>
-                      <p><strong>Responsabilidades y Tareas:</strong></p>
-                      <p>
-                        <strong
-                          >1. Implementación Gráfica y Conceptualización del
-                          Juego:</strong
-                        >
-                        Desarrollé la interfaz gráfica del juego y definí la
-                        dinámica general del mismo.
-                      </p>
-                      <p>
-                        <strong>2. Uso de Librerías:</strong> Siguiendo las
-                        indicaciones de los profesores, utilizamos una librería
-                        creada por la facultad, similar a Pygame, para el
-                        desarrollo del juego.
-                      </p>
-                      <p><strong>Desafíos y Soluciones:</strong></p>
-                      <p>
-                        <strong
-                          >1. Diagramación de las Calles y Manzanas del
-                          Pueblo:</strong
-                        >
-                      </p>
-                      <p>
-                        <strong>Desafío:</strong> La primera complicación fue la
-                        diagramación de las calles y las manzanas del pueblo o
-                        ciudad donde se ejecutaba el juego.
-                      </p>
-                      <p>
-                        <strong>Solución:</strong> Utilicé mis conocimientos en
-                        Photoshop para maquetar detalladamente el pueblo y sus
-                        calles. Posteriormente, esta información se utilizó para
-                        crear una base de datos que sirvió como referencia para
-                        la navegación del personaje y sus enemigos.
-                      </p>
-                      <p><strong>Aprendizajes y Experiencias:</strong></p>
-                      <p>
-                        <strong
-                          >Separación de Roles y Responsabilidades:</strong
-                        >
-                        Aunque aún no habíamos estudiado la teoría de la
-                        Programación Orientada a Objetos (POO), aprendimos a
-                        dividir y gestionar las responsabilidades de las clases
-                        de manera efectiva.
-                      </p>
-                      <p>
-                        <strong>Uso de Git: </strong> Tuvimos nuestra primera
-                        experiencia con Git, lo que nos permitió mantener el
-                        código actualizado y colaborar eficientemente.
-                      </p>
-                      <p>
-                        <strong>Duración del Proyecto:</strong> El tiempo
-                        asignado para completar este proyecto fue de
-                        aproximadamente 20 días.
-                      </p>
-                      <p><strong>Resultados y Conclusiones:</strong></p>
-                      <p>
-                        <em
-                          >Este proyecto no solo nos permitió adquirir
-                          habilidades técnicas, como el uso de herramientas
-                          gráficas y la gestión de versiones con Git, sino
-                          también mejorar nuestra capacidad para trabajar en
-                          equipo y dividir responsabilidades. La implementación
-                          gráfica y la planificación detallada del entorno de
-                          juego fueron fundamentales para el éxito del
-                          proyecto.</em
-                        >
-                      </p>
-                    </div>
+                      </li>
+                      <li class="list-group-item">
+                        Durante todo el juego deberán mostrarse los siguientes
+                        datos en pantalla. Deberá mostrarse en la esquina
+                        superior derecha de la pantalla el puntaje acumulando.
+                        Para calcular el puntaje, por cada pedido entregado se
+                        debe incrementar el puntaje en 5 puntos. Además,
+                        deberá mostrarse en la esquina superior izquierda de
+                        la pantalla, la cantidad de ninjas eliminados.
+                      </li>
+                      <li class="list-group-item">
+                        El código del proyecto deberá tener un buen diseño de
+                        modo que cada objeto tenga bien delimitadas sus
+                        responsabilidades.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <!-- /Nucleo -->
-               <!-- Repositorio o link -->
-              <a
-                href="https://gitlab.com/spectrelonewolf/tpprogra1"
-                class="btn my-3 btn-warning fw-bold"
-                >Ver Repositorio</a
-              >
-              <!-- /Repositorio o link -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-bg-warning fw-bold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThreeSakura" aria-expanded="false"
+                    aria-controls="collapseThreeSakura">
+                    Desarrollo
+                  </button>
+                </h2>
+                <div id="collapseThreeSakura" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      Este proyecto se desarrolló en equipo, conformado por
+                      tres integrantes, cada uno con responsabilidades
+                      específicas. Mi rol principal fue la implementación
+                      gráfica y la conceptualización general del manejo del
+                      juego.
+                    </p>
+                    <p><strong>Responsabilidades y Tareas:</strong></p>
+                    <p>
+                      <strong>1. Implementación Gráfica y Conceptualización del
+                        Juego:</strong>
+                      Desarrollé la interfaz gráfica del juego y definí la
+                      dinámica general del mismo.
+                    </p>
+                    <p>
+                      <strong>2. Uso de Librerías:</strong> Siguiendo las
+                      indicaciones de los profesores, utilizamos una librería
+                      creada por la facultad, similar a Pygame, para el
+                      desarrollo del juego.
+                    </p>
+                    <p><strong>Desafíos y Soluciones:</strong></p>
+                    <p>
+                      <strong>1. Diagramación de las Calles y Manzanas del
+                        Pueblo:</strong>
+                    </p>
+                    <p>
+                      <strong>Desafío:</strong> La primera complicación fue la
+                      diagramación de las calles y las manzanas del pueblo o
+                      ciudad donde se ejecutaba el juego.
+                    </p>
+                    <p>
+                      <strong>Solución:</strong> Utilicé mis conocimientos en
+                      Photoshop para maquetar detalladamente el pueblo y sus
+                      calles. Posteriormente, esta información se utilizó para
+                      crear una base de datos que sirvió como referencia para
+                      la navegación del personaje y sus enemigos.
+                    </p>
+                    <p><strong>Aprendizajes y Experiencias:</strong></p>
+                    <p>
+                      <strong>Separación de Roles y Responsabilidades:</strong>
+                      Aunque aún no habíamos estudiado la teoría de la
+                      Programación Orientada a Objetos (POO), aprendimos a
+                      dividir y gestionar las responsabilidades de las clases
+                      de manera efectiva.
+                    </p>
+                    <p>
+                      <strong>Uso de Git: </strong> Tuvimos nuestra primera
+                      experiencia con Git, lo que nos permitió mantener el
+                      código actualizado y colaborar eficientemente.
+                    </p>
+                    <p>
+                      <strong>Duración del Proyecto:</strong> El tiempo
+                      asignado para completar este proyecto fue de
+                      aproximadamente 20 días.
+                    </p>
+                    <p><strong>Resultados y Conclusiones:</strong></p>
+                    <p>
+                      <em>Este proyecto no solo nos permitió adquirir
+                        habilidades técnicas, como el uso de herramientas
+                        gráficas y la gestión de versiones con Git, sino
+                        también mejorar nuestra capacidad para trabajar en
+                        equipo y dividir responsabilidades. La implementación
+                        gráfica y la planificación detallada del entorno de
+                        juego fueron fundamentales para el éxito del
+                        proyecto.</em>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- /Nucleo -->
+            <!-- Repositorio o link -->
+            <a href="https://gitlab.com/spectrelonewolf/tpprogra1" class="btn my-3 btn-warning fw-bold">Ver
+              Repositorio</a>
+            <!-- /Repositorio o link -->
           </div>
         </div>
-        <!-- /Sakura Ikebana Game -->
-        <!-- Sistema de Votacion -->
-        <div class="col">
-          <div class="card fondo-oscuro-gauss">
-            <!-- Carousel -->
-            <div
-              id="carouselExample"
-              class="carousel slide"
-              data-bs-ride="true"
-            >
-              <div class="carousel-inner card-img-top px-3 py-3">
-                <div class="carousel-item active my-3 px-3">
-                  <img class="w-100" src="img/index/UltimoDiagrama-sistema-de-votacion.jpg">
-                </div>
+      </div>
+      <!-- /Sakura Ikebana Game -->
+      <!-- Sistema de Votacion -->
+      <div class="col">
+        <div class="card fondo-oscuro-gauss">
+          <!-- Carousel -->
+          <div id="carouselExample" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner card-img-top px-3 py-3">
+              <div class="carousel-item active my-3 px-3">
+                <img class="w-100" src="img/index/UltimoDiagrama-sistema-de-votacion.jpg">
               </div>
             </div>
-            <!-- /Carousel -->
-            <div class="card-body">
-              <h3 class="card-title text-center">
-                <div class="col text-center">
-                  <!-- Lo que use -->
-                  <div class="row px-3">
-                    <span
-                      class="badge text-secondary bg-warning-subtle badge-light"
-                    >
-                      <div class="col px-2">
-                        <div class="row py-2">Herramientas:</div>
-                        <div class="row">
-                          <span class="badge text-bg-warning my-1"
-                            ><i class="bi bi-terminal-fill"></i> Eclipse</span
-                          >
-                          <span class="badge text-bg-warning my-1"
-                            ><i class="bi bi-filetype-java"></i> Java</span
-                          >
-                          <span class="badge text-bg-warning my-1"
-                            ><i class="bi bi-git"></i> Git</span
-                          >
-                        </div>
+          </div>
+          <!-- /Carousel -->
+          <div class="card-body">
+            <h3 class="card-title text-center">
+              <div class="col text-center">
+                <!-- Lo que use -->
+                <div class="row px-3">
+                  <span class="badge text-secondary bg-warning-subtle badge-light">
+                    <div class="col px-2">
+                      <div class="row py-2">Herramientas:</div>
+                      <div class="row">
+                        <span class="badge text-bg-warning my-1"><i class="bi bi-terminal-fill"></i> Eclipse</span>
+                        <span class="badge text-bg-warning my-1"><i class="bi bi-filetype-java"></i> Java</span>
+                        <span class="badge text-bg-warning my-1"><i class="bi bi-filetype-java"></i> JUnit</span>
+                        <span class="badge text-bg-warning my-1"><i class="bi bi-git"></i> Git</span>
                       </div>
-                    </span>
-                  </div>
-                  <!-- /Lo que use -->
-                   <!-- Titulo referencial -->
-                  <div class="col text-warning text-center my-3">
-                    <p><strong>
+                    </div>
+                  </span>
+                </div>
+                <!-- /Lo que use -->
+                <!-- Titulo referencial -->
+                <div class="col text-warning text-center my-3">
+                  <p><strong>
                       Sistema de Votacion
                     </strong> </p>
-                  </div>
-                  <!-- /Titulo referencial -->
                 </div>
-              </h3>
-              <p class="card-text my-3"></p>
-              <!-- Nucleo -->
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button text-bg-warning fw-bold"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOneVotacion"
-                      aria-expanded="true"
-                      aria-controls="collapseOneVotacion"
-                    >
-                      Enunciado
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOneVotacion"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Sakura Haruno junto a su amiga de la infancia Ino
-                      Yamanaka, tienen un negocio de arreglos florales típicos
-                      japoneses (ikebana). Ino se encarga de preparar los
-                      arreglos florales, y Sakura se encarga del delivery de los
-                      mismos. La complicación del trabajo de Sakura es que debe
-                      entregar los pedidos evitando y combatiendo a los ninjas
-                      enemigos. El objetivo de este trabajo practico es
-                      desarrollar un video juego en el cual Sakura entregue los
-                      pedidos sin perder la vida a manos de los ninjas enemigos.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed text-bg-warning fw-bold"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwoVotacion"
-                      aria-expanded="false"
-                      aria-controls="collapseTwoVotacion"
-                    >
-                      Requerimientos
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwoVotacion"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                          Al iniciar el juego, Sakura debe aparecer
-                          aproximadamente en el centro de la pantalla.
-                        </li>
-                        <li class="list-group-item">
-                          Sakura solo puede moverse por las calles de la ciudad,
-                          Tampoco puede salirse de los límites de la pantalla.
-                        </li>
-                        <li class="list-group-item">
-                          Si se presionan las flechas direccionales (izquierda,
-                          abajo, arriba, derecha) Sakura debe moverse en la
-                          dirección correspondiente.
-                        </li>
-                        <li class="list-group-item">
-                          En pantalla deberá verse una ciudad/aldea, con una
-                          grilla de calles. La cantidad de calles es a criterio
-                          de cada grupo, aunque como mínimo deben ser tres
-                          horizontales y mínimo tres calles verticales. Además,
-                          deben verse dos o tres casas por manzana.
-                        </li>
-                        <li class="list-group-item">
-                          Durante el juego, Sakura debe entregar un pedido (un
-                          ramo de flores o ikebana) en una casa determinada
-                          aleatoriamente. Una vez entregado, se genera el
-                          siguiente pedido nuevamente para una casa determinada
-                          aleatoriamente. La casa donde Sakura debe entregar el
-                          pedido deberá estar marcada con una flecha. Cuando
-                          Sakura pasa caminando por enfrente de la casa marcada,
-                          se considera el pedido entregado y se cuenta como una
-                          entrega hecha. Al realizar la entrega la casa deberá
-                          dejar de estar marcada y deberá aparecer
-                          aleatoriamente otra casa marcada para realizar el
-                          siguiente pedido.
-                        </li>
-                        <li class="list-group-item">
-                          Cada ninja enemigo debe desplazarse únicamente por una
-                          única calle, y siempre en la misma dirección. La
-                          cantidad de ninjas enemigos queda a criterio de cada
-                          grupo, aunque como mínimo deben ser cuatro.
-                        </li>
-                        <li class="list-group-item">
-                          Si un ninja toca a Sakura perdemos el juego.
-                        </li>
-                        <li class="list-group-item">
-                          El gran maestro Gama-Sennin le enseno a Sakura su
-                          técnica secreta, el Rasengan. Cuando Sakura se ve
-                          acorralada por ninjas enemigos, puede usar el Rasengan
-                          para eliminar a los ninjas que se cruzan por su
-                          camino.
-                        </li>
-                        <li class="list-group-item">
-                          Cuando Sakura haya eliminado algún ninja, luego de
-                          determinada cantidad de tiempo, a criterio de cada
-                          grupo, deben aparecer nuevos ninjas. Siempre hay que
-                          respetar la cantidad mínima de cuatro ninjas en el
-                          juego.
-                        </li>
-                        <li class="list-group-item">
-                          Durante todo el juego deberán mostrarse los siguientes
-                          datos en pantalla. Deberá mostrarse en la esquina
-                          superior derecha de la pantalla el puntaje acumulando.
-                          Para calcular el puntaje, por cada pedido entregado se
-                          debe incrementar el puntaje en 5 puntos. Además,
-                          deberá mostrarse en la esquina superior izquierda de
-                          la pantalla, la cantidad de ninjas eliminados.
-                        </li>
-                        <li class="list-group-item">
-                          El código del proyecto deberá tener un buen diseño de
-                          modo que cada objeto tenga bien delimitadas sus
-                          responsabilidades.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed text-bg-warning fw-bold"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThreeVotacion"
-                      aria-expanded="false"
-                      aria-controls="collapseThreeVotacion"
-                    >
-                      Desarrollo
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThreeVotacion"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Este proyecto se desarrolló en equipo, conformado por
-                        tres integrantes, cada uno con responsabilidades
-                        específicas. Mi rol principal fue la implementación
-                        gráfica y la conceptualización general del manejo del
-                        juego.
-                      </p>
-                      <p><strong>Responsabilidades y Tareas:</strong></p>
-                      <p>
-                        <strong
-                          >1. Implementación Gráfica y Conceptualización del
-                          Juego:</strong
-                        >
-                        Desarrollé la interfaz gráfica del juego y definí la
-                        dinámica general del mismo.
-                      </p>
-                      <p>
-                        <strong>2. Uso de Librerías:</strong> Siguiendo las
-                        indicaciones de los profesores, utilizamos una librería
-                        creada por la facultad, similar a Pygame, para el
-                        desarrollo del juego.
-                      </p>
-                      <p><strong>Desafíos y Soluciones:</strong></p>
-                      <p>
-                        <strong
-                          >1. Diagramación de las Calles y Manzanas del
-                          Pueblo:</strong
-                        >
-                      </p>
-                      <p>
-                        <strong>Desafío:</strong> La primera complicación fue la
-                        diagramación de las calles y las manzanas del pueblo o
-                        ciudad donde se ejecutaba el juego.
-                      </p>
-                      <p>
-                        <strong>Solución:</strong> Utilicé mis conocimientos en
-                        Photoshop para maquetar detalladamente el pueblo y sus
-                        calles. Posteriormente, esta información se utilizó para
-                        crear una base de datos que sirvió como referencia para
-                        la navegación del personaje y sus enemigos.
-                      </p>
-                      <p><strong>Aprendizajes y Experiencias:</strong></p>
-                      <p>
-                        <strong
-                          >Separación de Roles y Responsabilidades:</strong
-                        >
-                        Aunque aún no habíamos estudiado la teoría de la
-                        Programación Orientada a Objetos (POO), aprendimos a
-                        dividir y gestionar las responsabilidades de las clases
-                        de manera efectiva.
-                      </p>
-                      <p>
-                        <strong>Uso de Git: </strong> Tuvimos nuestra primera
-                        experiencia con Git, lo que nos permitió mantener el
-                        código actualizado y colaborar eficientemente.
-                      </p>
-                      <p>
-                        <strong>Duración del Proyecto:</strong> El tiempo
-                        asignado para completar este proyecto fue de
-                        aproximadamente 20 días.
-                      </p>
-                      <p><strong>Resultados y Conclusiones:</strong></p>
-                      <p>
-                        <em
-                          >Este proyecto no solo nos permitió adquirir
-                          habilidades técnicas, como el uso de herramientas
-                          gráficas y la gestión de versiones con Git, sino
-                          también mejorar nuestra capacidad para trabajar en
-                          equipo y dividir responsabilidades. La implementación
-                          gráfica y la planificación detallada del entorno de
-                          juego fueron fundamentales para el éxito del
-                          proyecto.</em
-                        >
-                      </p>
-                    </div>
+                <!-- /Titulo referencial -->
+              </div>
+            </h3>
+            <p class="card-text my-3"></p>
+            <!-- Nucleo -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button text-bg-warning fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOneVotacion" aria-expanded="true" aria-controls="collapseOneVotacion">
+                    Enunciado
+                  </button>
+                </h2>
+                <div id="collapseOneVotacion" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    La UNGS va a ser sede de votación para las próximas elecciones de noviembre, y
+                    el gobierno nacional le pidió a la Universidad que gestione la asignación de turnos.
+                    Por este motivo, la UNGS solicita a los alumnos de Programación II que diseñen
+                    este sistema de votación.
                   </div>
                 </div>
               </div>
-              <!-- /Nucleo -->
-               <!-- Repositorio o link -->
-              <a
-                href="https://gitlab.com/spectrelonewolf/figueroa-moras-tp-p2"
-                class="btn my-3 btn-warning fw-bold"
-                >Ver Repositorio</a
-              >
-              <!-- /Repositorio o link -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-bg-warning fw-bold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwoVotacion" aria-expanded="false"
+                    aria-controls="collapseTwoVotacion">
+                    Requerimientos
+                  </button>
+                </h2>
+                <div id="collapseTwoVotacion" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        Este Trabajo Práctico consta de dos etapas. La primera requerirá la entrega del análisis del
+                        problema y el diseño de la solución propuesta, o sea la especificación de los TADs necesarios,
+                        diagrama de clases y la interfaz de la solución. En la segunda etapa se deberá entregar la
+                        implementación, cuyas condiciones de entrega se darán posteriormente en un segundo
+                        enunciado. El diseño se hará utilizando los conceptos de programación orientada a objetos,
+                        que incluyen herencia y polimorfismo.
+                      </li>
+                      <li class="list-group-item">
+                        Se deben realizar las correcciones del diseño de la 1ra parte antes de comenzar la 2da.
+                      </li>
+                      <li class="list-group-item">
+                        <p>Se debe hacer el diseño de la estructura de datos y el invariante de representación (IREP)
+                          que soporte el diseño.</p>
+                        <p>El IREP tiene que considerar la consistencia interna, o sea, cómo se relacionan entre sí las
+                          estructuras de datos de los TADs diseñados. Por ejemplo, cómo se relaciona el registro de
+                          los votantes con y sin turnos, los votantes que se presentaron a votar o no lo hicieron, o las
+                          capacidades de las mesas de cada tipo con los votantes que se asignaron a esas mesas y
+                          otras relaciones que surgen de la implementación realizada.</p>
+                      </li>
+                      <li class="list-group-item">
+                        Se debe hacer la implementación, la cual debe respetar la interfaz que se
+                        entrega con este enunciado y cumplir satisfactoriamente el junit otorgado por la cátedra.
+                      </li>
+                      <li class="list-group-item">
+                        Se deben utilizar al menos 2 tecnologías java: (StringBuilder, For each, Iteradores),
+                        además de Junit en sí, en alguna parte del TP.
+                      </li>
+                      <li class="list-group-item">
+                        Se debe implementar(sobreescribir) el toString de las clases principales. Como mínimo
+                        se debe mostrar un título (Sistema de Turnos para Votación - UNGS), los votantes en
+                        espera para un turno, los votantes con turnos asignados mostrando sus respectivos turnos
+                        (número de mesa y franja horaria) y si votó o no. Las mesas habilitadas en el Sistema,
+                        mostrando de qué clase son y el nombre de su presidente.
+                      </li>
+                      <li class="list-group-item">
+                        Se debe implementar(sobreescribir) el equals de Mesa y sus clases derivadas.
+                      </li>
+                      <li class="list-group-item">
+                        Se quiere conocer lo más rápido posible el turno de un votante dado su DNI.
+                      </li>
+                      <li class="list-group-item">
+                        <p>Se simplifica la asignación de turnos en caso de tener más de una característica:
+                        </p>
+                        <p>Si es trabajador, solo puede votar en una mesa para trabajadores</p>
+                        <p>Si es mayor con enfermedad preexistente, se asigna la primera mesa que
+                          tenga lugar disponible, pudiendo ser una mesa para mayores o para quienes
+                          padecen enfermedades.</p>
+                        <p>Dada una mesa se quiere conocer los votantes asignados por franja horaria.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-bg-warning fw-bold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThreeVotacion" aria-expanded="false"
+                    aria-controls="collapseThreeVotacion">
+                    Desarrollo
+                  </button>
+                </h2>
+                <div id="collapseThreeVotacion" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      Prácticamente a la semana de entregado el proyecto ya corrían todos los test unitarios, la
+                      solución e implementación en casi su totalidad fue realizada por mí, aunque trabajaba en grupo con
+                      mi compañera asignada.
+                    </p>
+                    <p><strong>Responsabilidades y Tareas:</strong></p>
+                    <p>
+                      <strong>1. Implementación y Solución del Proyecto:</strong>
+                      Desarrollé la mayor parte del proyecto y aseguré que todos los test unitarios se ejecutaran
+                      correctamente.
+                    </p>
+                    <p>
+                      <strong>2. Comunicación y Resolución de Errores:</strong> Detecté errores en el test unitario
+                      proporcionado por la cátedra y me comuniqué rápidamente con mis profesores para que lo
+                      solucionaran, evitando que otros grupos continuaran con errores.
+                    </p>
+                    <p><strong>Desafíos y Soluciones:</strong></p>
+                    <p>
+                      <strong>1. Gestión de Errores en los Test Unitarios:</strong>
+                    </p>
+                    <p>
+                      <strong>Desafío:</strong> Encontré errores en los test unitarios proporcionados por la cátedra,
+                      que podrían haber pasado desapercibidos para otros grupos.
+                    </p>
+                    <p>
+                      <strong>Solución:</strong> Notifiqué a mis profesores sobre los errores para que fueran
+                      corregidos, asegurando la precisión de las pruebas para todos los grupos.
+                    </p>
+                    <p>
+                      <strong>2. Apoyo Emocional a mi Compañera:</strong>
+                    </p>
+                    <p>
+                      <strong>Desafío:</strong> Mi compañera de trabajo, debido a la pandemia, tuvo un bajón emocional
+                      que puso en riesgo su continuidad en la materia.
+                    </p>
+                    <p>
+                      <strong>Solución:</strong> La apoyé emocionalmente para que no abandonara la materia, y finalmente
+                      aprobamos ambos.
+                    </p>
+                    <p><strong>Resultados y Conclusiones:</strong></p>
+                    <p>
+                      <em>
+                        Este proyecto no solo me permitió fortalecer mis habilidades técnicas, sino también mejorar mi
+                        capacidad para detectar y resolver errores, comunicarme efectivamente con los profesores y
+                        brindar apoyo emocional a mis compañeros. La implementación exitosa y el trabajo en equipo
+                        fueron claves para aprobar el proyecto.
+                      </em>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- /Nucleo -->
+            <!-- Repositorio o link -->
+            <a href="https://gitlab.com/spectrelonewolf/figueroa-moras-tp-p2" class="btn my-3 btn-warning fw-bold">Ver
+              Repositorio</a>
+            <!-- /Repositorio o link -->
           </div>
         </div>
-        <!--/Sistema de Votacion-->
       </div>
-      <!-- /Porfolio -->
+      <!--/Sistema de Votacion-->
     </div>
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!--JavaScript-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/index.js"></script>
-  </body>
+    <!-- /Porfolio -->
+  </div>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!--JavaScript-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
