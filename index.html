@@ -1054,6 +1054,164 @@
         </div>
       </div>
       <!--/Sistema de Clustering con AGM-->
+            <!-- Simulador de Album de figuritas con threads -->
+            <div class="col">
+              <div class="card fondo-oscuro-gauss">
+                <!-- Carousel -->
+                <div id="carouselExample" class="carousel slide" data-bs-ride="true">
+                  <div class="carousel-inner card-img-top px-3 py-3">
+                    <div class="carousel-item active my-3 px-3">
+                      <video class="w-100" controls>
+                        <source
+                          src="https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas/-/raw/main/Trabajo%20Practico%20N3/SIMULADOR%20TEST.mp4?ref_type=heads"
+                          type="video/mp4" />
+                      </video>
+      
+                    </div>
+                  </div>
+                </div>
+                <!-- /Carousel -->
+                <div class="card-body">
+                  <h3 class="card-title text-center">
+                    <div class="col text-center">
+                      <!-- Lo que use -->
+                      <div class="row px-3">
+                        <span class="badge text-secondary bg-warning-subtle badge-light">
+                          <div class="col px-2">
+                            <div class="row py-2">Herramientas:</div>
+                            <div class="row">
+                              <span class="badge text-bg-warning my-1"><i class="bi bi-terminal-fill"></i> Eclipse</span>
+                              <span class="badge text-bg-warning my-1"><i class="bi bi-filetype-java"></i> Java</span>
+                              <span class="badge text-bg-warning my-1"><i class="bi bi-filetype-java"></i> JUnit</span>
+                              <span class="badge text-bg-warning my-1"><i class="bi bi-git"></i> Git</span>
+                              <span class="badge text-bg-warning my-1"><i class="bi bi-brush"></i> Photoshop</span>
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                      <!-- /Lo que use -->
+                      <!-- Titulo referencial -->
+                      <div class="col text-warning text-center my-3">
+                        <p><strong>
+                          Simulador: Album de Figuritas con Threads
+                          </strong> </p>
+                      </div>
+                      <!-- /Titulo referencial -->
+                    </div>
+                  </h3>
+                  <p class="card-text my-3"></p>
+                  <!-- Nucleo -->
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button text-bg-warning fw-bold" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseProjectDetailsAlbum" aria-expanded="true"
+                          aria-controls="collapseProjectDetailsAlbum">
+                          Enunciado
+                        </button>
+                      </h2>
+                      <div id="collapseProjectDetailsAlbum" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          El objetivo de este trabajo es implementar una aplicación que simule uno o varios usuarios completando el álbum de figuritas del mundial de Qatar 2022, contemplando los siguientes escenarios:
+                          <ul>
+                            <li>Un usuario completa un álbum por su cuenta comprando paquetes de figuritas hasta llenarlo por completo.</li>
+                            <li>Varios usuarios completan el álbum mientras se donan las repetidas que les tocan.</li>
+                            <li>Varios usuarios completan el álbum mientras se intercambian figuritas una por una.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-bg-warning fw-bold" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseRequirementsAlbum" aria-expanded="false"
+                          aria-controls="collapseRequirementsAlbum">
+                          Requerimientos
+                        </button>
+                      </h2>
+                      <div id="collapseRequirementsAlbum" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              Implementar una interfaz gráfica con elementos para seleccionar la cantidad de figuritas en total, la cantidad de figuritas en cada paquete, la cantidad de simulaciones y el escenario seleccionado.
+                            </li>
+                            <li class="list-group-item">
+                              Informar el resultado de las simulaciones en la interfaz gráfica.
+                            </li>
+                            <li class="list-group-item">
+                              <p>Objetivos opcionales:</p>
+                              <p>Mostrar en un gráfico el resultado promedio en función de la cantidad de simulaciones realizadas.</p>
+                              <p>Considerar la existencia de una o varias figuritas difíciles o raras, que tengan menos chances de aparecer que el resto.</p>
+                              <p>Considerar un escenario donde las figuritas difíciles se cambian por más de una figurita normal.</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-bg-warning fw-bold" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseThreeAlbum" aria-expanded="false"
+                          aria-controls="collapseThreeAlbum">
+                          Desarrollo
+                        </button>
+                      </h2>
+                      <div id="collapseThreeAlbum" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>
+                            En este trabajo, además de cumplir con el requerimiento principal y los objetivos opcionales, se debía mantener el patrón de diseño MVC. Se trabajó en equipo, con un compañero, y se hizo uso eficiente de threads. Además, diseñé la parte gráfica de la interfaz para que fuera atractiva y no simple, y también desarrollé la solución de código en la mayoría de las partes del proyecto.
+                          </p>
+                          <p><strong>Responsabilidades y Tareas:</strong></p>
+                          <p>
+                            <strong>1. Implementación del Patrón MVC:</strong>
+                            Diseñamos y desarrollamos el proyecto siguiendo el patrón MVC, asegurando una clara separación de responsabilidades.
+                          </p>
+                          <p>
+                            <strong>2. Uso Eficiente de Threads:</strong>
+                            Implementamos la solución de manera que utilizara threads de forma eficiente, mejorando el rendimiento de la aplicación.
+                          </p>
+                          <p><strong>Desafíos y Soluciones:</strong></p>
+                          <p>
+                            <strong>1. Diseño de la Interfaz Gráfica:</strong>
+                          </p>
+                          <p>
+                            <strong>Desafío:</strong> Crear una interfaz gráfica atractiva y funcional.
+                          </p>
+                          <p>
+                            <strong>Solución:</strong> Diseñé una interfaz gráfica que no fuera simple, asegurando una buena experiencia de usuario.
+                          </p>
+                          <p><strong>Aprendizajes y Experiencias:</strong></p>
+                          <p>
+                            <strong>Arquitectura de Software:</strong>
+                            Profundizamos en conceptos de arquitectura de diseño de software y en la implementación del patrón MVC.
+                          </p>
+                          <p>
+                            <strong>Optimización con Threads:</strong>
+                            Aprendimos a utilizar threads de manera eficiente para mejorar el rendimiento de la aplicación.
+                          </p>
+                          <p><strong>Resultados y Conclusiones:</strong></p>
+                          <p>
+                            <em>
+                              Este proyecto no solo nos permitió aplicar el patrón MVC y mejorar nuestras habilidades en arquitectura de software, sino también diseñar una interfaz gráfica atractiva y utilizar threads de manera eficiente, logrando una aplicación funcional y bien optimizada.
+                            </em>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                
+                  <!-- /Nucleo -->
+                  <!-- Repositorio o link -->
+                  <a href="https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas/-/tree/main/Trabajo%20Practico%20N3?ref_type=heads"
+                    class="btn my-3 btn-warning fw-bold">Ver
+                    Repositorio</a>
+                  <!-- /Repositorio o link -->
+                </div>
+              </div>
+            </div>
+            <!--/Simulador de Album de figuritas con threads-->
     </div>
     <!-- /Porfolio -->
   </div>
