@@ -39,7 +39,10 @@ body {
   background-repeat: repeat;
 }
 
-
+.perfil{
+  min-width: 65%;
+  max-width: 70%;
+}
 
 #columnas-cv1{
   background-color: transparent;
