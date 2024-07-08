@@ -15,6 +15,9 @@ body {
 .card {
   background-color: #000;
   border: 1px  hwb(0 100% 0%);
+}
+
+.alinear-items{
   align-items: center;
 }
 
