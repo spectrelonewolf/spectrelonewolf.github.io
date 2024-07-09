@@ -7,6 +7,22 @@
 
 /* FIN CARDS COMO PPT */
 
+.ultra-wide-container {
+  width: 100%;
+  padding-top: 40%; /* Esto da una relación de aspecto 21:9 */
+  position: relative;
+  overflow: hidden;
+}
+
+.ultra-wide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 body {
   background-image: url("../img/index/patron-am2-final.jpg");
   background-repeat: repeat;
@@ -49,6 +65,12 @@ body {
   overflow-y: auto;
   background-image: url("../img/index/patron-am-final.jpg");
   background-repeat: repeat;
+}
+
+.bg-acercade {
+  background-color: #5b046e;
+  color: #ffffff;
+  font-size: small;
 }
 
 .perfil{
