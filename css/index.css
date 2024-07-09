@@ -155,7 +155,7 @@ body {
 
   #columnas-cv1 {
     flex-basis: 100%;
-    min-width: 320px; /* Ajusta el tamaño mínimo según tus necesidades */
+    min-width: 280px; /* Ajusta el tamaño mínimo según tus necesidades */
     max-width: 400px; /* Ajusta el tamaño máximo según tus necesidades */
   }
 }
@@ -172,7 +172,7 @@ body {
 
   #columnas-cv1 {
     flex-basis: 100%;
-    min-width: 300px; /* Ajusta el tamaño mínimo según tus necesidades */
+    min-width: 240px; /* Ajusta el tamaño mínimo según tus necesidades */
     max-width: 350px; /* Ajusta el tamaño máximo según tus necesidades */
   }
 }
