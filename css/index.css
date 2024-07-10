@@ -168,12 +168,12 @@ body {
     width:fit-content;
     flex-basis: 1 1 100%;
     flex-basis: 100%;
-    min-width: 350px; /* Ajusta el tamaño mínimo según tus necesidades */
+    min-width: 330px; /* Ajusta el tamaño mínimo según tus necesidades */
     max-width: 650px; /* Ajusta el tamaño máximo según tus necesidades */
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 599px) {
   #columnas > * {
     flex: 1 1 100%; /* 1 columna */
   }
