@@ -1724,9 +1724,9 @@
                           Este proyecto no solo me permitió fortalecer mis
                           habilidades técnicas, sino también mejorar mi
                           capacidad para detectar y resolver errores,
-                          comunicarme efectivamente con los profesores. La implementación
-                          exitosa y el trabajo en equipo fueron claves para
-                          aprobar el proyecto.
+                          comunicarme efectivamente con los profesores. La
+                          implementación exitosa y el trabajo en equipo fueron
+                          claves para aprobar el proyecto.
                         </em>
                       </p>
                     </div>
@@ -2484,6 +2484,382 @@
           </div>
         </div>
         <!--/Simulador de Album de figuritas con threads-->
+        <!-- Sistema posgresql -->
+        <div class="col">
+          <div
+            class="card alinear-items fondo-oscuro-gauss border border-warning"
+          >
+            <!-- Carousel -->
+            <div
+              id="carouselExample"
+              class="carousel slide"
+              data-bs-ride="true"
+            >
+              <div class="carousel-inner card-img-top px-3 py-3">
+                <div class="carousel-item active my-3 px-3">
+                  <img
+                    class="w-100"
+                    src="https://gitlab.com/spectrelonewolf/ibarra-galeano-gaona-moras-db1/-/raw/main/db-posgresql-tp.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- /Carousel -->
+            <!--Cuerpo de la tarjeta-->
+            <div class="card-body w-100">
+              <h3 class="card-title text-center">
+                <div class="col text-center">
+                  <!-- Lo que use -->
+                  <div class="row px-3">
+                    <span
+                      class="badge text-secondary bg-warning-subtle badge-light"
+                    >
+                      <div class="col px-2">
+                        <div class="row py-2">Herramientas:</div>
+                        <div class="row">
+                          <span class="badge text-bg-warning my-1">
+                            <i class="bi bi-terminal-fill"></i> GOlang
+                          </span>
+                          <span class="badge text-bg-warning my-1">
+                            <i class="bi bi-database"></i> PostgreSQL
+                          </span>
+                          <span class="badge text-bg-warning my-1">
+                            <i class="bi bi-filetype-json"></i> BoltDB
+                          </span>
+                          <span class="badge text-bg-warning my-1">
+                            <i class="bi bi-code-slash"></i> Alpine
+                          </span>
+                          <span class="badge text-bg-warning my-1">
+                            <i class="bi bi-terminal-fill"></i> Git
+                          </span>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                  <!-- /Lo que use -->
+                  <!-- Titulo referencial -->
+                  <div class="col text-warning text-center my-3">
+                    <p>
+                      <strong> Sistema de Gestión de Pedidos </strong>
+                    </p>
+                  </div>
+                  <!-- /Titulo referencial -->
+                </div>
+              </h3>
+              <p class="card-text my-3"></p>
+              <!-- Nucleo -->
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button text-bg-warning fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseProjectDetailsPedidos"
+                      aria-expanded="true"
+                      aria-controls="collapseProjectDetailsPedidos"
+                    >
+                      Introducción
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseProjectDetailsPedidos"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Este trabajo práctico modelamos un sistema para gestionar
+                      ingreso, cancelación y entrega de pedidos. Prioriza la
+                      integridad de la información de clientes y productos,
+                      enfocándose en mantener un stock preciso para evitar
+                      errores en pedidos y asegurar entregas completas. El
+                      sistema notifica a los clientes sobre eventos relevantes
+                      por correo electrónico tales como cuando el pedido se
+                      cerró, si se canceló, cuando recibió su compra y anticipa
+                      la reposición de productos con bajo stock.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed text-bg-warning fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseRequirementsPedidos"
+                      aria-expanded="false"
+                      aria-controls="collapseRequirementsPedidos"
+                    >
+                      Requerimientos
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseRequirementsPedidos"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          El sistema debe administrar el ingreso, la
+                          cancelación, y la entrega de pedidos, mantener toda la
+                          información de los clientes y de los productos, y
+                          controlar que el stock disponible y el reservado de
+                          los productos sea actualizado correctamente—e.g. no
+                          puede agregarse a los pedidos una cantidad mayor a la
+                          disponible, el proceso de entrega del pedido no puede
+                          quedar a medio hacer, etc.
+                        </li>
+                        <li class="list-group-item">
+                          Los clientes deben ser informados vía email cuando
+                          ocurran eventos importantes sobre sus pedidos. Además,
+                          es necesario poder generar solicitudes de reposición
+                          para aquellos productos que hayan quedado con bajo
+                          stock.
+                        </li>
+                        <li class="list-group-item">
+                          Se deberán cargar 20 clientes y 20 productos. Todos
+                          los clientes tendrán una dirección de entrega, excepto
+                          dos clientes que tendrán dos direcciones cada uno. La
+                          tabla tarifa_entrega deberá tener los códigos postales
+                          de todos los clientes, excepto para tres de las
+                          direcciones.
+                        </li>
+                        <li class="list-group-item">
+                          Los datos de los clientes, de sus direcciones de
+                          entrega, de los productos, de las tarifas de entrega,
+                          así como los datos de entrada para las transacciones
+                          de prueba, deberán cargarse en las tablas
+                          correspondientes a partir de sus respectivos
+                          documentos JSON.
+                        </li>
+                        <li class="list-group-item">
+                          El trabajo práctico deberá incluir los siguientes
+                          stored procedures ó triggers:
+                          <ul>
+                            <li>
+                              Creación del pedido: se deberá incluir la lógica
+                              que reciba los datos del pedido—id de usuario, id
+                              de dirección—y que devuelva true si se logra crear
+                              el pedido, ó false si se rechaza. El procedimiento
+                              deberá validar los siguientes elementos antes de
+                              confirmar el alta: Que el id de usuario exista. En
+                              caso de que no cumpla, se debe cargar un error con
+                              el mensaje “id de usuario no válido”. Que el id de
+                              la dirección de entrega exista para el cliente. En
+                              caso de que no cumpla, se debe cargar un error con
+                              el mensaje “id de dirección no válido”. Que el
+                              código postal de la dirección de entrega tenga una
+                              tarifa establecida. En caso de que no cumpla, se
+                              debe cargar un error con el mensaje “dirección de
+                              entrega fuera del área de atención”. Si se aprueba
+                              la creación del pedido, se deberá insertar una
+                              fila en la tabla pedido con los datos del cliente,
+                              la fecha y hora del pedido, y el costo de envío
+                              correspondiente al código postal, dejando su
+                              estado como ingresado.
+                            </li>
+                            <li>
+                              Agregado de producto: se deberá incluir la lógica
+                              que reciba un id de pedido, un id de producto y
+                              una cantidad, y añada la información al pedido.
+                              Retornará true si la operación se realiza
+                              satisfactoriamente, ó false en caso contrario. El
+                              procedimiento deberá validar los siguientes
+                              elementos, antes de incorporar el ítem al pedido:
+                              Que el id de pedido exista. En caso de que no
+                              cumpla, se debe cargar un error con el mensaje “id
+                              de pedido no válido”. Que el pedido se encuentre
+                              en estado ingresado. En caso de que no cumpla, se
+                              debe cargar un error con el mensaje “pedido
+                              cerrado”. Que el id de producto exista. En caso de
+                              que no cumpla, se debe cargar un error con el
+                              mensaje “id de producto no válido”. Que el
+                              producto tenga stock disponible para satisfacer la
+                              cantidad solicitada al momento de realizar el
+                              pedido. En caso de que no se cumpla, se debe
+                              cargar un nuevo error con el mensaje “stock no
+                              disponible para el producto 'id_producto'”,
+                              reemplazando en el mensaje “id_producto” por el
+                              valor correspondiente que generó el error. Si se
+                              aprueba la incorporación, se deberá insertar una
+                              fila en la tabla pedido_detalle con los datos del
+                              producto. Si el pedido ya contiene al producto, se
+                              deberá actualizar la fila correspondiente, sumando
+                              la nueva cantidad. En cualquiera de los dos casos,
+                              se deberá descontar dicha cantidad del stock
+                              disponible y sumarla al stock reservado. También
+                              deberá mantenerse actualizado el monto total del
+                              pedido de forma coherente con el detalle de
+                              productos solicitados.
+                            </li>
+                            <li>
+                              Cierre del pedido: se deberá proveer la lógica que
+                              reciba un id de pedido, la fecha y hora de
+                              entrega, y que devuelva true si se logra cerrar el
+                              pedido ó false en caso contrario. El procedimiento
+                              deberá validar los siguientes elementos antes de
+                              confirmar el cierre: Que el id de pedido exista.
+                              En caso de que no cumpla, se debe cargar un error
+                              con el mensaje “id de pedido no válido”. Que el
+                              pedido tenga al menos un producto agregado. En
+                              caso de que no cumpla, se debe cargar un error con
+                              el mensaje “pedido vacío”. Que la fecha y hora de
+                              entrega sea posterior a la fecha y hora actual. En
+                              caso de que no cumpla, se debe cargar un error con
+                              el mensaje “fecha de entrega no válida”. Si se
+                              aprueba el cierre, se deberá actualizar la fila
+                              correspondiente en la tabla pedido con la fecha de
+                              entrega, y las horas de entrega desde y hasta,
+                              dejando su estado como completado. Calcular la
+                              hora hasta como dos horas posterior a la hora
+                              desde.
+                            </li>
+                            <li>
+                              Cancelación de pedido: se deberá proveer la lógica
+                              que permita cancelar un pedido. El procedimiento
+                              debe recibir el id de pedido, y retornar true si
+                              se logra cancelar el pedido ó false en caso
+                              contrario. El procedimiento deberá validar los
+                              siguientes elementos antes de confirmar la
+                              cancelación: Que el id de pedido exista. En caso
+                              de que no cumpla, se debe cargar un error con el
+                              mensaje “id de pedido no válido”. Que el pedido se
+                              encuentre en estado ingresado o completado. En
+                              caso de que no cumpla, se debe cargar un error con
+                              el mensaje “pedido ya entregado o cancelado”. Si
+                              las validaciones pasan correctamente, se deberá
+                              marcar el estado del pedido como cancelado.
+                              Además, deberá sumarse al stock disponible de cada
+                              producto la cantidad incluida en el pedido
+                              cancelado, y descontarla del stock reservado.
+                            </li>
+                            <li>
+                              Entrega de pedido: se deberá proveer la lógica que
+                              reciba un id de pedido, y que retorne true si se
+                              logra marcar el pedido como entregado ó false en
+                              caso contrario. El procedimiento deberá validar
+                              los siguientes elementos antes de confirmar la
+                              entrega: Que el id de pedido exista. En caso de
+                              que no cumpla, se debe cargar un error con el
+                              mensaje “id de pedido no válido”. Que el pedido se
+                              encuentre en estado completado. En caso de que no
+                              cumpla, se debe cargar un error con el mensaje
+                              “pedido no cerrado”. Si se aprueba la entrega, se
+                              deberá marcar el estado del pedido como entregado,
+                              y restar del stock reservado las cantidades de
+                              productos del pedido.
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed text-bg-warning fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThreeSql"
+                      aria-expanded="false"
+                      aria-controls="collapseThreeSql"
+                    >
+                      Desarrollo
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThreeSql"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Un trabajo el cual involucró el lenguaje y librerías
+                        GOlang, PostgreSQL, BoltDB y usamos sistema Alpine. Se
+                        implementó todo en tiempo y forma, teníamos distribución
+                        equitativa de las tareas y como yo finalicé mis tareas
+                        me dediqué a realizar una herramienta de test unitarios
+                        por consola, para verificar las queries, cargándole
+                        datos, etc.
+                      </p>
+                      <p><strong>Responsabilidades y Tareas:</strong></p>
+                      <p>
+                        <strong
+                          >1. Implementación de GOlang y PostgreSQL:</strong
+                        >
+                        Diseñamos y desarrollamos el proyecto utilizando GOlang
+                        y PostgreSQL, asegurando una clara integración y
+                        funcionalidad.
+                      </p>
+                      <p>
+                        <strong
+                          >2. Desarrollo de Herramienta de Test
+                          Unitarios:</strong
+                        >
+                        Creé una herramienta de test unitarios por consola para
+                        verificar las queries, cargando datos y asegurando su
+                        correcto funcionamiento.
+                      </p>
+                      <p><strong>Desafíos y Soluciones:</strong></p>
+                      <p>
+                        <strong>1. Implementación de BoltDB y Alpine:</strong>
+                      </p>
+                      <p>
+                        <strong>Desafío:</strong> Integrar BoltDB y configurar
+                        el sistema Alpine de manera eficiente.
+                      </p>
+                      <p>
+                        <strong>Solución:</strong> Implementamos BoltDB y
+                        configuramos Alpine asegurando un rendimiento óptimo y
+                        una configuración estable.
+                      </p>
+                      <p><strong>Aprendizajes y Experiencias:</strong></p>
+                      <p>
+                        <strong>Integración de Tecnologías:</strong>
+                        Profundizamos en la integración de tecnologías como
+                        GOlang, PostgreSQL, BoltDB y Alpine, mejorando nuestras
+                        habilidades en el desarrollo de software.
+                      </p>
+                      <p>
+                        <strong>Desarrollo de Herramientas de Test:</strong>
+                        Aprendimos a desarrollar herramientas de test unitarios
+                        por consola, mejorando la calidad y fiabilidad de
+                        nuestras aplicaciones.
+                      </p>
+                      <p><strong>Resultados y Conclusiones:</strong></p>
+                      <p>
+                        <em>
+                          Este proyecto no solo nos permitió aplicar y mejorar
+                          nuestras habilidades en GOlang y PostgreSQL, sino
+                          también desarrollar herramientas de test unitarios y
+                          optimizar el uso de BoltDB y Alpine, logrando una
+                          aplicación funcional y bien optimizada.
+                        </em>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Nucleo -->
+            </div>
+
+            <!--/Cuerpo de la tarjeta-->
+            <!--Footer-->
+            <div class="card-footer">
+              <!-- Repositorio o link -->
+              <a
+                href="https://gitlab.com/spectrelonewolf/ibarra-galeano-gaona-moras-db1"
+                class="btn my-3 btn-warning fw-bold"
+                >Ver Repositorio</a
+              >
+              <!-- /Repositorio o link -->
+            </div>
+            <!--/Footer-->
+          </div>
+        </div>
+        <!--/Sistema posgresql-->
       </div>
       <!-- /Porfolio -->
     </div>
