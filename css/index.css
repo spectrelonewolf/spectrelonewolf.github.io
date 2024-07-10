@@ -125,7 +125,29 @@ body {
   padding: 0;
 }
 
+#columnas-cv2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#columnas-cv2 > * {
+  flex: 1 1 calc(50% - 1rem); /* 2 columnas */
+  margin: 0.5rem;
+}
+
 /* Estilos para pantallas medianas y pequeñas (1 columna) */
+@media (max-width: 1080px) {
+  #columnas-cv2 {
+    width:fit-content;
+    flex-basis: 1 1 100%;
+    flex-basis: 100%;
+    min-width: 300px; /* Ajusta el tamaño mínimo según tus necesidades */
+    max-width: 650px; /* Ajusta el tamaño máximo según tus necesidades */
+  }
+}
+
+
 @media (max-width: 765px) {
   #columnas > * {
     flex: 1 1 100%; /* 1 columna */
@@ -138,7 +160,15 @@ body {
 
   #columnas-cv1 {
     flex-basis: 100%;
-    min-width: 300px; /* Ajusta el tamaño mínimo según tus necesidades */
+    min-width: 250px; /* Ajusta el tamaño mínimo según tus necesidades */
+    max-width: 650px; /* Ajusta el tamaño máximo según tus necesidades */
+  }
+
+  #columnas-cv2 {
+    width:fit-content;
+    flex-basis: 1 1 100%;
+    flex-basis: 100%;
+    min-width: 350px; /* Ajusta el tamaño mínimo según tus necesidades */
     max-width: 650px; /* Ajusta el tamaño máximo según tus necesidades */
   }
 }
@@ -155,8 +185,16 @@ body {
 
   #columnas-cv1 {
     flex-basis: 100%;
-    min-width: 280px; /* Ajusta el tamaño mínimo según tus necesidades */
+    min-width: 250px; /* Ajusta el tamaño mínimo según tus necesidades */
     max-width: 400px; /* Ajusta el tamaño máximo según tus necesidades */
+  }
+
+  #columnas-cv2 {
+    width:fit-content;
+    flex-basis: 1 1 100%;
+    flex-basis: 100%;
+    min-width: 220px; /* Ajusta el tamaño mínimo según tus necesidades */
+    max-width: 650px; /* Ajusta el tamaño máximo según tus necesidades */
   }
 }
 
@@ -172,7 +210,15 @@ body {
 
   #columnas-cv1 {
     flex-basis: 100%;
-    min-width: 240px; /* Ajusta el tamaño mínimo según tus necesidades */
+    min-width: 250px; /* Ajusta el tamaño mínimo según tus necesidades */
     max-width: 350px; /* Ajusta el tamaño máximo según tus necesidades */
+  }
+
+  #columnas-cv2 {
+    width:fit-content;
+    flex-basis: 1 1 100%;
+    flex-basis: 100%;
+    min-width: 220px; /* Ajusta el tamaño mínimo según tus necesidades */
+    max-width: 650px; /* Ajusta el tamaño máximo según tus necesidades */
   }
 }
