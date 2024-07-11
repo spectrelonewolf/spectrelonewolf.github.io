@@ -2634,123 +2634,180 @@
                           documentos JSON.
                         </li>
                         <li class="list-group-item">
-                          El trabajo práctico deberá incluir los siguientes
-                          stored procedures ó triggers:
+                          <p>
+                            <strong>Creación del pedido:</strong> Se deberá
+                            incluir la lógica que reciba los datos del pedido —
+                            id de usuario, id de dirección — y que devuelva true
+                            si se logra crear el pedido, ó false si se rechaza.
+                            El procedimiento deberá validar los siguientes
+                            elementos antes de confirmar el alta:
+                          </p>
                           <ul>
                             <li>
-                              Creación del pedido: se deberá incluir la lógica
-                              que reciba los datos del pedido—id de usuario, id
-                              de dirección—y que devuelva true si se logra crear
-                              el pedido, ó false si se rechaza. El procedimiento
-                              deberá validar los siguientes elementos antes de
-                              confirmar el alta: Que el id de usuario exista. En
-                              caso de que no cumpla, se debe cargar un error con
-                              el mensaje “id de usuario no válido”. Que el id de
-                              la dirección de entrega exista para el cliente. En
-                              caso de que no cumpla, se debe cargar un error con
-                              el mensaje “id de dirección no válido”. Que el
-                              código postal de la dirección de entrega tenga una
-                              tarifa establecida. En caso de que no cumpla, se
-                              debe cargar un error con el mensaje “dirección de
-                              entrega fuera del área de atención”. Si se aprueba
-                              la creación del pedido, se deberá insertar una
-                              fila en la tabla pedido con los datos del cliente,
-                              la fecha y hora del pedido, y el costo de envío
-                              correspondiente al código postal, dejando su
-                              estado como ingresado.
-                            </li>
-                            <li>
-                              Agregado de producto: se deberá incluir la lógica
-                              que reciba un id de pedido, un id de producto y
-                              una cantidad, y añada la información al pedido.
-                              Retornará true si la operación se realiza
-                              satisfactoriamente, ó false en caso contrario. El
-                              procedimiento deberá validar los siguientes
-                              elementos, antes de incorporar el ítem al pedido:
-                              Que el id de pedido exista. En caso de que no
+                              Que el id de usuario exista. En caso de que no
                               cumpla, se debe cargar un error con el mensaje “id
-                              de pedido no válido”. Que el pedido se encuentre
-                              en estado ingresado. En caso de que no cumpla, se
-                              debe cargar un error con el mensaje “pedido
-                              cerrado”. Que el id de producto exista. En caso de
-                              que no cumpla, se debe cargar un error con el
-                              mensaje “id de producto no válido”. Que el
-                              producto tenga stock disponible para satisfacer la
-                              cantidad solicitada al momento de realizar el
-                              pedido. En caso de que no se cumpla, se debe
-                              cargar un nuevo error con el mensaje “stock no
-                              disponible para el producto 'id_producto'”,
-                              reemplazando en el mensaje “id_producto” por el
-                              valor correspondiente que generó el error. Si se
-                              aprueba la incorporación, se deberá insertar una
-                              fila en la tabla pedido_detalle con los datos del
-                              producto. Si el pedido ya contiene al producto, se
-                              deberá actualizar la fila correspondiente, sumando
-                              la nueva cantidad. En cualquiera de los dos casos,
-                              se deberá descontar dicha cantidad del stock
-                              disponible y sumarla al stock reservado. También
-                              deberá mantenerse actualizado el monto total del
-                              pedido de forma coherente con el detalle de
-                              productos solicitados.
+                              de usuario no válido”.
                             </li>
                             <li>
-                              Cierre del pedido: se deberá proveer la lógica que
-                              reciba un id de pedido, la fecha y hora de
-                              entrega, y que devuelva true si se logra cerrar el
-                              pedido ó false en caso contrario. El procedimiento
-                              deberá validar los siguientes elementos antes de
-                              confirmar el cierre: Que el id de pedido exista.
-                              En caso de que no cumpla, se debe cargar un error
-                              con el mensaje “id de pedido no válido”. Que el
-                              pedido tenga al menos un producto agregado. En
-                              caso de que no cumpla, se debe cargar un error con
-                              el mensaje “pedido vacío”. Que la fecha y hora de
-                              entrega sea posterior a la fecha y hora actual. En
-                              caso de que no cumpla, se debe cargar un error con
-                              el mensaje “fecha de entrega no válida”. Si se
-                              aprueba el cierre, se deberá actualizar la fila
-                              correspondiente en la tabla pedido con la fecha de
-                              entrega, y las horas de entrega desde y hasta,
-                              dejando su estado como completado. Calcular la
-                              hora hasta como dos horas posterior a la hora
-                              desde.
+                              Que el id de la dirección de entrega exista para
+                              el cliente. En caso de que no cumpla, se debe
+                              cargar un error con el mensaje “id de dirección no
+                              válido”.
                             </li>
                             <li>
-                              Cancelación de pedido: se deberá proveer la lógica
-                              que permita cancelar un pedido. El procedimiento
-                              debe recibir el id de pedido, y retornar true si
-                              se logra cancelar el pedido ó false en caso
-                              contrario. El procedimiento deberá validar los
-                              siguientes elementos antes de confirmar la
-                              cancelación: Que el id de pedido exista. En caso
-                              de que no cumpla, se debe cargar un error con el
-                              mensaje “id de pedido no válido”. Que el pedido se
-                              encuentre en estado ingresado o completado. En
-                              caso de que no cumpla, se debe cargar un error con
-                              el mensaje “pedido ya entregado o cancelado”. Si
-                              las validaciones pasan correctamente, se deberá
-                              marcar el estado del pedido como cancelado.
-                              Además, deberá sumarse al stock disponible de cada
-                              producto la cantidad incluida en el pedido
-                              cancelado, y descontarla del stock reservado.
-                            </li>
-                            <li>
-                              Entrega de pedido: se deberá proveer la lógica que
-                              reciba un id de pedido, y que retorne true si se
-                              logra marcar el pedido como entregado ó false en
-                              caso contrario. El procedimiento deberá validar
-                              los siguientes elementos antes de confirmar la
-                              entrega: Que el id de pedido exista. En caso de
-                              que no cumpla, se debe cargar un error con el
-                              mensaje “id de pedido no válido”. Que el pedido se
-                              encuentre en estado completado. En caso de que no
+                              Que el código postal de la dirección de entrega
+                              tenga una tarifa establecida. En caso de que no
                               cumpla, se debe cargar un error con el mensaje
-                              “pedido no cerrado”. Si se aprueba la entrega, se
-                              deberá marcar el estado del pedido como entregado,
-                              y restar del stock reservado las cantidades de
-                              productos del pedido.
+                              “dirección de entrega fuera del área de atención”.
                             </li>
                           </ul>
+                          <p>
+                            Si se aprueba la creación del pedido, se deberá
+                            insertar una fila en la tabla pedido con los datos
+                            del cliente, la fecha y hora del pedido, y el costo
+                            de envío correspondiente al código postal, dejando
+                            su estado como ingresado.
+                          </p>
+                        </li>
+
+                        <li class="list-group-item">
+                          <p>
+                            <strong>Agregado de producto:</strong> Se deberá
+                            incluir la lógica que reciba un id de pedido, un id
+                            de producto y una cantidad, y añada la información
+                            al pedido. Retornará true si la operación se realiza
+                            satisfactoriamente, ó false en caso contrario. El
+                            procedimiento deberá validar los siguientes
+                            elementos antes de incorporar el ítem al pedido:
+                          </p>
+                          <ul>
+                            <li>
+                              Que el id de pedido exista. En caso de que no
+                              cumpla, se debe cargar un error con el mensaje “id
+                              de pedido no válido”.
+                            </li>
+                            <li>
+                              Que el pedido se encuentre en estado ingresado. En
+                              caso de que no cumpla, se debe cargar un error con
+                              el mensaje “pedido cerrado”.
+                            </li>
+                            <li>
+                              Que el id de producto exista. En caso de que no
+                              cumpla, se debe cargar un error con el mensaje “id
+                              de producto no válido”.
+                            </li>
+                            <li>
+                              Que el producto tenga stock disponible para
+                              satisfacer la cantidad solicitada al momento de
+                              realizar el pedido. En caso de que no se cumpla,
+                              se debe cargar un nuevo error con el mensaje
+                              “stock no disponible para el producto
+                              'id_producto'”.
+                            </li>
+                          </ul>
+                          <p>
+                            Si se aprueba la incorporación, se deberá insertar
+                            una fila en la tabla pedido_detalle con los datos
+                            del producto. Si el pedido ya contiene al producto,
+                            se deberá actualizar la fila correspondiente,
+                            sumando la nueva cantidad.
+                          </p>
+                        </li>
+
+                        <li class="list-group-item">
+                          <p>
+                            <strong>Cierre del pedido:</strong> Se deberá
+                            proveer la lógica que reciba un id de pedido, la
+                            fecha y hora de entrega, y que devuelva true si se
+                            logra cerrar el pedido ó false en caso contrario. El
+                            procedimiento deberá validar los siguientes
+                            elementos antes de confirmar el cierre:
+                          </p>
+                          <ul>
+                            <li>
+                              Que el id de pedido exista. En caso de que no
+                              cumpla, se debe cargar un error con el mensaje “id
+                              de pedido no válido”.
+                            </li>
+                            <li>
+                              Que el pedido tenga al menos un producto agregado.
+                              En caso de que no cumpla, se debe cargar un error
+                              con el mensaje “pedido vacío”.
+                            </li>
+                            <li>
+                              Que la fecha y hora de entrega sea posterior a la
+                              fecha y hora actual. En caso de que no cumpla, se
+                              debe cargar un error con el mensaje “fecha de
+                              entrega no válida”.
+                            </li>
+                          </ul>
+                          <p>
+                            Si se aprueba el cierre, se deberá actualizar la
+                            fila correspondiente en la tabla pedido con la fecha
+                            de entrega, y las horas de entrega desde y hasta,
+                            dejando su estado como completado. Calcular la hora
+                            hasta como dos horas posterior a la hora desde.
+                          </p>
+                        </li>
+
+                        <li class="list-group-item">
+                          <p>
+                            <strong>Cancelación de pedido:</strong> Se deberá
+                            proveer la lógica que permita cancelar un pedido. El
+                            procedimiento debe recibir el id de pedido, y
+                            retornar true si se logra cancelar el pedido ó false
+                            en caso contrario. El procedimiento deberá validar
+                            los siguientes elementos antes de confirmar la
+                            cancelación:
+                          </p>
+                          <ul>
+                            <li>
+                              Que el id de pedido exista. En caso de que no
+                              cumpla, se debe cargar un error con el mensaje “id
+                              de pedido no válido”.
+                            </li>
+                            <li>
+                              Que el pedido se encuentre en estado ingresado o
+                              completado. En caso de que no cumpla, se debe
+                              cargar un error con el mensaje “pedido ya
+                              entregado o cancelado”.
+                            </li>
+                          </ul>
+                          <p>
+                            Si las validaciones pasan correctamente, se deberá
+                            marcar el estado del pedido como cancelado. Además,
+                            deberá sumarse al stock disponible de cada producto
+                            la cantidad incluida en el pedido cancelado, y
+                            descontarla del stock reservado.
+                          </p>
+                        </li>
+
+                        <li class="list-group-item">
+                          <p>
+                            <strong>Entrega de pedido:</strong> Se deberá
+                            proveer la lógica que reciba un id de pedido, y que
+                            retorne true si se logra marcar el pedido como
+                            entregado ó false en caso contrario. El
+                            procedimiento deberá validar los siguientes
+                            elementos antes de confirmar la entrega:
+                          </p>
+                          <ul>
+                            <li>
+                              Que el id de pedido exista. En caso de que no
+                              cumpla, se debe cargar un error con el mensaje “id
+                              de pedido no válido”.
+                            </li>
+                            <li>
+                              Que el pedido se encuentre en estado completado.
+                              En caso de que no cumpla, se debe cargar un error
+                              con el mensaje “pedido no cerrado”.
+                            </li>
+                          </ul>
+                          <p>
+                            Si se aprueba la entrega, se deberá marcar el estado
+                            del pedido como entregado, y restar del stock
+                            reservado las cantidades de productos del pedido.
+                          </p>
                         </li>
                       </ul>
                     </div>
@@ -2860,6 +2917,285 @@
           </div>
         </div>
         <!--/Sistema posgresql-->
+        <!-- Red UNGS -->
+        <div class="col">
+          <div
+            class="card alinear-items fondo-oscuro-gauss border border-warning"
+          >
+            <!-- Carousel -->
+            <div
+              id="carouselExample"
+              class="carousel slide"
+              data-bs-ride="true"
+            >
+              <div class="carousel-inner card-img-top px-3 py-3">
+                <div class="carousel-item active my-3 px-3">
+                  <img
+                    class="w-100"
+                    src="https://gitlab.com/spectrelonewolf/franco-matias-ale-tp-sor/-/raw/master/diagramapt.png?ref_type=heads&inline=false"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- /Carousel -->
+            <!--Cuerpo de la tarjeta-->
+            <div class="card-body w-100">
+              <h3 class="card-title text-center">
+                <div class="col text-center">
+                  <!-- Lo que use -->
+                  <div class="row px-3">
+                    <span
+                      class="badge text-secondary bg-warning-subtle badge-light"
+                    >
+                      <div class="col px-2">
+                        <div class="row py-2">Herramientas:</div>
+                        <div class="row">
+                          <span class="badge text-bg-warning my-1">
+                            <i class="bi bi-terminal-fill"></i> Cisco Packet
+                            Tracer
+                          </span>
+                          <span class="badge text-bg-warning my-1">
+                            <i class="bi bi-code-slash"></i> Command Prompt
+                          </span>
+                          <span class="badge text-bg-warning my-1">
+                            <i class="bi bi-terminal-fill"></i> Git
+                          </span>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                  <!-- /Lo que use -->
+                  <!-- Titulo referencial -->
+                  <div class="col text-warning text-center my-3">
+                    <p>
+                      <strong> Diseño de Red en la UNGS </strong>
+                    </p>
+                  </div>
+                  <!-- /Titulo referencial -->
+                </div>
+              </h3>
+              <p class="card-text my-3"></p>
+              <!-- Nucleo -->
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button text-bg-warning fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseProjectDetailsRed"
+                      aria-expanded="true"
+                      aria-controls="collapseProjectDetailsRed"
+                    >
+                      Introduccion
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseProjectDetailsRed"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      En el año 2022, en la UNGS comenzará la construcción del
+                      Módulo 10, este nuevo edificio tendrá 4 pisos, y se prevén
+                      instalar 16 laboratorios, más una sala de servidores donde
+                      se alojará el cluster ColosUngs compuesto por 1024
+                      Raspberry Pi. La Dirección General de Sistemas y
+                      Tecnologías de la Información (DGSyTI) de la UNGS convocó
+                      durante el primer semestre del 2021 a una licitación para
+                      diseñar e instalar la red de este nuevo módulo, en donde
+                      también participaron los alumnos de la carrera de Sistemas
+                      que estén cursando la materia Sistemas Operativos y Redes.
+                      Tu equipo fue seleccionado como ganador de esta
+                      convocatoria, para lo cual se les asignó un presupuesto de
+                      U$S 10.000.-. Este diseño se tiene que llevar a cabo antes
+                      que finalice la pandemia. La decana del ICI convocó a tu
+                      equipo a una entrevista para interiorizarlos en los
+                      detalles del diseño: La Dirección de Redes y
+                      Comunicaciones le asignó al nuevo módulo la dirección la
+                      red IP 10.0.0.0. En el Módulo 10, habrá 4 laboratorios por
+                      piso con 30 computadoras en cada uno. La sala de
+                      servidores se encuentra en el primer piso. Este tiene 4
+                      servidores y el cluster ColosUngs, el cual solo consume
+                      una dirección IP. Por cada piso hay 3 oficinas
+                      administrativas con 5 computadoras en cada una. Se les
+                      solicita que la red se divida en administrativa y
+                      académica, no permitiendo el tráfico entre ellas, ni
+                      tampoco entre los laboratorios. Además, por cada piso se
+                      necesita una red WiFi de uso no académico, a la cual se
+                      puede conectar cualquier dispositivo. Cinco laboratorios
+                      del Módulo 7 pasarán a ser utilizados solo por los
+                      estudiantes de la carrera de Sistemas, por lo cual estos
+                      estarán en la misma red del Módulo 10.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed text-bg-warning fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseRequirementsRed"
+                      aria-expanded="false"
+                      aria-controls="collapseRequirementsRed"
+                    >
+                      Requerimientos
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseRequirementsRed"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Utilizar un direccionamiento privado de la clase que
+                          más se ajuste a la cantidad de nodos.
+                        </li>
+                        <li class="list-group-item">
+                          Utilizar VLSM, para evitar la propagación innecesaria
+                          de tráfico.
+                        </li>
+                        <li class="list-group-item">
+                          Utilizar VLANs para separar el tráfico de red.
+                        </li>
+                        <li class="list-group-item">
+                          El Módulo 7 tiene un solo router que se conecta con el
+                          router del Módulo 10.
+                        </li>
+                        <li class="list-group-item">
+                          Deberá existir un solo switch troncal por cada piso.
+                        </li>
+                        <li class="list-group-item">
+                          Habilitar en toda la red el protocolo de enrutamiento
+                          RIP versión 2.
+                        </li>
+                        <li class="list-group-item">
+                          Crear un servidor DNS que resuelva el dominio
+                          colos.ungs.edu.ar desde todas las computadoras, para
+                          que toda la comunidad pueda acceder al cluster
+                          ColosUngs.
+                        </li>
+                        <li class="list-group-item">
+                          El diseño de la red hecho en Packet Tracer debe
+                          funcionar íntegramente.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed text-bg-warning fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThreeRed"
+                      aria-expanded="false"
+                      aria-controls="collapseThreeRed"
+                    >
+                      Desarrollo
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThreeRed"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          Problema de arrastre: El principal desafío en la
+                          implementación inicial fue la detección de un error de
+                          arrastre en las direcciones IP, particularmente
+                          visible a partir de la subred número 11. Esto causó
+                          que solo los laboratorios funcionaran correctamente en
+                          el primer piso, mientras que las otras redes no
+                          respondían al ping.
+                        </li>
+                        <li>
+                          Observación de la consigna: Al revisar el PDF después
+                          de la implementación, descubrimos que el módulo 7
+                          requería un router en la salida. Inicialmente,
+                          habíamos conectado directamente al switch troncal de
+                          troncales, pero al agregar otro router, implementamos
+                          el protocolo RIP v2 para resolver los problemas de
+                          conectividad entre redes.
+                        </li>
+                        <li>
+                          Cantidad de puertos de los Routers: El modelo
+                          recomendado tenía limitaciones en cuanto a la cantidad
+                          de puertos, lo que nos obligó a crear un switch
+                          llamado "troncal de troncales". Este switch fue
+                          configurado en modo trunk en todos sus puertos, ya que
+                          ninguno de los módulos adicionales era compatible con
+                          el sistema VLAN.
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          Resultados y Conclusiones:
+                          <ul>
+                            <li>
+                              Conclusión del proyecto: La instalación y diseño
+                              de esta red han servido como una valiosa práctica
+                              para futuras implementaciones en entornos
+                              laborales, especialmente en el uso de diferentes
+                              capas de red.
+                            </li>
+                            <li>
+                              Formación en VLANs y Subnetting: La experiencia
+                              nos permitió profundizar en la lógica de las VLANs
+                              y el subnetting, aplicándolo a la asignación de
+                              IPs en módulos, pisos, laboratorios y aulas.
+                            </li>
+                            <li>
+                              Uso de PacketTracer y Hardware: Utilizamos
+                              PacketTracer para simular y verificar las
+                              conexiones, además de familiarizarnos con el
+                              manejo de hardware como switches, routers y cables
+                              de conexión.
+                            </li>
+                            <li>
+                              Capa de Aplicación y Servidor DNS: Exploramos la
+                              configuración detallada de la capa de aplicación,
+                              incluyendo la creación y conexión de un servidor
+                              DNS para entender mejor su funcionamiento.
+                            </li>
+                            <li>
+                              Colaboración y Gestión de Proyectos: Destacamos el
+                              uso efectivo de Git para mantener un ambiente
+                              colaborativo y ordenado durante todo el desarrollo
+                              del proyecto.
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Nucleo -->
+            </div>
+
+            <!--/Cuerpo de la tarjeta-->
+            <!--Footer-->
+            <div class="card-footer">
+              <!-- Repositorio o link -->
+              <a
+                href="https://gitlab.com/spectrelonewolf/franco-matias-ale-tp-sor"
+                class="btn my-3 btn-warning fw-bold"
+                >Ver Repositorio</a
+              >
+              <!-- /Repositorio o link -->
+            </div>
+            <!--/Footer-->
+          </div>
+        </div>
+        <!--/Red UNGS-->
       </div>
       <!-- /Porfolio -->
     </div>
