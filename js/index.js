@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   async function sendMessageToBackend(message) {
-    const url = "https://spectrelw.pythonanywhere.com/bot/"; 
+    const url = "https://spectrelw.pythonanywhere.com/bot"; 
     try {
       const response = await fetch(url, {
         method: "POST",
