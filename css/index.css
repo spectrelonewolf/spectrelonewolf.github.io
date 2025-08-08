@@ -406,3 +406,29 @@ body {
     max-width: 650px; /* Ajusta el tamaño máximo según tus necesidades */
   }
 }
+
+/* Estilo base para todas las cards */
+.project-card-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* Card individual */
+.project-card-wrapper .card {
+  width: 100%;
+ /* max-width: 600px;  Para que no se estiren demasiado */
+}
+
+/* Layout para pantallas grandes: máximo 2 por fila */
+#proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 992px) {
+  #proyectos {
+    grid-template-columns: repeat(2, 1fr); /* Máximo 2 columnas */
+  }
+}
