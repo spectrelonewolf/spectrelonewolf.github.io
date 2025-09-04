@@ -46,7 +46,7 @@ function createProjectElement(project) {
   // Enlace externo si existe
   if (project.externalLink) {
     const externalLink = document.createElement('a');
-    externalLink.className = 'rounded-pill text-bg-warning py-2 px-2 mx-2';
+    externalLink.className = 'rounded-pill text-bg-warning py-2 px-2 mx-2 mb-3';
     externalLink.href = project.externalLink.url;
     externalLink.target = '_blank';
     externalLink.rel = 'noopener noreferrer';
@@ -166,7 +166,7 @@ function createTitleSection(project) {
 
   project.tools.forEach(tool => {
     const toolBadge = document.createElement('span');
-    toolBadge.className = 'badge text-bg-warning my-1';
+    toolBadge.className = 'badge text-bg-warning herramientas-texto my-1';
 
     const toolIcon = document.createElement('i');
     toolIcon.className = `bi ${tool.icon}`;
@@ -184,7 +184,7 @@ function createTitleSection(project) {
 
   // Título
   const titleRow = document.createElement('div');
-  titleRow.className = 'row text-warning text-center my-3';
+  titleRow.className = 'row herramientas-titulo text-warning text-center my-2';
 
   const title = document.createElement('p');
   title.innerHTML = `<strong>${project.title}</strong>`;
@@ -208,14 +208,11 @@ function createAccordion(project) {
     header.className = 'accordion-header';
 
     const button = document.createElement('button');
-    button.className = 'accordion-button text-bg-warning fw-bold';
-    if (index !== 0) {
-      button.classList.add('collapsed');
-    }
+    button.className = 'accordion-button text-bg-warning fw-bold collapsed'; // Siempre collapsed
     button.type = 'button';
     button.setAttribute('data-bs-toggle', 'collapse');
     button.setAttribute('data-bs-target', `#collapse-${project.id}-${index}`);
-    button.setAttribute('aria-expanded', index === 0 ? 'true' : 'false');
+    button.setAttribute('aria-expanded', 'false'); // Siempre false
     button.setAttribute('aria-controls', `collapse-${project.id}-${index}`);
     button.textContent = section.title;
 
@@ -224,10 +221,7 @@ function createAccordion(project) {
 
     const collapseDiv = document.createElement('div');
     collapseDiv.id = `collapse-${project.id}-${index}`;
-    collapseDiv.className = 'accordion-collapse collapse';
-    if (index === 0) {
-      collapseDiv.classList.add('show');
-    }
+    collapseDiv.className = 'accordion-collapse collapse'; // Sin 'show'
     collapseDiv.setAttribute('data-bs-parent', `#accordion-${project.id}`);
 
     const bodyDiv = document.createElement('div');
@@ -238,9 +232,9 @@ function createAccordion(project) {
     accordionItem.appendChild(collapseDiv);
 
     accordionDiv.appendChild(accordionItem);
-  });
+});
 
-  return accordionDiv;
+return accordionDiv;
 }
 
 function createFooter(project) {
@@ -249,7 +243,7 @@ function createFooter(project) {
 
   const repoLink = document.createElement('a');
   repoLink.href = project.repository;
-  repoLink.className = 'btn my-3 btn-warning fw-bold';
+  repoLink.className = 'btn mb-2 btn-warning fw-bold';
   repoLink.textContent = 'Ver Repositorio';
 
   footerDiv.appendChild(repoLink);

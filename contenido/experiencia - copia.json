@@ -1,0 +1,588 @@
+{
+  "projects": [
+    {
+      "id": "cypher-vault",
+      "title": "Aplicacion: Cypher Vault",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://gitlab.com/spectrelonewolf/pp-tpfinal/-/raw/main/Entrega%20Final/Manual%20de%20usuario/Cypher%20Vault%20-%20Demo%20%E2%80%91%20Final.mp4?ref_type=heads",
+          "active": true
+        },
+        {
+          "type": "video",
+          "src": "https://gitlab.com/spectrelonewolf/pp-tpfinal/-/raw/main/Entrega%20Final/Manual%20de%20usuario/Cypher%20Vault%20-%20Promo.mp4?ref_type=heads",
+          "active": false
+        }
+      ],
+      "tools": [
+        {
+          "name": "Android Studio",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "Kotlin",
+          "icon": "bi-filetype-java"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-git"
+        },
+        {
+          "name": "Photoshop",
+          "icon": "bi-brush"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Enunciado",
+          "content": "El objetivo de este trabajo práctico es que los estudiantes apliquen los conocimientos adquiridos en la asignatura sobre Metodologías Ágiles y Waterfall en el desarrollo de un sistema de autenticación por reconocimiento facial para una Tablet, permitiendo el ingreso a áreas con seguridad."
+        },
+        {
+          "title": "Requerimientos",
+          "content": "<ul><li>El sistema debe ser capaz de capturar imágenes de la cámara frontal de la Tablet.</li><li>El sistema debe ser capaz de detectar rostros en las imágenes capturadas.</li><li>El sistema debe ser capaz de identificar a las personas a partir de sus rostros.</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p>La última materia de la tecnicatura trata de realizar un proyecto ejecutando la metodología ágil de Scrum. En total, en nuestro equipo éramos seis: un Scrum Master, tres desarrolladores y dos testers. Yo pertenecía al equipo de desarrollo.</p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/pp-tpfinal/-/tree/main?ref_type=heads"
+    },
+    {
+      "id": "medbot-chatbot",
+      "title": "Web : MEDbot con Webauth",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://gitlab.com/spectrelonewolf/pp-chatbot/-/raw/main/ChatBot-Tp/20240412/Chatbot%20-%20login%20demo.mp4?ref_type=heads",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Visual Studio Code",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "bi-filetype-java"
+        },
+        {
+          "name": "Flask",
+          "icon": "bi-hdd-network-fill"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-git"
+        },
+        {
+          "name": "Photoshop",
+          "icon": "bi-brush"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Enunciado",
+          "content": "Después de leer el material e investigar respecto a la aplicación de algoritmos de Machine Learning para Inteligencia Artificial utilizando el lenguaje Python para el procesamiento de los datos"
+        },
+        {
+          "title": "Requerimientos",
+          "content": "<ul><li>Documentar la investigación de los temas propuestos y subirla a un repositorio de trabajo.</li><li>Crear un Chatbot.</li><li>Lograr que el login se realice con reconocimiento de la huella digital en el celular.</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p>Es un trabajo donde se simulaba la metodología Scrum, pero solo la parte de la entrega por incrementos cada semana. Se nos pidió realizar una app para móvil la cual debía tener WebAuth y un chatbot, con la premisa de que no tenía que instalarse en el dispositivo.</p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/pp-chatbot"
+    },
+    {
+      "id": "sakura-game",
+      "title": "Juego: Sakura Ikebana Delivery",
+      "media": [
+        {
+          "type": "video",
+          "src": "video/sakura-game.mp4",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Eclipse",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "Java",
+          "icon": "bi-filetype-java"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-git"
+        },
+        {
+          "name": "Photoshop",
+          "icon": "bi-brush"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Enunciado",
+          "content": "Sakura Haruno junto a su amiga de la infancia Ino Yamanaka, tienen un negocio de arreglos florales típicos japoneses (ikebana). Ino se encarga de preparar los arreglos florales, y Sakura se encarga del delivery de los mismos. La complicación del trabajo de Sakura es que debe entregar los pedidos evitando y combatiendo a los ninjas enemigos. El objetivo de este trabajo practico es desarrollar un video juego en el cual Sakura entregue los pedidos sin perder la vida a manos de los ninjas enemigos."
+        },
+        {
+          "title": "Requerimientos",
+          "content": "<ul><li>Al iniciar el juego, Sakura debe aparecer aproximadamente en el centro de la pantalla.</li><li>Sakura solo puede moverse por las calles de la ciudad, Tampoco puede salirse de los límites de la pantalla.</li><li>Si se presionan las flechas direccionales (izquierda, abajo, arriba, derecha) Sakura debe moverse en la dirección correspondiente.</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p>Este proyecto se desarrolló en equipo, conformado por tres integrantes, cada uno con responsabilidades específicas. Mi rol principal fue la implementación gráfica y la conceptualización general del manejo del juego.</p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/tpprogra1"
+    },
+    {
+      "id": "voting-system",
+      "title": "Sistema de Votacion",
+      "media": [
+        {
+          "type": "image",
+          "src": "img/index/UltimoDiagrama-sistema-de-votacion.jpg",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Eclipse",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "Java",
+          "icon": "bi-filetype-java"
+        },
+        {
+          "name": "JUnit",
+          "icon": "bi-filetype-java"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-git"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Enunciado",
+          "content": "La UNGS va a ser sede de votación para las próximas elecciones de noviembre, y el gobierno nacional le pidió a la Universidad que gestione la asignación de turnos. Por este motivo, la UNGS solicita a los alumnos de Programación II que diseñen este sistema de votación."
+        },
+        {
+          "title": "Requerimientos",
+          "content": "<ul><li>Este Trabajo Práctico consta de dos etapas. La primera requerirá la entrega del análisis del problema y el diseño de la solución propuesta, o sea la especificación de los TADs necesarios, diagrama de clases y la interfaz de la solución.</li><li>Se deben realizar las correcciones del diseño de la 1ra parte antes de comenzar la 2da.</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p>Prácticamente a la semana de entregado el proyecto ya corrían todos los test unitarios, la solución e implementación en casi su totalidad fue realizada por mí, aunque trabajaba en grupo con mi compañera asignada.</p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/figueroa-moras-tp-p2"
+    },
+    {
+      "id": "wordle-game",
+      "title": "Juego: Wordle",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas/-/raw/main/Trabajo%20Practico%20N1/WORDLE%20TEST.mp4?ref_type=heads",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Eclipse",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "Java",
+          "icon": "bi-filetype-java"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-git"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Enunciado",
+          "content": "El trabajo consiste en recrear la lógica del juego Wordle, donde el jugador debe adivinar una palabra secreta en seis intentos, y presentarlo en una interfaz gráfica con la que el usuario pueda interactuar."
+        },
+        {
+          "title": "Requerimientos",
+          "content": "<ul><li>Cuando el usuario ingresa una palabra se le mostrara la siguiente información; las letras que coincidan con el mismo lugar de la palabra secreta se mostraran en verde, las que existen, pero no están en la posición correcta, se mostraran en naranja, y las letras que no existen en la palabra secreta se marcaran con gris.</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p>En esta materia se estudió arquitectura de diseño de software. Se pidió implementar el patrón MVC, el cual cumplimos sin correcciones por parte de los profesores.</p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas/-/tree/main/Trabajo%20Practico%20N1?ref_type=heads"
+    },
+    {
+      "id": "clustering-system",
+      "title": "Sistema de Clustering con AGM",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas/-/raw/main/Trabajo%20Practico%20N2/CLUSTER%20GENERATOR%20TEST.mp4?ref_type=heads",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Eclipse",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "Java",
+          "icon": "bi-filetype-java"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-git"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Enunciado",
+          "content": "El objetivo de este trabajo es desarrollar una aplicación que realice clustering utilizando el algoritmo propuesto por Charles Zahn en su libro 'IEEE Transactions on Computers'."
+        },
+        {
+          "title": "Requerimientos",
+          "content": "<ul><li>Implementar una interfaz gráfica que permita mostrar los puntos de la instancia y ejecutar el algoritmo de Charles Zahn.</li><li>Visualizar el resultado del algoritmo en la interfaz gráfica.</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p>En este trabajo, además de cumplir con el requerimiento principal sumado a los agregados propuestos, menos la edicion manual, se debía mantener el patrón de diseño MVC. También se estudiaron varias teorías respecto al análisis de clusters dentro de un grafo.</p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas/-/tree/main/Trabajo%20Practico%20N2?ref_type=heads"
+    },
+    {
+      "id": "sticker-album-simulator",
+      "title": "Simulador: Album de Figuritas con Threads",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas/-/raw/main/Trabajo%20Practico%20N3/SIMULADOR%20TEST.mp4?ref_type=heads",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Eclipse",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "Java",
+          "icon": "bi-filetype-java"
+        },
+        {
+          "name": "JUnit",
+          "icon": "bi-filetype-java"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-git"
+        },
+        {
+          "name": "Photoshop",
+          "icon": "bi-brush"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Enunciado",
+          "content": "El objetivo de este trabajo es implementar una aplicación que simule uno o varios usuarios completando el álbum de figuritas del mundial de Qatar 2022."
+        },
+        {
+          "title": "Requerimientos",
+          "content": "<ul><li>Implementar una interfaz gráfica con elementos para seleccionar la cantidad de figuritas en total, la cantidad de figuritas en cada paquete, la cantidad de simulaciones y el escenario seleccionado.</li><li>Informar el resultado de las simulaciones en la interfaz gráfica.</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p>En este trabajo, además de cumplir con el requerimiento principal y los objetivos opcionales, se debía mantener el patrón de diseño MVC. Se trabajó en equipo, con un compañero, y se hizo uso eficiente de threads.</p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas/-/tree/main/Trabajo%20Practico%20N3?ref_type=heads"
+    },
+    {
+      "id": "postgresql-system",
+      "title": "Sistema de Gestión de Pedidos",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://gitlab.com/spectrelonewolf/ibarra-galeano-gaona-moras-db1/-/raw/main/db-posgresql-tp.png",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "GOlang",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "bi-database"
+        },
+        {
+          "name": "BoltDB",
+          "icon": "bi-filetype-json"
+        },
+        {
+          "name": "Alpine",
+          "icon": "bi-code-slash"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-terminal-fill"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Introducción",
+          "content": "Este trabajo práctico modelamos un sistema para gestionar ingreso, cancelación y entrega de pedidos. Prioriza la integridad de la información de clientes y productos, enfocándose en mantener un stock preciso para evitar errores en pedidos y asegurar entregas completas."
+        },
+        {
+          "title": "Requerimientos",
+          "content": "<ul><li>El sistema debe administrar el ingreso, la cancelación, y la entrega de pedidos, mantener toda la información de los clientes y de los productos, y controlar que el stock disponible y el reservado de los productos sea actualizado correctamente.</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p>Un trabajo el cual involucró el lenguaje y librerías GOlang, PostgreSQL, BoltDB y usamos sistema Alpine. Se implementó todo en tiempo y forma, teníamos distribución equitativa de las tareas y como yo finalicé mis tareas me dediqué a realizar una herramienta de test unitarios por consola, para verificar las queries, cargándole datos, etc.</p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/ibarra-galeano-gaona-moras-db1"
+    },
+    {
+      "id": "ungs-network",
+      "title": "Diseño de Red en la UNGS",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://gitlab.com/spectrelonewolf/franco-matias-ale-tp-sor/-/raw/master/diagramapt.png?ref_type=heads&inline=false",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Cisco Packet Tracer",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "Command Prompt",
+          "icon": "bi-code-slash"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-terminal-fill"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Introduccion",
+          "content": "En el año 2022, en la UNGS comenzará la construcción del Módulo 10, este nuevo edificio tendrá 4 pisos, y se prevén instalar 16 laboratorios, más una sala de servidores donde se alojará el cluster ColosUngs compuesto por 1024 Raspberry Pi."
+        },
+        {
+          "title": "Requerimientos",
+          "content": "<ul><li>Utilizar un direccionamiento privado de la clase que más se ajuste a la cantidad de nodos.</li><li>Utilizar VLSM, para evitar la propagación innecesaria de tráfico.</li><li>Utilizar VLANs para separar el tráfico de red.</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<ul><li>Problema de arrastre: El principal desafío en la implementación inicial fue la detección de un error de arrastre en las direcciones IP, particularmente visible a partir de la subred número 11.</li></ul>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/franco-matias-ale-tp-sor"
+    },
+    {
+      "id": "hotel-reservation",
+      "title": "Web: Hotelia \"Reserva de Hoteles\"",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://gitlab.com/spectrelonewolf/tp-evs-hoteles/-/raw/main/imagenes_del_pdf/pagina_principal.png?ref_type=heads&inline=false",
+          "active": true
+        },
+        {
+          "type": "image",
+          "src": "https://gitlab.com/spectrelonewolf/tp-evs-hoteles/-/raw/main/imagenes_del_pdf/pagina_principal2.png?ref_type=heads&inline=false",
+          "active": false
+        },
+        {
+          "type": "image",
+          "src": "https://gitlab.com/spectrelonewolf/tp-evs-hoteles/-/raw/main/imagenes_del_pdf/pagina_busqueda.png?ref_type=heads&inline=false",
+          "active": false
+        }
+      ],
+      "tools": [
+        {
+          "name": "Visual Studio Code",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "bi-filetype-java"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "bi-filetype-css"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-git"
+        },
+        {
+          "name": "Photoshop",
+          "icon": "bi-brush"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Enunciado",
+          "content": "El enunciado de este trabajo práctico consistió en la elaboración del documento FRD basado en una simulación Cliente/Agencia. Se simuló un cliente interesado en desarrollar una página web para la reserva de hoteles."
+        },
+        {
+          "title": "Requerimientos",
+          "content": "<ul><li>El documento FRD debe detallar los requisitos funcionales y no funcionales para la página web de reserva de hoteles.</li><li>Se deben incluir User Stories que describan las funcionalidades clave del sistema.</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p>El desarrollo de este proyecto se llevó a cabo siguiendo la metodología ágil de Scrum. Se formó un equipo de trabajo que incluyó un Scrum Master, desarrolladores y testers.</p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/tp-evs-hoteles"
+    },
+    {
+      "id": "hospital-larcade",
+      "title": "Prototipo Web: Hosp. Larcade",
+      "media": [
+        {
+          "type": "iframe",
+          "src": "https://hosplarcade.web.app/index.html",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Visual Studio Code",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "Firebase CLI",
+          "icon": "bi-code-slash"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "bi-filetype-java"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "bi-filetype-css"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "Photoshop",
+          "icon": "bi-brush"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Introducción",
+          "content": "En el año 2023, Un medico del hospital Larcade queria mejorar la atención de pacientes. Este proyecto incluyó el desarrollo de un sistema de monitoreo remoto de presión arterial, dirigido a facilitar la autogestión de salud por parte de los pacientes desde sus hogares."
+        },
+        {
+          "title": "Requerimientos",
+          "content": "<ul><li>Desarrollar una interfaz de usuario intuitiva y segura que permita el ingreso y monitoreo de datos de presión arterial de los pacientes.</li><li>Implementar un sistema de almacenamiento de datos seguro y confiable para proteger la información personal de los usuarios.</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<ul><li>Durante el desarrollo del proyecto, se inició con la creación de una plataforma web integral para el control de presión arterial de los pacientes del Hospital Larcade.</li></ul>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/hospital-larcade/-/tree/main/sitio/public?ref_type=heads",
+      "externalLink": {
+        "text": "Prototipo del sitio: Hosp. Larcade",
+        "url": "https://hosplarcade.web.app/index.html"
+      }
+    },
+    {
+      "id": "github-chatbot",
+      "title": "Chatbot: GitHub Pages",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://gitlab.com/spectrelonewolf/bot-githubpages/-/raw/main/recursos_md/logica_del_chatbot.png?ref_type=heads&inline=false",
+          "active": true
+        },
+        {
+          "type": "image",
+          "src": "https://gitlab.com/spectrelonewolf/bot-githubpages/-/raw/main/recursos_md/python_click_web.png?ref_type=heads&inline=false",
+          "active": false
+        }
+      ],
+      "tools": [
+        {
+          "name": "Visual Studio Code",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "Pythonanywhere",
+          "icon": "bi-hdd-network-fill"
+        },
+        {
+          "name": "Flask",
+          "icon": "bi-hdd-network-fill"
+        },
+        {
+          "name": "Python",
+          "icon": "bi-code-slash"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "bi-filetype-java"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "bi-filetype-css"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "Gimp",
+          "icon": "bi-brush"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Introducción",
+          "content": "Este proyecto se enmarca en la necesidad de proporcionar a los usuarios una experiencia interactiva y amigable al interactuar con la página web. El chatbot estará alojado en el servicio PythonAnywhere y deberá ser capaz de interactuar de manera natural y efectiva con los visitantes del sitio."
+        },
+        {
+          "title": "Requerimientos",
+          "content": "<ul><li>Se detallarán los procesos de investigación para seleccionar las mejores prácticas en el desarrollo de chatbots, así como el proceso de implementación técnica.</li><li>El chatbot solo respondera acerca de las aptitudes del representado.</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<ul><li>El desarrollo del chatbot se completó en aproximadamente 12 horas, abarcando desde la generación de sus archivos principales, su alojamiento en PythonAnywhere, hasta su integración dentro de la página principal, la cual es esta misma.</li></ul>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/bot-githubpages",
+      "externalLink": {
+        "text": "Prueba del chatbot",
+        "url": "https://spectrelw.pythonanywhere.com"
+      }
+    }
+  ]
+}

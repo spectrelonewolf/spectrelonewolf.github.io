@@ -135,6 +135,20 @@ body {
   margin: 0.5rem;
 }
 
+/* Titulo de la Card */
+.herramientas-titulo {
+  font-size: x-large;
+  text-align: center;
+  color: #000000;
+}
+
+/* Textos de las herramientas */
+.herramientas-texto {
+  font-size: medium;
+  text-align: center;
+  color: #000000;
+}
+
 /* Estilos para pantallas medianas y pequeñas (1 columna) */
 @media (max-width: 1080px) {
   .columnas-cv2 {
