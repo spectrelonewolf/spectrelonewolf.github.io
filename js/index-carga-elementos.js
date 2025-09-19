@@ -75,7 +75,7 @@ function createCarousel(project) {
     let mediaElement;
     if (media.type === 'video') {
       mediaElement = document.createElement('video');
-      mediaElement.className = 'w-100';
+      mediaElement.className = 'w-100 video';
       mediaElement.controls = true;
       const source = document.createElement('source');
       source.src = media.src;

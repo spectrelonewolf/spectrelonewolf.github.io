@@ -464,8 +464,8 @@
       "title": "Prototipo Web: Hosp. Larcade",
       "media": [
         {
-          "type": "iframe",
-          "src": "https://hosplarcade.web.app/index.html",
+          "type": "video",
+          "src": "video/Hospital-Larcade.mp4",
           "active": true
         }
       ],

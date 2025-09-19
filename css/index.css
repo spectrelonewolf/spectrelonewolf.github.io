@@ -5,6 +5,9 @@
 }
 /* FIN CARDS COMO PPT */
 
+.datos-presentacion {
+  width: 100%;
+}
 
 .ultra-wide-container {
   width: 100%;
@@ -140,6 +143,20 @@ body {
   font-size: x-large;
   text-align: center;
   color: #000000;
+}
+
+/* Contenedor principal que mantiene relación de aspecto consistente */
+/* El video dentro del contenedor */
+.video {
+  height: 50dvh;
+  object-fit: cover; /* Recorta los bordes para llenar el contenedor */
+  /* object-fit: contain; */ /* Alternativa: muestra todo el video con barras negras */
+  position: relative;
+  /*aspect-ratio: 9/16;*/ /* Fuerza relación de aspecto horizontal */
+  overflow: hidden;
+  background-color: #000; /* Fondo negro para las áreas sobrantes */
+  border-radius: 8px; /* Opcional: para que coincida con el estilo de las cards */
+
 }
 
 /* Textos de las herramientas */
@@ -446,3 +463,79 @@ btn_chatbot:hover {
 
 }
 /* FIN AREA DE CHAT */
+
+/* nuevo CSS */ 
+
+/* Layout para las columnas de la tarjeta principal */
+.columnas-cv1 {
+  background-color: transparent;
+}
+
+/* Para pantallas grandes (lg y superior) */
+@media (min-width: 992px) {
+  .columnas-cv1 {
+    flex: 0 0 auto;
+    width: 25%; /* Lado izquierdo ocupa 25% */
+  }
+  
+  #contenido-tarjeta.columnas-cv1 {
+    width: 75%; /* Lado derecho ocupa 75% */
+  }
+  
+  /* Mantener lado izquierdo y derecho en horizontal */
+  .flex-lg-row {
+    flex-direction: row !important;
+  }
+}
+
+/* Para pantallas medianas y pequeñas */
+@media (max-width: 991.98px) {
+  .flex-column {
+    flex-direction: column !important;
+  }
+  
+  .columnas-cv1 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Asegurar que el contenido se apile verticalmente */
+  .order-1 {
+    order: 1 !important;
+  }
+  
+  .order-2 {
+    order: 2 !important;
+  }
+}
+
+/* Ajustes específicos para el contenido */
+#tarjeta {
+  min-width: 250px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#contenido-tarjeta {
+  flex-grow: 1;
+}
+
+/* Para las cards internas de columnas-cv2 */
+@media (min-width: 768px) {
+  .columnas-cv2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .columnas-cv2 > * {
+    flex: 1 1 calc(50% - 0.5rem);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .columnas-cv2 > * {
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+  }
+}
