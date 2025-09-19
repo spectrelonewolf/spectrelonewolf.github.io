@@ -1,6 +1,74 @@
 {
   "projects": [
     {
+      "id": "lavagcer-catalogo",
+      "title": "Lavagcer - Catálogo Digital de Productos Cerámicos",
+      "media": [
+        {
+          "type": "image",
+          "src": "img/lav01.png",
+          "active": true
+        },
+        {
+          "type": "image",
+          "src": "img/lav02.png"
+        },
+        {
+          "type": "image",
+          "src": "img/lav03.png"
+        },
+        {
+          "type": "image",
+          "src": "img/lav04.png"
+        }
+      ],
+      "tools": [
+        {
+          "name": "HTML5",
+          "icon": "bi-filetype-html"
+        },
+        {
+          "name": "CSS3",
+          "icon": "bi-filetype-css"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "bi-filetype-js"
+        },
+        {
+          "name": "Bootstrap 5.3",
+          "icon": "bi-bootstrap"
+        },
+        {
+          "name": "Firebase CLI",
+          "icon": "bi-cloud-upload"
+        },
+        {
+          "name": "JSON",
+          "icon": "bi-filetype-json"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Introducción",
+          "content": "Página web tipo catálogo desarrollada para Lavagcer, una empresa especializada en productos cerámicos. El objetivo del sitio es ofrecer una experiencia visual clara, ordenada y adaptable en múltiples dispositivos para que los clientes puedan explorar el portafolio de piezas cerámicas de manera intuitiva y eficiente, con enfoque en SEO y indexación para Google."
+        },
+        {
+          "title": "Características",
+          "content": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">Interfaz Responsive desarrollada con Bootstrap 5.3</li><li class=\"list-group-item\">Visual limpio y profesional con paleta personalizada de azules y blancos</li><li class=\"list-group-item\">Sistema de carga dinámica desde archivo JSON</li><li class=\"list-group-item\">Acordeones de producto para navegación compacta</li><li class=\"list-group-item\">Búsqueda de palabras clave en catálogo</li><li class=\"list-group-item\">Optimización para SEO y campañas de AdWords</li></ul>"
+        },
+        {
+          "title": "Desarrollo y Estado",
+          "content": "<ul><li>Hosting en Firebase para pruebas (lavagcer.web.app)</li><li>En desarrollo activo - Próximas mejoras:<ul><li>Mejora de accesibilidad (contrastes y tamaños tipográficos)</li><li>Configuración de campañas publicitarias en Google y Bing</li><li>Optimización de alt-text en imágenes para SEO</li><li>Corrección de acentos y redacción</li><li>Creación de manual de actualización</li></ul></li><li>Estructura modular que facilita la actualización de productos mediante archivo JSON</li></ul>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/lavagcer-web/",
+      "externalLink": {
+        "text": "Visitar sitio web: lavagcer.com",
+        "url": "https://lavagcer.com"
+      }
+    },
+    {
       "id": "cypher-vault",
       "title": "Aplicacion: Cypher Vault",
       "media": [
