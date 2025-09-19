@@ -226,6 +226,58 @@
       "repository": "https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas/-/tree/main/Trabajo%20Practico%20N1?ref_type=heads"
     },
     {
+      "id": "ahorcado-ejecuciones",
+      "title": "Juego: Ahorcado Ejecuciones",
+      "media": [
+        {
+          "type": "video",
+          "src": "video/Ahorcado-demo_1.mp4",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Construct 2",
+          "icon": "bi-controller"
+        },
+        {
+          "name": "Photoshop",
+          "icon": "bi-brush"
+        },
+        {
+          "name": "Sketch Book",
+          "icon": "bi-palette"
+        },
+        {
+          "name": "Spriter",
+          "icon": "bi-image"
+        },
+        {
+          "name": "Wacom",
+          "icon": "bi-pencil"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Introducción",
+          "content": "Desarrollado en el año 2017, mediante un motor de juegos llamado Construct 2, en conjunto con Photoshop, Sketch Book y Spriter. Demoré alrededor de un año en realizarlo ya que era algo paralelo a mi trabajo full time. Todo contenido fue comprado y se pagaron las licencias, sea música, personajes, interfaz de usuario. Los escenarios y ciertas cosas puntuales, como la modificación de los personajes cuando están muertos, expresiones y animaciones, fueron realizados por mi persona."
+        },
+        {
+          "title": "Estado del Proyecto",
+          "content": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\"><strong>Nunca se terminó:</strong> El equipo que tenía en ese momento (computadora) se quemó y dejé el proyecto de lado para dedicarme a hacer otras cosas.</li><li class=\"list-group-item\"><strong>Errores detectados:</strong> El juego ya había sido publicado en PlayStore de Android y el Store de Windows en fase alfa. Se detectaron errores de ortografía en la base de datos de pistas y palabras, faltaba un botón de cierre del juego y un botón de juego rápido.</li></ul>"
+        },
+        {
+          "title": "Descripción del Juego",
+          "content": "<ul><li>Versión GRATIS del juego clásico de acertijos de palabras del Ahorcado con ejecuciones animadas.</li><li>Juego tradicional del Ahorcado en una versión totalmente animada con gráficos HD y variedad de ambientaciones y métodos de ejecución.</li><li>Reglas clásicas: 6 vidas para adivinar la palabra, sistema de pistas y ayudas.</li><li>Personalización: 12 categorías de palabras, ajustes de dificultad, diferentes personajes y escenarios.</li><li>Cada partida finalizada muestra la palabra a adivinar y su significado.</li><li>Características principales: Animaciones y gráficos HD, sistema de premios, diferentes formas de ejecución según el escenario.</li></ul>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/ahorcado-ejecuciones",
+      "externalLink": {
+        "text": "Descargar en Microsoft Store",
+        "url": "https://www.microsoft.com/store/apps/9NBLGGH40K85"
+      }
+    },
+    {
       "id": "clustering-system",
       "title": "Sistema de Clustering con AGM",
       "media": [
