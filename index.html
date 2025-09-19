@@ -1,540 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio personal de Alejandro Fabian Moras. Muestra desarrollos, colaboraciones técnicas, proyectos personales y habilidades en programación, edición de video y fotografía. Explora trabajos prácticos y proyectos detallados con descripciones, tecnologías usadas, requisitos y etapas de desarrollo.">
-    <meta name="keywords" content="portfolio, programación, desarrollo web, proyectos personales, edición de video, edición de fotografía, Alejandro Fabian Moras">
-    <meta name="author" content="Alejandro Fabian Moras">
-    <title>Mi Huella Digital</title>
-    <link rel="icon" href="img/index/am.png" type="image/x-icon" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <!-- Estilos -->
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-  </head>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SS7FWDNZR8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  <body>
-    <div class="alert alert-info alert-dismissible mx-3 my-3" role="alert">
-      <div>
-        Info: La pagina aun se encuentra en proceso, no es su version final.
-        Gracias. [ 2025/09/04 ]
-      </div>
-      <button
-        type="button"
-        class="btn-close"
-        data-bs-dismiss="alert"
-        aria-label="Close"
-      ></button>
+    gtag('config', 'G-SS7FWDNZR8');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio personal de Alejandro Fabian Moras. Muestra desarrollos, colaboraciones técnicas, proyectos personales y habilidades en programación, edición de video y fotografía. Explora trabajos prácticos y proyectos detallados con descripciones, tecnologías usadas, requisitos y etapas de desarrollo.">
+  <meta name="keywords"
+    content="portfolio, programación, desarrollo web, proyectos personales, edición de video, edición de fotografía, Alejandro Fabian Moras">
+  <meta name="author" content="Alejandro Fabian Moras">
+  <title>Mi Huella Digital</title>
+  <link rel="icon" href="img/index/am.png" type="image/x-icon" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Estilos -->
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body>
+  <div class="alert alert-info alert-dismissible mx-3 my-3" role="alert">
+    <div>
+      Info: La pagina aun se encuentra en proceso, no es su version final.
+      Gracias. [ 2025/09/18 ]
     </div>
-    <div class="container">
-      <!-- Tarjeta de presentacion y Titulo -->
-      <div id="bio" class="row justify-content-md-center">
-        <div class="col">
-          <div id="presentacion" class="card my-2">
-            <div class="card-body">
-              <!-- Barra de datos y botones -->
-              <div class="row flex-lg-row flex-column">
-                <!-- Lado Izq -->
-                <div id="tarjeta" class="col-lg-3 col-12 order-lg-1 order-1">
-                  <div id="card-botones" class="card --bs-success-bg-subtle my-1">
-                    <div class="card-body">
-                      <div class="col justify-content-md-center">
-                        <div class="row">
-                          <h3 class="text-center text-success-emphasis">
-                            Moras Alejandro
-                          </h3>
-                        </div>
-                        <div class="row justify-content-md-center">
-                          <img
-                            class="perfil img-fluid rounded-circle mx-auto mb-3"
-                            src="img/index/perfil.png"
-                            alt="..."
-                          />
-                        </div>
-                        <div class="row justify-content-md-center">
-                          <div
-                            class="btn-group-vertical"
-                            role="group"
-                            aria-label="Vertical button group"
-                          >
-                            <button
-                              class="btn btn-outline-success text-success-emphasis"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#collapseYo"
-                              aria-expanded="true"
-                              aria-controls="collapseYo"
-                            >
-                              Yo
-                            </button>
-                            <button
-                              class="btn btn-outline-success text-success-emphasis"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#collapseHobbies"
-                              aria-expanded="false"
-                              aria-controls="collapseHobbies"
-                            >
-                              Hobbies
-                            </button>
-                            <button
-                              class="btn btn-outline-success text-success-emphasis"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#collapseLink"
-                              aria-expanded="false"
-                              aria-controls="collapseLink"
-                            >
-                              Links
-                            </button>
-                          </div>
-                        </div>
-                        <div class="row justify-content-md-center"></div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div class="container">
+    <!-- Tarjeta de presentacion y Titulo -->
+    <div id="bio" class="row justify-content-md-center">
+      <div class="col">
+        <div id="presentacion" class="card my-2">
+          <div class="card-body">
+            <!-- Barra de datos y botones -->
+            <div class="row flex-lg-row flex-column">
+              <!-- Lado Izq -->
+              <div id="tarjeta" class="col-lg-3 col-12 order-lg-1 order-1">
+                <div id="card-botones" class="card --bs-success-bg-subtle my-1">
+                  <div class="card-body">
+                    <div class="col justify-content-md-center">
+                      <div class="row">
+                        <h3 class="text-center text-success-emphasis">
+                          Moras Alejandro
+                        </h3>
                       </div>
+                      <div class="row justify-content-md-center">
+                        <img class="perfil img-fluid rounded-circle mx-auto mb-3" src="img/index/perfil.png"
+                          alt="..." />
+                      </div>
+                      <div class="row justify-content-md-center">
+                        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                          <button class="btn btn-outline-success text-success-emphasis" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseYo" aria-expanded="true"
+                            aria-controls="collapseYo">
+                            Yo
+                          </button>
+                          <button class="btn btn-outline-success text-success-emphasis" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseHobbies" aria-expanded="false"
+                            aria-controls="collapseHobbies">
+                            Hobbies
+                          </button>
+                          <button class="btn btn-outline-success text-success-emphasis" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseLink" aria-expanded="false"
+                            aria-controls="collapseLink">
+                            Links
+                          </button>
+                        </div>
+                      </div>
+                      <div class="row justify-content-md-center"></div>
                     </div>
                   </div>
                 </div>
-                <!-- Lado Der-->
-                <div id="contenido-tarjeta" class="col-lg-9 col-12 order-lg-2 order-2">
-                  <div class="card bg-success-subtle my-1">
-                    <div class="card-body">
-                      <div class="accordion datos-presentacion" id="accordionExample">
-                        <!--YO-->
-                        <div class="accordion-item">
-                          <h2 class="accordion-header"></h2>
-                          <div
-                            id="collapseYo"
-                            class="accordion-collapse collapse"
-                            data-bs-parent="#accordionExample"
-                          >
-                            <div class="accordion-body">
-                              <h2>Presentación Personal</h2>
-                              <ul class="list-group">
-                                <li class="list-group-item">
-                                  <strong>Nombre:</strong><br />Alejandro Moras
-                                </li>
-                                <li class="list-group-item">
-                                  <strong>Resumen Profesional:</strong><br />
-                                  <p>
-                                    Apasionado por la tecnología, mi trayectoria
-                                    profesional y académica me ha permitido
-                                    desarrollar una amplia gama de habilidades
-                                    en diversas áreas.
-                                  </p>
-                                  <p>
-                                    Tras egresarme de la tecnicatura en
-                                    electrónica en mi secundaria, comencé mi
-                                    carrera laboral en una casa de fotografía.
-                                    Aquí, exploté mi interés por la edición
-                                    multimedia y perfeccioné mis habilidades en
-                                    atención al público y edición fotográfica.
-                                  </p>
-                                  <p>
-                                    Posteriormente, estudié dirección de arte,
-                                    lo que me proporcionó un profundo
-                                    conocimiento en la parte gráfica de la
-                                    publicidad y me enseñó conceptos importantes
-                                    de especialización en este campo.
-                                  </p>
-                                  <p>
-                                    Durante mi carrera, he tenido la oportunidad
-                                    de gestionar personal, lo que me ha
-                                    permitido desarrollar competencias en
-                                    liderazgo y manejo de equipos.
-                                  </p>
-                                  <p>
-                                    Actualmente, estoy a un final de recibirme
-                                    de Técnico en Sistemas y estudio
-                                    Licenciatura en Sistemas, lo que complementa
-                                    y amplía mis conocimientos técnicos y mi
-                                    pasión por la tecnología.
-                                  </p>
-                                </li>
-                                <li class="list-group-item">
-                                  <strong>Experiencia Laboral:</strong><br />
-                                  <div>
-                                    <span class="company-name"
-                                      >Fotomar - Villa Gesell</span
-                                    ><br />
-                                    <span class="job-title"
-                                      >Atención al Público y Edición
-                                      Fotográfica</span
-                                    >
-                                    <ul class="responsibilities">
-                                      <li>
-                                        Atención al cliente personalizada.
-                                      </li>
-                                      <li>Edición y mejora de imágenes.</li>
-                                      <li>
-                                        Venta y asesoramiento de productos.
-                                      </li>
-                                    </ul>
-                                  </div>
-                                  <div>
-                                    <span class="company-name"
-                                      >Munchis - Villa Gesell</span
-                                    ><br />
-                                    <span class="job-title"
-                                      >Encargado de Turno</span
-                                    >
-                                    <ul class="responsibilities">
-                                      <li>Supervisión del personal.</li>
-                                      <li>Gestión de inventarios.</li>
-                                      <li>Manejo de caja.</li>
-                                    </ul>
-                                  </div>
+              </div>
+              <!-- Lado Der-->
+              <div id="contenido-tarjeta" class="col-lg-9 col-12 order-lg-2 order-2">
+                <div class="card bg-success-subtle my-1">
+                  <div class="card-body">
+                    <div class="accordion datos-presentacion" id="accordionExample">
+                      <!--YO-->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header"></h2>
+                        <div id="collapseYo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <h2>Presentación Personal</h2>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <strong>Nombre:</strong><br />Alejandro Moras
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Resumen Profesional:</strong><br />
+                                <p>
+                                  Apasionado por la tecnología, mi trayectoria
+                                  profesional y académica me ha permitido
+                                  desarrollar una amplia gama de habilidades
+                                  en diversas áreas.
+                                </p>
+                                <p>
+                                  Tras egresarme de la tecnicatura en
+                                  electrónica en mi secundaria, comencé mi
+                                  carrera laboral en una casa de fotografía.
+                                  Aquí, exploté mi interés por la edición
+                                  multimedia y perfeccioné mis habilidades en
+                                  atención al público y edición fotográfica.
+                                </p>
+                                <p>
+                                  Posteriormente, estudié dirección de arte,
+                                  lo que me proporcionó un profundo
+                                  conocimiento en la parte gráfica de la
+                                  publicidad y me enseñó conceptos importantes
+                                  de especialización en este campo.
+                                </p>
+                                <p>
+                                  Durante mi carrera, he tenido la oportunidad
+                                  de gestionar personal, lo que me ha
+                                  permitido desarrollar competencias en
+                                  liderazgo y manejo de equipos.
+                                </p>
+                                <p>
+                                  Actualmente, estoy a un final de recibirme
+                                  de Técnico en Sistemas y estudio
+                                  Licenciatura en Sistemas, lo que complementa
+                                  y amplía mis conocimientos técnicos y mi
+                                  pasión por la tecnología.
+                                </p>
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Experiencia Laboral:</strong><br />
+                                <div>
+                                  <span class="company-name">Fotomar - Villa Gesell</span><br />
+                                  <span class="job-title">Atención al Público y Edición
+                                    Fotográfica</span>
+                                  <ul class="responsibilities">
+                                    <li>
+                                      Atención al cliente personalizada.
+                                    </li>
+                                    <li>Edición y mejora de imágenes.</li>
+                                    <li>
+                                      Venta y asesoramiento de productos.
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div>
+                                  <span class="company-name">Munchis - Villa Gesell</span><br />
+                                  <span class="job-title">Encargado de Turno</span>
+                                  <ul class="responsibilities">
+                                    <li>Supervisión del personal.</li>
+                                    <li>Gestión de inventarios.</li>
+                                    <li>Manejo de caja.</li>
+                                  </ul>
+                                </div>
 
-                                  <div>
-                                    <span class="company-name"
-                                      >Colonial - Villa Gesell</span
-                                    ><br />
-                                    <span class="job-title"
-                                      >Encargado de Turno</span
-                                    >
-                                    <ul class="responsibilities">
-                                      <li>
-                                        Coordinación y supervisión del personal.
-                                      </li>
-                                      <li>Gestión de inventarios.</li>
-                                      <li>Manejo de caja.</li>
-                                    </ul>
-                                  </div>
-                                </li>
-                                <li class="list-group-item">
-                                  <strong>Educación:</strong><br />
-                                  <div>
-                                    <span class="institution"
-                                      >Primera Brigada Aérea del Palomar</span
-                                    ><br />
-                                    <span class="degree"
-                                      >Técnico en Electrónica (Orientación
-                                      Telecomunicaciones)</span
-                                    >
-                                    <p class="education-details">
-                                      Secundario Completo
-                                    </p>
-                                  </div>
-                                  <div>
-                                    <span class="institution"
-                                      >Asociación Argentina de Agencias de
-                                      Publicidad</span
-                                    ><br />
-                                    <span class="degree"
-                                      >Dirección de Arte</span
-                                    >
-                                    <p class="education-details">
-                                      Terciario (un año y medio)
-                                    </p>
-                                  </div>
-                                  <div>
-                                    <span class="institution"
-                                      >Universidad Nacional General
-                                      Sarmiento</span
-                                    ><br />
-                                    <span class="degree"
-                                      >Tecnicatura en Sistemas</span
-                                    >
-                                    <p class="education-details">A un final</p>
-                                  </div>
-                                  <div>
-                                    <span class="institution"
-                                      >Universidad Nacional General
-                                      Sarmiento</span
-                                    ><br />
-                                    <span class="degree"
-                                      >Licenciatura en Sistemas</span
-                                    >
-                                    <p class="education-details">En curso</p>
-                                  </div>
-                                </li>
-                                <li class="list-group-item">
-                                  <strong>Habilitades:</strong><br />
-                                  <div>
-                                    <span class="skill-category"
-                                      >Software y Herramientas</span
-                                    >
-                                    <ul class="skills-list">
-                                      <li>Photoshop</li>
-                                      <li>After Effects</li>
-                                      <li>Office</li>
-                                      <li>Git</li>
-                                      <li>Eclipse</li>
-                                      <li>Android Studio</li>
-                                    </ul>
-                                  </div>
-                                  <div>
-                                    <span class="skill-category"
-                                      >Lenguajes de Programación</span
-                                    >
-                                    <ul class="skills-list">
-                                      <li>Java</li>
-                                      <li>Python</li>
-                                      <li>Kotlin</li>
-                                    </ul>
-                                  </div>
-                                  <div>
-                                    <span class="skill-category"
-                                      >Bases de Datos</span
-                                    >
-                                    <ul class="skills-list">
-                                      <li>Room</li>
-                                      <li>SQLite</li>
-                                      <li>PostgreSQL</li>
-                                    </ul>
-                                  </div>
-                                  <div>
-                                    <span class="skill-category"
-                                      >Sistemas Operativos</span
-                                    >
-                                    <ul class="skills-list">
-                                      <li>Linux</li>
-                                      <li>Windows</li>
-                                    </ul>
-                                  </div>
-                                  <div>
-                                    <span class="skill-category"
-                                      >Otras Habilidades</span
-                                    >
-                                    <ul class="skills-list">
-                                      <li>
-                                        Alto desenvolvimiento en ambientes
-                                        tecnológicos
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </li>
-                                <li class="list-group-item">
-                                  <strong>Idiomas:</strong>
-                                  ILC
-                                </li>
-                              </ul>
-                            </div>
+                                <div>
+                                  <span class="company-name">Colonial - Villa Gesell</span><br />
+                                  <span class="job-title">Encargado de Turno</span>
+                                  <ul class="responsibilities">
+                                    <li>
+                                      Coordinación y supervisión del personal.
+                                    </li>
+                                    <li>Gestión de inventarios.</li>
+                                    <li>Manejo de caja.</li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Educación:</strong><br />
+                                <div>
+                                  <span class="institution">Primera Brigada Aérea del Palomar</span><br />
+                                  <span class="degree">Técnico en Electrónica (Orientación
+                                    Telecomunicaciones)</span>
+                                  <p class="education-details">
+                                    Secundario Completo
+                                  </p>
+                                </div>
+                                <div>
+                                  <span class="institution">Asociación Argentina de Agencias de
+                                    Publicidad</span><br />
+                                  <span class="degree">Dirección de Arte</span>
+                                  <p class="education-details">
+                                    Terciario (un año y medio)
+                                  </p>
+                                </div>
+                                <div>
+                                  <span class="institution">Universidad Nacional General
+                                    Sarmiento</span><br />
+                                  <span class="degree">Tecnicatura en Sistemas</span>
+                                  <p class="education-details">A un final</p>
+                                </div>
+                                <div>
+                                  <span class="institution">Universidad Nacional General
+                                    Sarmiento</span><br />
+                                  <span class="degree">Licenciatura en Sistemas</span>
+                                  <p class="education-details">En curso</p>
+                                </div>
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Habilitades:</strong><br />
+                                <div>
+                                  <span class="skill-category">Software y Herramientas</span>
+                                  <ul class="skills-list">
+                                    <li>Photoshop</li>
+                                    <li>After Effects</li>
+                                    <li>Office</li>
+                                    <li>Git</li>
+                                    <li>Eclipse</li>
+                                    <li>Android Studio</li>
+                                  </ul>
+                                </div>
+                                <div>
+                                  <span class="skill-category">Lenguajes de Programación</span>
+                                  <ul class="skills-list">
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>Kotlin</li>
+                                  </ul>
+                                </div>
+                                <div>
+                                  <span class="skill-category">Bases de Datos</span>
+                                  <ul class="skills-list">
+                                    <li>Room</li>
+                                    <li>SQLite</li>
+                                    <li>PostgreSQL</li>
+                                  </ul>
+                                </div>
+                                <div>
+                                  <span class="skill-category">Sistemas Operativos</span>
+                                  <ul class="skills-list">
+                                    <li>Linux</li>
+                                    <li>Windows</li>
+                                  </ul>
+                                </div>
+                                <div>
+                                  <span class="skill-category">Otras Habilidades</span>
+                                  <ul class="skills-list">
+                                    <li>
+                                      Alto desenvolvimiento en ambientes
+                                      tecnológicos
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="list-group-item">
+                                <strong>Idiomas:</strong>
+                                ILC
+                              </li>
+                            </ul>
                           </div>
                         </div>
-                        <!--HOBBIES-->
-                        <div class="accordion-item">
-                          <h2 class="accordion-header"></h2>
-                          <div
-                            id="collapseHobbies"
-                            class="accordion-collapse collapse"
-                            data-bs-parent="#accordionExample"
-                          >
-                            <div class="accordion-body hobbies">
-                              <h2>Hobbies e Intereses</h2>
-                              <ul class="list-group hobbies-list">
-                                <li class="list-group-item">
-                                  Musica y despejar la mente al aire libre
-                                </li>
-                                <li class="list-group-item">
-                                  Pasar tiempo frente a la computadora
-                                  informándome o viendo series
-                                </li>
-                                <li class="list-group-item">
-                                  Crear herramientas para uso propio como una
-                                  terminal para Debian y Termux
-                                </li>
-                                <li class="list-group-item">
-                                  Exploración de tecnologías como Raspberry Pi
-                                  Pico y Android Studio
-                                </li>
-                                <li class="list-group-item">
-                                  Proyectos simples con electrónica
-                                </li>
-                              </ul>
-                            </div>
+                      </div>
+                      <!--HOBBIES-->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header"></h2>
+                        <div id="collapseHobbies" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body hobbies">
+                            <h2>Hobbies e Intereses</h2>
+                            <ul class="list-group hobbies-list">
+                              <li class="list-group-item">
+                                Musica y despejar la mente al aire libre
+                              </li>
+                              <li class="list-group-item">
+                                Pasar tiempo frente a la computadora
+                                informándome o viendo series
+                              </li>
+                              <li class="list-group-item">
+                                Crear herramientas para uso propio como una
+                                terminal para Debian y Termux
+                              </li>
+                              <li class="list-group-item">
+                                Exploración de tecnologías como Raspberry Pi
+                                Pico y Android Studio
+                              </li>
+                              <li class="list-group-item">
+                                Proyectos simples con electrónica
+                              </li>
+                            </ul>
                           </div>
                         </div>
-                        <!--LINKS-->
-                        <div class="accordion-item">
-                          <h2 class="accordion-header"></h2>
-                          <div
-                            id="collapseLink"
-                            class="accordion-collapse collapse"
-                            data-bs-parent="#accordionExample"
-                          >
-                            <div class="accordion-body">
-                              <strong>Aun no hay nada :/.</strong>
-                            </div>
+                      </div>
+                      <!--LINKS-->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header"></h2>
+                        <div id="collapseLink" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>Aun no hay nada :/.</strong>
                           </div>
                         </div>
-                        <!--Acerca de la pagina-->
-                        <div class="accordion-item">
-                          <h2 class="accordion-header"></h2>
-                          <div
-                            id="collapseTuto"
-                            class="accordion-collapse collapse show fondo-oscuro-gauss"
-                            data-bs-parent="#accordionExample"
-                          >
-                            <div class="accordion-body">
-                              <div class="row">
-                                <div id="" class="columnas-cv2 col py-2">
-                                  <!-- CARD TUTO -->
-                                  <div class="col">
-                                    <div
-                                      class="card bg-black-subtle border border-success"
-                                      aria-hidden="true"
-                                    >
-                                      <div class="ultra-wide-container">
-                                        <div
-                                          class="card-img-top py-3 px-3 ultra-wide-image placeholder-glow"
-                                        >
-                                          <span
-                                            class="placeholder col-12 h-100 bg-secondary"
-                                          ></span>
-                                        </div>
+                      </div>
+                      <!--Acerca de la pagina-->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header"></h2>
+                        <div id="collapseTuto" class="accordion-collapse collapse show fondo-oscuro-gauss"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <div class="row">
+                              <div id="" class="columnas-cv2 col py-2">
+                                <!-- CARD TUTO -->
+                                <div class="col">
+                                  <div class="card bg-black-subtle border border-success" aria-hidden="true">
+                                    <div class="ultra-wide-container">
+                                      <div class="card-img-top py-3 px-3 ultra-wide-image placeholder-glow">
+                                        <span class="placeholder col-12 h-100 bg-secondary"></span>
                                       </div>
-                                      <div class="card-body">
-                                        <div
-                                          class="col d-flex flex-column justify-content-center align-items-center"
-                                        >
-                                          <div class="row w-100 mb-2">
-                                            <h5
-                                              class="card-title placeholder-glow text-center"
-                                            >
-                                              <span
-                                                class="placeholder col-12 bg-warning"
-                                              ></span>
-                                            </h5>
-                                          </div>
-                                          <div class="row w-100 mb-2">
-                                            <h5
-                                              class="card-title placeholder-glow text-center"
-                                            >
-                                              <span
-                                                class="placeholder col-8 bg-danger mx-auto"
-                                              ></span>
-                                            </h5>
-                                          </div>
-                                          <div class="row w-100 mb-2">
-                                            <h5
-                                              class="card-title placeholder-glow text-center"
-                                            >
-                                              <span
-                                                class="placeholder col-12 bg-success"
-                                              ></span>
-                                            </h5>
-                                          </div>
-                                          <div class="row w-100 mb-2">
-                                            <h5
-                                              class="card-title placeholder-glow text-center"
-                                            >
-                                              <span
-                                                class="placeholder col-4 bg-info mx-auto"
-                                              ></span>
-                                            </h5>
-                                          </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="col d-flex flex-column justify-content-center align-items-center">
+                                        <div class="row w-100 mb-2">
+                                          <h5 class="card-title placeholder-glow text-center">
+                                            <span class="placeholder col-12 bg-warning"></span>
+                                          </h5>
+                                        </div>
+                                        <div class="row w-100 mb-2">
+                                          <h5 class="card-title placeholder-glow text-center">
+                                            <span class="placeholder col-8 bg-danger mx-auto"></span>
+                                          </h5>
+                                        </div>
+                                        <div class="row w-100 mb-2">
+                                          <h5 class="card-title placeholder-glow text-center">
+                                            <span class="placeholder col-12 bg-success"></span>
+                                          </h5>
+                                        </div>
+                                        <div class="row w-100 mb-2">
+                                          <h5 class="card-title placeholder-glow text-center">
+                                            <span class="placeholder col-4 bg-info mx-auto"></span>
+                                          </h5>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                  <!-- /CARD TUTO -->
                                 </div>
-                                <div id="" class="columnas-cv2 col py-2">
-                                  <!-- CARD TUTO -->
-                                  <div class="col">
-                                    <div
-                                      class="card bg-black-subtle border border-success "
-                                    >
-                                      <div class="card-body text-success-emphasis">
-                                        <div class="col">
-                                          <div class="row">
-                                            <h4>Acerca de las muestras</h4>
+                                <!-- /CARD TUTO -->
+                              </div>
+                              <div id="" class="columnas-cv2 col py-2">
+                                <!-- CARD TUTO -->
+                                <div class="col">
+                                  <div class="card bg-black-subtle border border-success ">
+                                    <div class="card-body text-success-emphasis">
+                                      <div class="col">
+                                        <div class="row">
+                                          <h4>Acerca de las muestras</h4>
+                                        </div>
+                                        <div class="row">
+                                          <p>
+                                            A continuacion una breve
+                                            explicacion de las distintas
+                                            partes de las tarjetas de
+                                            proyectos
+                                          </p>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-2">
+                                            <span class="placeholder col-12 bg-secondary"></span>
                                           </div>
-                                          <div class="row">
+                                          <div class="col-9">
                                             <p>
-                                              A continuacion una breve
-                                              explicacion de las distintas
-                                              partes de las tarjetas de
-                                              proyectos
+                                              Una imagen o video perteneciente
+                                              al proyecto.
                                             </p>
                                           </div>
-                                          <div class="row">
-                                            <div class="col-2">
-                                              <span
-                                                class="placeholder col-12 bg-secondary"
-                                              ></span>
-                                            </div>
-                                            <div class="col-9">
-                                              <p>
-                                                Una imagen o video perteneciente
-                                                al proyecto.
-                                              </p>
-                                            </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-2">
+                                            <span class="placeholder col-12 bg-warning"></span>
                                           </div>
-                                          <div class="row">
-                                            <div class="col-2">
-                                              <span
-                                                class="placeholder col-12 bg-warning"
-                                              ></span>
-                                            </div>
-                                            <div class="col-9">
-                                              <p>
-                                                Herramientas principales que
-                                                utilice, en la mayoria de los
-                                                casos no fueron las unicas.
-                                              </p>
-                                            </div>
+                                          <div class="col-9">
+                                            <p>
+                                              Herramientas principales que
+                                              utilice, en la mayoria de los
+                                              casos no fueron las unicas.
+                                            </p>
                                           </div>
-                                          <div class="row">
-                                            <div class="col-2">
-                                              <span
-                                                class="placeholder col-12 bg-danger"
-                                              ></span>
-                                            </div>
-                                            <div class="col-9">
-                                              <p>Titulo de referencia.</p>
-                                            </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-2">
+                                            <span class="placeholder col-12 bg-danger"></span>
                                           </div>
-                                          <div class="row">
-                                            <div class="col-2">
-                                              <span
-                                                class="placeholder col-12 bg-success"
-                                              ></span>
-                                            </div>
-                                            <div class="col-9">
-                                              <p>
-                                                Se divide en tres partes, la
-                                                primera es el enunciado del
-                                                proyecto o idea general, una
-                                                segunda la cual tiene los
-                                                requerimientos del mismo y una
-                                                tercera la cual tiene el
-                                                desarrollo del mismo o hitos
-                                                importantes a destacar.
-                                              </p>
-                                            </div>
+                                          <div class="col-9">
+                                            <p>Titulo de referencia.</p>
                                           </div>
-                                          <div class="row">
-                                            <div class="col-2">
-                                              <span
-                                                class="placeholder col-12 bg-info"
-                                              ></span>
-                                            </div>
-                                            <div class="col-9">
-                                              <p>
-                                                Link al repositorio en el cual
-                                                se encuentran los commits,
-                                                codigo e informe del proyecto.
-                                              </p>
-                                            </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-2">
+                                            <span class="placeholder col-12 bg-success"></span>
+                                          </div>
+                                          <div class="col-9">
+                                            <p>
+                                              Se divide en tres partes, la
+                                              primera es el enunciado del
+                                              proyecto o idea general, una
+                                              segunda la cual tiene los
+                                              requerimientos del mismo y una
+                                              tercera la cual tiene el
+                                              desarrollo del mismo o hitos
+                                              importantes a destacar.
+                                            </p>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-2">
+                                            <span class="placeholder col-12 bg-info"></span>
+                                          </div>
+                                          <div class="col-9">
+                                            <p>
+                                              Link al repositorio en el cual
+                                              se encuentran los commits,
+                                              codigo e informe del proyecto.
+                                            </p>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                  <!-- /CARD TUTO -->
                                 </div>
+                                <!-- /CARD TUTO -->
                               </div>
                             </div>
                           </div>
@@ -544,132 +432,96 @@
                   </div>
                 </div>
               </div>
-              <!-- Barra de datos y botones -->
             </div>
+            <!-- Barra de datos y botones -->
           </div>
         </div>
       </div>
-      <!-- Titulo de seccion proyectos y colaboraciones -->
-      <div class="row justify-content-md-center">
-        <div class="col">
-          <div class="card text-bg-warning mb-2">
-            <div class="card-body">
-              <h2 class="text-center text-success-emphasis">
-                <strong>Desarrollos y Colaboraciones Técnicas</strong>
-              </h2>
-            </div>
+    </div>
+    <!-- Titulo de seccion proyectos y colaboraciones -->
+    <div class="row justify-content-md-center">
+      <div class="col">
+        <div class="card text-bg-warning mb-2">
+          <div class="card-body">
+            <h2 class="text-center text-success-emphasis">
+              <strong>Desarrollos y Colaboraciones Técnicas</strong>
+            </h2>
           </div>
         </div>
       </div>
-      <!-- /Tarjeta de presentacion y Titulo -->
-      <!-- Porfolio -->
-      <div id="proyectos"></div>
-      
-      <!-- /Porfolio -->
-      <!-- Chatbot -->
-      <button
-        id="btn_chatbot"
-        class="btn border border-3 rounded-5 border-primary text-secondary bg-white floating-button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasScrolling"
-        aria-controls="offcanvasScrolling"
-      >
-        AlEx CareerBot
-      </button>
-      <i id="user-icon" class="bi bi-person"></i>
-      <div
-        class="offcanvas cuerpoofcanvachat offcanvas-end col-sm-8 rounded-5 bg-primary mx-1 my-2 px-2 py-2"
-        data-bs-scroll="true"
-        data-bs-backdrop="false"
-        tabindex="-1"
-        id="offcanvasScrolling"
-        aria-labelledby="offcanvasScrollingLabel"
-      >
-        <div id="socalo-titulo" class="offcanvas-header rounded-4 border-1">
-          <h2 class="offcanvas-title text-light" id="offcanvasScrollingLabel">
-            AlEx CareerBot
-          </h2>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasScrolling"
-            aria-controls="offcanvasScrolling"
-          ></button>
+    </div>
+    <!-- /Tarjeta de presentacion y Titulo -->
+    <!-- Porfolio -->
+    <div id="proyectos"></div>
+
+    <!-- /Porfolio -->
+    <!-- Chatbot -->
+    <button id="btn_chatbot"
+      class="btn border border-3 rounded-5 border-primary text-secondary bg-white floating-button"
+      data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+      AlEx CareerBot
+    </button>
+    <i id="user-icon" class="bi bi-person"></i>
+    <div class="offcanvas cuerpoofcanvachat offcanvas-end col-sm-8 rounded-5 bg-primary mx-1 my-2 px-2 py-2"
+      data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+      aria-labelledby="offcanvasScrollingLabel">
+      <div id="socalo-titulo" class="offcanvas-header rounded-4 border-1">
+        <h2 class="offcanvas-title text-light" id="offcanvasScrollingLabel">
+          AlEx CareerBot
+        </h2>
+        <button type="button" class="btn-close" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"></button>
+      </div>
+      <div id="chatbody" class="offcanvas-body my-1 rounded-4 border-2">
+        <div id="contenedor_chat" class="container-fluid rounded-5">
+          <div id="chat-messages">
+            <!-- Aquí los mensajes del chat -->
+            <div class="alert alert-primary" role="alert">
+              ¡Hola! Bienvenido al chatbot diseñado para responder preguntas
+              de entrevistas desde la perspectiva de Alejandro. Estoy aquí
+              para ayudarte a obtener respuestas claras y detalladas sobre
+              cualquier aspecto relacionado con la entrevista para un rol de
+              programación. Puedes preguntarme sobre: Ejemplos de proyectos
+              anteriores y tecnologías utilizadas. Desafíos técnicos que he
+              enfrentado y cómo los resolví. Mis habilidades y áreas de
+              especialización en programación. Procesos de desarrollo de
+              software en los que he participado. Mi enfoque para la
+              resolución de problemas en el desarrollo de software. Cualquier
+              otra pregunta técnica o profesional relacionada con el
+              desarrollo de software y programación. Estoy aquí para brindarte
+              información precisa y relevante que te ayude a conocer mejor mi
+              experiencia y habilidades como programador. ¡Adelante, estoy
+              listo para responder tus preguntas de entrevista!
+            </div>
+          </div>
         </div>
-        <div id="chatbody" class="offcanvas-body my-1 rounded-4 border-2">
-          <div id="contenedor_chat" class="container-fluid rounded-5">
-            <div id="chat-messages">
-              <!-- Aquí los mensajes del chat -->
-              <div class="alert alert-primary" role="alert">
-                ¡Hola! Bienvenido al chatbot diseñado para responder preguntas
-                de entrevistas desde la perspectiva de Alejandro. Estoy aquí
-                para ayudarte a obtener respuestas claras y detalladas sobre
-                cualquier aspecto relacionado con la entrevista para un rol de
-                programación. Puedes preguntarme sobre: Ejemplos de proyectos
-                anteriores y tecnologías utilizadas. Desafíos técnicos que he
-                enfrentado y cómo los resolví. Mis habilidades y áreas de
-                especialización en programación. Procesos de desarrollo de
-                software en los que he participado. Mi enfoque para la
-                resolución de problemas en el desarrollo de software. Cualquier
-                otra pregunta técnica o profesional relacionada con el
-                desarrollo de software y programación. Estoy aquí para brindarte
-                información precisa y relevante que te ayude a conocer mejor mi
-                experiencia y habilidades como programador. ¡Adelante, estoy
-                listo para responder tus preguntas de entrevista!
-              </div>
-            </div>
+        <div id="mensajes-sistema" class="progress my-2" role="progressbar" aria-label="Danger example"
+          aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+          <div id="mensajes-sistema-constenido" class="progress-bar bg-warning text-dark" style="width: 100%">
+            Cargando servicios..
           </div>
-          <div
-            id="mensajes-sistema"
-            class="progress my-2"
-            role="progressbar"
-            aria-label="Danger example"
-            aria-valuenow="100"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <div
-              id="mensajes-sistema-constenido"
-              class="progress-bar bg-warning text-dark"
-              style="width: 100%"
-            >
-              Cargando servicios..
-            </div>
-          </div>
-          <div class="input-group mt-2">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Escribe tu mensaje..."
-              id="user-message"
-            />
-            <button class="btn btn-primary" type="button" id="send-message">
-              Enviar
-            </button>
-          </div>
-          <button
-            class="btn text-bg-warning mt-3"
-            type="button"
-            id="close-chat"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasScrolling"
-            aria-controls="offcanvasScrolling"
-          >
-            Cerrar Chat
+        </div>
+        <div class="input-group mt-2">
+          <input type="text" class="form-control" placeholder="Escribe tu mensaje..." id="user-message" />
+          <button class="btn btn-primary" type="button" id="send-message">
+            Enviar
           </button>
         </div>
+        <button class="btn text-bg-warning mt-3" type="button" id="close-chat" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+          Cerrar Chat
+        </button>
       </div>
-      <!--/ Chatbot -->
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!--JavaScript-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/index-carga-elementos.js"></script>
-  </body>
+    <!--/ Chatbot -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!--JavaScript-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/index-carga-elementos.js"></script>
+</body>
+
 </html>
