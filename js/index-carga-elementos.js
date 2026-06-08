@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  fetch('contenido/experiencia.json') // Asegúrate de que la ruta al JSON es correcta
+  fetch('contenido/experiencia.json?v=' + Date.now())
     .then(response => response.json())
     .then(data => {
       const projectsContainer = document.getElementById('proyectos');
