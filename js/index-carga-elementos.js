@@ -21,17 +21,17 @@ function createProjectElement(project) {
   const card = document.createElement('div');
   card.className = 'card alinear-items fondo-oscuro-gauss border border-warning';
 
-  // Crear el carrusel de medios
-  const carousel = createCarousel(project);
-  card.appendChild(carousel);
-
   // Crear el cuerpo de la tarjeta
   const cardBody = document.createElement('div');
   cardBody.className = 'card-body w-100';
 
-  // Título y herramientas
+  // Título y herramientas (arriba del carrusel)
   const titleSection = createTitleSection(project);
   cardBody.appendChild(titleSection);
+
+  // Crear el carrusel de medios
+  const carousel = createCarousel(project);
+  cardBody.appendChild(carousel);
 
   // Secciones de contenido (Enunciado, Requerimientos, Desarrollo)
   const accordion = createAccordion(project);
@@ -147,7 +147,17 @@ function createTitleSection(project) {
   const titleDiv = document.createElement('div');
   titleDiv.className = 'col text-center';
 
-  // Herramientas
+  // Título (primero)
+  const titleRow = document.createElement('div');
+  titleRow.className = 'row herramientas-titulo text-warning text-center my-2';
+
+  const title = document.createElement('p');
+  title.innerHTML = `<strong>${project.title}</strong>`;
+
+  titleRow.appendChild(title);
+  titleDiv.appendChild(titleRow);
+
+  // Herramientas (después del título)
   const toolsRow = document.createElement('div');
   toolsRow.className = 'row px-3';
 
@@ -181,16 +191,6 @@ function createTitleSection(project) {
   toolsBadge.appendChild(toolsCol);
   toolsRow.appendChild(toolsBadge);
   titleDiv.appendChild(toolsRow);
-
-  // Título
-  const titleRow = document.createElement('div');
-  titleRow.className = 'row herramientas-titulo text-warning text-center my-2';
-
-  const title = document.createElement('p');
-  title.innerHTML = `<strong>${project.title}</strong>`;
-
-  titleRow.appendChild(title);
-  titleDiv.appendChild(titleRow);
 
   return titleDiv;
 }

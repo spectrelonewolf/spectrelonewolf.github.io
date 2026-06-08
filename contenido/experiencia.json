@@ -629,11 +629,7 @@
           "content": "<ul><li>Durante el desarrollo del proyecto, se inició con la creación de una plataforma web integral para el control de presión arterial de los pacientes del Hospital Larcade. La investigación inicial reveló la ausencia de una presencia digital adecuada para el hospital, lo que motivó la creación de un portal robusto que no solo gestionara las mediciones de presión, sino que también ofreciera una experiencia integrada con herramientas de administración para el personal médico.</li><li>El diseño y desarrollo del sitio web se realizó utilizando herramientas avanzadas como Photoshop e Illustrator para crear el logo del hospital y restaurar su imagen pública en línea. Se implementaron formularios con verificación de domicilio, y un mapa interactivo con marcador personalizado para mejorar la accesibilidad y funcionalidad del sitio.</li><li>El proyecto se extendió por un período de 2 meses y medio, con un enfoque meticuloso en la calidad y funcionalidad del producto final. Durante este tiempo, se enfrentaron desafíos logísticos y de tiempos de respuesta en la recopilación de información necesaria para su correcta implementación.</li></ul><ul><li>Resultados y Conclusiones:<ul><li>El proyecto demostró ser funcional en su diseno estatico. Sin embargo, quedó inconcluso en la fase final de desarrollo del panel de usuarios.</li><li>A pesar de los desafíos encontrados, el proyecto proporcionó valiosas lecciones sobre la integración de tecnologías emergentes como Firebase para el almacenamiento seguro de datos y el uso de APIs abiertas .</li></ul></li></ul>"
         }
       ],
-      "repository": "https://gitlab.com/spectrelonewolf/hospital-larcade/-/tree/main/sitio/public?ref_type=heads",
-      "externalLink": {
-        "text": "Prototipo del sitio: Hosp. Larcade",
-        "url": "https://hosplarcade.web.app/index.html"
-      }
+      "repository": "https://gitlab.com/spectrelonewolf/hospital-larcade/-/tree/main/sitio/public?ref_type=heads"
     },
     {
       "id": "github-chatbot",
@@ -698,11 +694,267 @@
           "content": "<ul><li>El desarrollo del chatbot se completó en aproximadamente 12 horas, abarcando desde la generación de sus archivos principales, su alojamiento en PythonAnywhere, hasta su integración dentro de la página principal, la cual es esta misma.</li><li>El principal desafío fue su alojamiento, ya que PythonAnywhere ofrece muy poco espacio en su plan gratuito. Para su correcta implementación, fue necesario realizar el proceso en dos etapas. En la primera instalación, se siguió un orden establecido, pero todas las instalaciones tuvieron que ser eliminadas porque no se pudo instalar la librería principal \"scikit-learn\". En la segunda instalación, esta librería fue la primera en ser instalada. El problema surgió con los archivos de caché, que ocupan memoria. Cambiando el orden de instalación (tal como se describe en su documentación) y eliminando la carpeta de caché después de cada paquete instalado, se solucionó el problema. Actualmente, el proyecto completo ocupa un 80% del espacio total disponible.</li><li>Otro problema durante el desarrollo fue un requisito autoimpuesto: la implementación de animaciones para un avatar que aparece como botón de inicio de conversación y dentro del panel de chat. Sin embargo, debido a limitaciones de hardware (una PC con pocas capacidades), no pude realizar las animaciones propuestas.</li><li>Se ha desarrollado una documentación completa que explica paso a paso cómo replicar el montaje de un bot en páginas web.</li><li>Un desafío que aún no me satisface completamente es el paquete de preguntas y respuestas del bot. Se han realizado mejoras y se han planteado formatos conversacionales, pero aún es posible mejorar este aspecto.</li></ul>"
         }
       ],
-      "repository": "https://gitlab.com/spectrelonewolf/bot-githubpages",
-      "externalLink": {
-        "text": "Prueba del chatbot",
-        "url": "https://spectrelw.pythonanywhere.com"
-      }
+      "repository": "https://gitlab.com/spectrelonewolf/bot-githubpages"
+    },
+    {
+      "id": "viru-sin",
+      "title": "Viru Sin - Analizador de Conexiones de Red",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://gitlab.com/spectrelonewolf/viru-sin/-/raw/main/logo.png",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Python",
+          "icon": "bi-code-slash"
+        },
+        {
+          "name": "AbuseIPDB API",
+          "icon": "bi-hdd-network-fill"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-git"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Introducci\u00f3n",
+          "content": "Herramienta gr\u00e1fica para analizar en tiempo real las conexiones de red p\u00fablicas establecidas por tu computadora. Identifica direcci\u00f3n IP remota, proceso/PID que gener\u00f3 la conexi\u00f3n, pa\u00eds/ciudad/ISP, categor\u00edas de reporte seg\u00fan AbuseIPDB, score de abuso y cantidad de reportes realizados por la comunidad. El objetivo es brindar una forma r\u00e1pida y simple de ver qu\u00e9 procesos se est\u00e1n comunicando hacia afuera y si esas IPs tienen historial sospechoso."
+        },
+        {
+          "title": "Caracter\u00edsticas",
+          "content": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">Escaneo de conexiones activas usando netstat con fallback a netstat -ano</li><li class=\"list-group-item\">Integraci\u00f3n opcional con AbuseIPDB mediante API Key gratuita</li><li class=\"list-group-item\">Muestra Score de abuso, cantidad de reportes y categor\u00edas de amenaza</li><li class=\"list-group-item\">Modo sin API Key: obtiene informaci\u00f3n de IPWhois (pa\u00eds, ciudad, ISP)</li><li class=\"list-group-item\">Posibilidad de copiar celdas, filas o datos de la consola</li><li class=\"list-group-item\">Compilable a .exe para Windows con PyInstaller</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p>Este proyecto naci\u00f3 por necesidad personal: no exist\u00edan herramientas gratuitas que funcionaran como buscaba. Implement\u00e9 una interfaz gr\u00e1fica limpia que ejecuta netstat internamente, parsea la salida y enriquece los datos con geolocalizaci\u00f3n IPWhois y reputaci\u00f3n AbuseIPDB.</p><p><strong>Responsabilidades y Tareas:</strong></p><p><strong>1. Desarrollo Completo:</strong> Proyecto individual donde dise\u00f1\u00e9 la arquitectura, implement\u00e9 la UI y la l\u00f3gica de integraci\u00f3n con APIs externas.</p><p><strong>2. Integraci\u00f3n con APIs:</strong> Conexi\u00f3n con AbuseIPDB para consultar reputaci\u00f3n de IPs y con IPWhois para geolocalizaci\u00f3n.</p><p><strong>Desaf\u00edos y Soluciones:</strong></p><p><strong>1. Ejecuci\u00f3n de netstat con permisos:</strong> El comando netstat -bn requiere permisos de administrador fuera de consola. Se implement\u00f3 fallback a netstat -ano como alternativa.</p><p><strong>Aprendizajes y Experiencias:</strong></p><p><strong>Integraci\u00f3n de APIs de seguridad:</strong> Aprend\u00ed a trabajar con APIs de ciberseguridad y a parsear datos de red en tiempo real.</p><p><strong>Resultados y Conclusiones:</strong></p><p><em>Herramienta funcional que permite a cualquier usuario monitorear las conexiones salientes de su PC y detectar posibles comunicaciones sospechosas.</em></p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/viru-sin"
+    },
+    {
+      "id": "rar-crack",
+      "title": "RARCrack - Recuperaci\u00f3n de Contrase\u00f1as RAR",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://gitlab.com/spectrelonewolf/rarcrack/-/raw/main/logo192x192.png",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Python",
+          "icon": "bi-code-slash"
+        },
+        {
+          "name": "PyInstaller",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-git"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Introducci\u00f3n",
+          "content": "Herramienta gr\u00e1fica para recuperar contrase\u00f1as de archivos .RAR mediante fuerza bruta o wordlist. Creada por necesidad propia de desbloquear un archivo personal y ante la desconfianza de usar compilados de internet de dudosa procedencia."
+        },
+        {
+          "title": "Caracter\u00edsticas",
+          "content": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">Selecci\u00f3n del archivo .RAR mediante interfaz gr\u00e1fica</li><li class=\"list-group-item\">Modo Wordlist: prueba contrase\u00f1as desde un archivo .txt</li><li class=\"list-group-item\">Modo Fuerza Bruta: genera combinaciones con caracteres y longitudes configurables</li><li class=\"list-group-item\">Velocidad aproximada de ~20 contrase\u00f1as por segundo</li><li class=\"list-group-item\">Usa el archivo m\u00e1s peque\u00f1o del RAR para acelerar las pruebas</li><li class=\"list-group-item\">Requiere 7-Zip instalado en el sistema</li><li class=\"list-group-item\">Compilable a .exe para Windows con PyInstaller</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p><strong>Responsabilidades y Tareas:</strong></p><p><strong>1. Desarrollo Completo:</strong> Proyecto individual, desde la idea hasta la implementaci\u00f3n y empaquetado.</p><p><strong>Desaf\u00edos y Soluciones:</strong></p><p><strong>1. Integraci\u00f3n con 7-Zip:</strong> La herramienta necesita ejecutar 7z.exe en segundo plano para probar contrase\u00f1as. Se configur\u00f3 la ruta est\u00e1ndar de instalaci\u00f3n de 7-Zip.</p><p><strong>2. Optimizaci\u00f3n de velocidad:</strong> Para acelerar las pruebas, solo se intenta extraer el archivo m\u00e1s peque\u00f1o dentro del RAR, reduciendo dr\u00e1sticamente el tiempo por intento.</p><p><strong>Aprendizajes y Experiencias:</strong></p><p><strong>UI con Python:</strong> Implementaci\u00f3n de interfaz gr\u00e1fica funcional con Python puro.</p><p><strong>Manejo de procesos externos:</strong> Integraci\u00f3n con 7-Zip como motor de verificaci\u00f3n de contrase\u00f1as.</p><p><strong>Resultados y Conclusiones:</strong></p><p><em>Herramienta de recuperaci\u00f3n funcional que permite recuperar acceso a archivos RAR propios de forma segura y transparente.</em></p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/rarcrack"
+    },
+    {
+      "id": "proyecto-calendario",
+      "title": "Dayzen - Recordatorios Inteligentes con Telegram",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://gitlab.com/uploads/-/system/project/avatar/80467424/Dayzen-Core-Logo192x192.png",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Java",
+          "icon": "bi-filetype-java"
+        },
+        {
+          "name": "JavaFX",
+          "icon": "bi-code-slash"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-git"
+        },
+        {
+          "name": "CI/CD",
+          "icon": "bi-arrow-repeat"
+        },
+        {
+          "name": "Telegram API",
+          "icon": "bi-telegram"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Descripci\u00f3n General",
+          "content": "En un mundo que premia la velocidad y exige jornadas repletas de actividades, compromisos y obligaciones, es pr\u00e1cticamente imposible vivir sin la ayuda de un calendario. T\u00edpicamente tenemos distintas aplicaciones de calendario (personal, desktop, m\u00f3vil, laboral), lo que implica un constante esfuerzo para mantener un seguimiento de los recordatorios agendados. Dayzen propone una soluci\u00f3n: un recordatorio inteligente que env\u00eda por Telegram un mensaje de un recordatorio agendado en cualquier plataforma (Google, Outlook o Apple). El usuario puede revisar en un mismo lugar todos los eventos de las distintas plataformas y configurar c\u00f3mo quiere obtener los recordatorios, seleccionar cu\u00e1les tendr\u00e1n m\u00e1s prioridad y decidir con cu\u00e1nto tiempo de antelaci\u00f3n ser notificado."
+        },
+        {
+          "title": "Arquitectura y Patrones",
+          "content": "<p>Proyecto dise\u00f1ado aplicando principios SOLID (OCP, SRP), YAGNI, KISS, y patrones de dise\u00f1o como Facade, Factory Method, Strategy, Observer y Template Method. La arquitectura se divide en tres m\u00f3dulos independientes conectados por CI/CD multiproyecto:</p><ul class=\"list-group list-group-flush\"><li class=\"list-group-item\"><strong>Dayzen-Core</strong> \u2014 Reglas del dominio y l\u00f3gica de negocio. Maneja la creaci\u00f3n de recordatorios, la agenda de calendarios y la notificaci\u00f3n a listeners.</li><li class=\"list-group-item\"><strong>Dayzen-UI</strong> \u2014 Interfaz de usuario en JavaFX donde se visualizan eventos y se configuran recordatorios.</li><li class=\"list-group-item\"><strong>Dayzen-Ext</strong> \u2014 M\u00f3dulo de extensibilidad basado en plugins: incorpora din\u00e1micamente implementaciones de ProveedorDeCalendario (Google Calendar, Outlook, etc.) sin modificar el Core.</li><li class=\"list-group-item\">El Discoverer escanea la carpeta de plugins en tiempo de ejecuci\u00f3n para cargar extensiones .class, logrando un acoplamiento m\u00ednimo y verdadera extensibilidad.</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p><strong>Responsabilidades y Tareas:</strong></p><p><strong>1. Desarrollo completo del Core:</strong> Implement\u00e9 la totalidad del m\u00f3dulo Dayzen-Core: la f\u00e1brica (DayzenFactory), el inicializador (DayzenInitializer), el facade (DayzenFacade), la agenda, el creador de recordatorios, el gestor de recordatorios, y el sistema de notificaci\u00f3n por Telegram con gateway y listeners.</p><p><strong>2. Asesoramiento t\u00e9cnico al equipo:</strong> Gui\u00e9 a los integrantes en la implementaci\u00f3n de la UI (JavaFX) y el m\u00f3dulo de extensibilidad, asegurando que respetaran la interfaz ProveedorDeCalendario y el flujo de datos definido por el Core.</p><p><strong>3. Dise\u00f1o gr\u00e1fico de presentaciones:</strong> Cre\u00e9 los diagramas de secuencia, clases y flujos para la documentaci\u00f3n del proyecto, as\u00ed como la est\u00e9tica visual de las diapositivas de presentaci\u00f3n.</p><p><strong>Desaf\u00edos y Soluciones:</strong></p><p><strong>1. Extensibilidad por plugins en tiempo de ejecuci\u00f3n:</strong> Dise\u00f1\u00e9 el Discoverer que escanea din\u00e1micamente la carpeta Plugins y carga implementaciones de ProveedorDeCalendario sin necesidad de recompilar el Core, aplicando OCP.</p><p><strong>2. Integraci\u00f3n con Telegram:</strong> Implement\u00e9 el gateway que formatea los recordatorios y realiza POST a la API de Telegram, con manejo de errores y configuraci\u00f3n externalizada en services.properties.</p><p><strong>3. CI/CD multiproyecto:</strong> Configur\u00e9 pipelines de GitLab donde los cambios en el Core disparan autom\u00e1ticamente la reconstrucci\u00f3n de los m\u00f3dulos dependientes.</p><p><strong>Aprendizajes y Experiencias:</strong></p><p><strong>Arquitectura limpia y principios SOLID:</strong> Aplicaci\u00f3n pr\u00e1ctica de OCP, SRP, YAGNI, y abstracci\u00f3n leak en un proyecto real con m\u00faltiples m\u00f3dulos interdependientes.</p><p><strong>Trabajo en equipo con roles definidos:</strong> Coordinaci\u00f3n de un equipo de 4 integrantes con separaci\u00f3n clara de responsabilidades entre Core, UI y Ext.</p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/proyectoprofesionalcore1"
+    },
+    {
+      "id": "conversor-lavagcer",
+      "title": "Conversor Lavagcer - C\u00e1lculo de Contracci\u00f3n Cer\u00e1mica",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://gitlab.com/spectrelonewolf/conversor-lavagcer/-/raw/main/logo/logo.jpg",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Kotlin",
+          "icon": "bi-filetype-java"
+        },
+        {
+          "name": "Android Studio",
+          "icon": "bi-terminal-fill"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-git"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Introducci\u00f3n",
+          "content": "Herramienta digital para Android desarrollada en Kotlin, orientada al c\u00e1lculo de contracci\u00f3n cer\u00e1mica industrial para la empresa Lavagcer. La aplicaci\u00f3n permite realizar c\u00e1lculos precisos de las dimensiones previas a la cocci\u00f3n a 1200\u00b0C, eliminando la necesidad de calculadoras externas, anotaciones manuales o tablas f\u00edsicas de referencia."
+        },
+        {
+          "title": "Funcionamiento",
+          "content": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">El usuario ingresa la medida final requerida de la pieza cer\u00e1mica y selecciona el material junto con su condici\u00f3n de conformado (h\u00famedo, seco o prensado)</li><li class=\"list-group-item\">Materiales soportados: Silimanita, Porcelana extruida, Mull, Estatita, Cordierita</li><li class=\"list-group-item\">La herramienta devuelve dos salidas de datos calculadas en base a coeficientes de contracci\u00f3n predefinidos para cada material</li><li class=\"list-group-item\">Optimiza y estandariza el c\u00e1lculo de medidas previas a la cocci\u00f3n, reduciendo errores y ahorrando tiempo</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p><strong>Responsabilidades y Tareas:</strong></p><p><strong>1. Desarrollo Completo:</strong> Proyecto individual donde dise\u00f1\u00e9 e implement\u00e9 toda la aplicaci\u00f3n Android.</p><p><strong>2. Investigaci\u00f3n de Coeficientes:</strong> Recopil\u00e9 y valid\u00e9 los coeficientes de contracci\u00f3n para cada material cer\u00e1mico en conjunto con el personal t\u00e9cnico de Lavagcer.</p><p><strong>Desaf\u00edos y Soluciones:</strong></p><p><strong>1. Precisi\u00f3n de C\u00e1lculos:</strong> Los coeficientes de contracci\u00f3n var\u00edan seg\u00fan el material y estado de conformado. Se implement\u00f3 una tabla de coeficientes verificada con datos reales de producci\u00f3n.</p><p><strong>Aprendizajes y Experiencias:</strong></p><p><strong>Desarrollo Android:</strong> Implementaci\u00f3n pr\u00e1ctica de Kotlin y Android Studio para una aplicaci\u00f3n industrial real.</p><p><strong>Colaboraci\u00f3n con dominio experto:</strong> Trabajo conjunto con operarios y t\u00e9cnicos para entender y digitalizar conocimiento artesanal.</p><p><strong>Resultados y Conclusiones:</strong></p><p><em>Aplicaci\u00f3n funcional utilizada en el entorno industrial de Lavagcer para agilizar y estandarizar los c\u00e1lculos cer\u00e1micos diarios.</em></p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/conversor-lavagcer"
+    },
+    {
+      "id": "raspberry-horno",
+      "title": "Raspberry - Control de Horno Industrial",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://gitlab.com/spectrelonewolf/rasp-pi-pico-w-control-de-horno/-/raw/main/logo.jpg",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Python",
+          "icon": "bi-code-slash"
+        },
+        {
+          "name": "Flask",
+          "icon": "bi-hdd-network-fill"
+        },
+        {
+          "name": "Raspberry Pi",
+          "icon": "bi-cpu"
+        },
+        {
+          "name": "OpenCV",
+          "icon": "bi-camera"
+        },
+        {
+          "name": "SQLite",
+          "icon": "bi-database"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-git"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Introducci\u00f3n",
+          "content": "Sistema de control y monitoreo para horno t\u00fanel industrial desarrollado para Lavagcer. El proyecto evolucion\u00f3 desde una soluci\u00f3n b\u00e1sica con Raspberry Pi Pico W (MicroPython) hasta una implementaci\u00f3n robusta con Raspberry Pi Zero 2 W, incorporando funcionalidades avanzadas de control, monitoreo en tiempo real, interfaz web con Flask, alertas sonoras y captura de im\u00e1genes con OpenCV."
+        },
+        {
+          "title": "Caracter\u00edsticas T\u00e9cnicas",
+          "content": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\"><strong>Control de Proceso:</strong> Gesti\u00f3n autom\u00e1tica de ciclos de cocci\u00f3n con temporizadores por zona (acercamiento/empuje) y secuenciaci\u00f3n de movimientos de zorras.</li><li class=\"list-group-item\"><strong>Dashboard Web:</strong> Interfaz responsive con Flask, monitoreo en tiempo real v\u00eda WebSockets (Flask-SocketIO), hist\u00f3rico de operaciones y gesti\u00f3n de usuarios.</li><li class=\"list-group-item\"><strong>Sistema Multimedia:</strong> Alertas sonoras con voces predefinidas y captura autom\u00e1tica de im\u00e1genes al ingreso de zorras con c\u00e1mara USB y OpenCV.</li><li class=\"list-group-item\"><strong>Gesti\u00f3n de Zorras:</strong> Seguimiento individual con estados (acercamiento, empuje, cocci\u00f3n, cocinada) y registro temporal persistente.</li><li class=\"list-group-item\"><strong>Base de Datos:</strong> SQLAlchemy + SQLite para persistencia de datos.</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p><strong>Responsabilidades y Tareas:</strong></p><p><strong>1. Desarrollo Completo:</strong> Proyecto individual donde dise\u00f1\u00e9, implement\u00e9 y desplegu\u00e9 el sistema completo, desde el hardware hasta el software.</p><p><strong>2. Evoluci\u00f3n Tecnol\u00f3gica:</strong> Migr\u00e9 la soluci\u00f3n de Raspberry Pi Pico W (limitaciones de memoria y procesamiento) a Raspberry Pi Zero 2 W, agregando interfaz web, audio y captura de im\u00e1genes.</p><p><strong>Desaf\u00edos y Soluciones:</strong></p><p><strong>1. Limitaciones del Pico W:</strong> Memoria insuficiente para interfaz gr\u00e1fica y concurrencia. Se migr\u00f3 a Zero 2 W con Flask y multithreading.</p><p><strong>2. Integraci\u00f3n Multimedia:</strong> Coordinaci\u00f3n de m\u00faltiples subsistemas (control, web, audio, c\u00e1mara) en un solo dispositivo embebido.</p><p><strong>Aprendizajes y Experiencias:</strong></p><p><strong>IoT Industrial:</strong> Implementaci\u00f3n completa de un sistema embebido con m\u00faltiples subsistemas en tiempo real.</p><p><strong>Fullstack Embebido:</strong> Desde sensores y actuadores hasta interfaz web moderna con WebSockets.</p><p><strong>Resultados y Conclusiones:</strong></p><p><em>Sistema industrial en funcionamiento que automatiza el control del horno t\u00fanel de Lavagcer, mejorando la precisi\u00f3n y eficiencia del proceso de cocci\u00f3n cer\u00e1mica.</em></p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/rasp-pi-pico-w-control-de-horno"
+    },
+    {
+      "id": "app-time-tracker",
+      "title": "App-Time-Tracker - Registro Autom\u00e1tico de Tiempo",
+      "media": [
+        {
+          "type": "image",
+          "src": "https://gitlab.com/uploads/-/system/project/avatar/76274692/192x192.png",
+          "active": true
+        }
+      ],
+      "tools": [
+        {
+          "name": "Python",
+          "icon": "bi-code-slash"
+        },
+        {
+          "name": "JSON",
+          "icon": "bi-filetype-json"
+        },
+        {
+          "name": "Git",
+          "icon": "bi-git"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Introducci\u00f3n",
+          "content": "Script para Windows que registra autom\u00e1ticamente el tiempo de uso de cada aplicaci\u00f3n. Detecta la ventana activa, suma tiempo mientras haya actividad y entra en modo sleep si no hay interacci\u00f3n. Dise\u00f1ado para personas que necesitan medir con precisi\u00f3n cu\u00e1nto tiempo pasan en distintos programas, ideal para cotizar trabajos de edici\u00f3n de video, imagen o uso general de aplicaciones."
+        },
+        {
+          "title": "Funcionamiento",
+          "content": "<ul class=\"list-group list-group-flush\"><li class=\"list-group-item\">Detecta cu\u00e1l es la ventana activa (el programa en uso)</li><li class=\"list-group-item\">Comienza a sumar tiempo mientras haya actividad del mouse/teclado</li><li class=\"list-group-item\">Si no hay interacci\u00f3n, entra en modo sleep: no suma tiempo y se reactiva autom\u00e1ticamente al detectar actividad</li><li class=\"list-group-item\">Guarda los registros del d\u00eda en un archivo JSON con estructura por fecha y aplicaci\u00f3n</li></ul>"
+        },
+        {
+          "title": "Desarrollo",
+          "content": "<p><strong>Responsabilidades y Tareas:</strong></p><p><strong>1. Desarrollo Completo:</strong> Proyecto individual, idea e implementaci\u00f3n completa del script.</p><p><strong>2. Dise\u00f1o de la l\u00f3gica de detecci\u00f3n:</strong> Implementaci\u00f3n del monitoreo de ventana activa en Windows y el sistema de sleep/wake basado en actividad del usuario.</p><p><strong>Desaf\u00edos y Soluciones:</strong></p><p><strong>1. Detecci\u00f3n precisa de actividad:</strong> Diferenciar entre uso activo y pausas sin consumir recursos innecesarios. Se implement\u00f3 un umbral de inactividad con polling eficiente.</p><p><strong>Aprendizajes y Experiencias:</strong></p><p><strong>Automatizaci\u00f3n en Windows:</strong> Trabajo con APIs de Windows para detecci\u00f3n de ventanas y actividad del usuario.</p><p><strong>Persistencia JSON:</strong> Dise\u00f1o de estructura de datos para almacenamiento diario de m\u00e9tricas.</p><p><strong>Resultados y Conclusiones:</strong></p><p><em>Herramienta \u00fatil para freelancers que necesitan medir tiempo real invertido en cada proyecto o aplicaci\u00f3n.</em></p>"
+        }
+      ],
+      "repository": "https://gitlab.com/spectrelonewolf/app-time-tracker"
     }
   ]
 }
