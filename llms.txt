@@ -1,0 +1,60 @@
+# Mi Huella Digital - Alejandro Fabian Moras
+
+> Portfolio personal de Alejandro Fabian Moras, Técnico Universitario en Informática y desarrollador en formación. Más de 19 años de experiencia en gestión, atención al público, multimedia y microinformática, realizando una transición estratégica al desarrollo de software.
+
+## Sobre mí
+
+- [Perfil y contacto](https://spectrelonewolf.github.io/#hero): Desarrollador en formación con enfoque en Java, Python, Kotlin y GOlang. Experiencia en Flask, Bootstrap, Docker, PostgreSQL, SQLite y MongoDB.
+
+## Experiencia Profesional
+
+- [Lavagger S.R.L](https://spectrelonewolf.github.io/#experiencia): Desarrollador Fullstack Freelance (2020-Presente). Web App con Python/Flask para control de producción, soporte IT, rediseño web corporativo.
+- [Colonial - Villa Gesell](https://spectrelonewolf.github.io/#experiencia): Encargado (2019-2020). Coordinación de personal, control de inventario y caja.
+- [Fotomar S.R.L - Villa Gesell](https://spectrelonewolf.github.io/#experiencia): Auxiliar Experimentado (2007-2017). Atención al cliente, diseño multimedia con Photoshop y After Effects.
+- [Munchi's - Villa Gesell](https://spectrelonewolf.github.io/#experiencia): Encargado (2005-2007). Liderazgo de equipos, administración de inventarios.
+
+## Proyectos Destacados
+
+- [Dayzen - Recordatorios Inteligentes con Telegram](https://gitlab.com/spectrelonewolf/proyectoprofesionalcore1): Arquitectura MVC con CI/CD multiproyecto. Core completo en Java con patrones SOLID, extensibilidad por plugins, integración Telegram API.
+- [Cypher Vault - Galería de Imágenes Segura](https://gitlab.com/spectrelonewolf/pp-tpfinal): App Android en Kotlin con cifrado de imágenes, reconocimiento facial (ML Kit), 2FA y servidor temporal Node.js/Vercel.
+
+## Educación
+
+- Licenciatura en Sistemas - UNGS (cursando 4to año)
+- Técnico Universitario en Informática - UNGS (2024)
+- Desarrollo de Aplicaciones para Móviles - UTN (2016)
+- Técnico en Electrónica - Primera Brigada Aérea "El Palomar" (2002)
+
+## Habilidades Técnicas
+
+- **Lenguajes:** Java, Python, Kotlin, JavaScript (ES6+), SQL, GOlang
+- **Frameworks:** Flask, Bootstrap, Git, Node.js, Docker
+- **Bases de Datos:** PostgreSQL, SQLite, MongoDB, Firebase
+- **Herramientas:** Android Studio, VSCode, Eclipse, Photoshop, After Effects, Linux, Windows, Raspberry Pi, Postman
+- **Metodologías:** Scrum, Clean Code, MVVM, MVC, CI/CD
+
+## Proyectos del Portfolio
+
+- [Lavagcer - Catálogo Digital](https://gitlab.com/spectrelonewolf/lavagcer-web/): Catálogo web responsive con Bootstrap 5.3 y carga dinámica JSON para productos cerámicos.
+- [MEDbot con Webauth](https://gitlab.com/spectrelonewolf/pp-chatbot): Chatbot médico con Flask, PyTorch y autenticación biométrica WebAuth.
+- [Sistema de Gestión de Pedidos](https://gitlab.com/spectrelonewolf/ibarra-galeano-gaona-moras-db1): Backend en GOlang + PostgreSQL con BoltDB y test unitarios por consola.
+- [Sistema de Clustering con AGM](https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas): Implementación del algoritmo de Charles Zahn en Java con patrón MVC.
+- [Viru Sin - Analizador de Red](https://gitlab.com/spectrelonewolf/viru-sin): Herramienta Python con AbuseIPDB API para monitoreo de conexiones de red.
+- [RARCrack](https://gitlab.com/spectrelonewolf/rarcrack): Recuperación de contraseñas RAR por fuerza bruta/wordlist con interfaz gráfica Python.
+- [Conversor Lavagcer](https://gitlab.com/spectrelonewolf/conversor-lavagcer): App Android Kotlin para cálculo de contracción cerámica industrial.
+- [Raspberry - Control de Horno](https://gitlab.com/spectrelonewolf/rasp-pi-pico-w-control-de-horno): IoT industrial con Raspberry Pi, Flask, OpenCV y WebSockets.
+- [App-Time-Tracker](https://gitlab.com/spectrelonewolf/app-time-tracker): Script Python para registro automático de tiempo de uso de aplicaciones en Windows.
+- [Juego: Sakura Ikebana Delivery](https://gitlab.com/spectrelonewolf/tpprogra1): Videojuego Java con librería gráfica académica.
+- [Sistema de Votación](https://gitlab.com/spectrelonewolf/figueroa-moras-tp-p2): Sistema Java con TADs, JUnit, herencia y polimorfismo.
+- [Wordle](https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas): Implementación Java del juego Wordle con patrón MVC.
+- [Simulador Álbum de Figuritas](https://gitlab.com/spectrelonewolf/programacion-3-tps-y-practicas): Simulación multithreading en Java con MVC.
+- [Diseño de Red UNGS](https://gitlab.com/spectrelonewolf/franco-matias-ale-tp-sor): Red corporativa con Cisco Packet Tracer, VLANs, VLSM y RIP v2.
+- [Hotelia - Reserva de Hoteles](https://gitlab.com/spectrelonewolf/tp-evs-hoteles): Prototipo web con metodología Scrum y documento FRD.
+- [Prototipo Hosp. Larcade](https://gitlab.com/spectrelonewolf/hospital-larcade): Sistema de monitoreo de presión arterial con Firebase.
+- [Ahorcado Ejecuciones](https://gitlab.com/spectrelonewolf/ahorcado-ejecuciones): Videojuego animado en Construct 2 con gráficos HD.
+- [Chatbot GitHub Pages](https://gitlab.com/spectrelonewolf/bot-githubpages): Chatbot Flask + scikit-learn alojado en PythonAnywhere.
+
+## Optional
+
+- [LinkedIn](https://www.linkedin.com/in/alejandro-fabian-moras): Perfil profesional de Alejandro Moras.
+- [GitLab](https://gitlab.com/spectrelonewolf): Repositorios de proyectos.
